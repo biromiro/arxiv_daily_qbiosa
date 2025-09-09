@@ -45,6 +45,23 @@ jobs:
           git commit -m "Update daily arXiv papers $(date +'%Y-%m-%d')"
           git push
         fi
+    
+    - name: Send email if new papers found
+      if: success() && hashFiles('notify_email.txt') != ''
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: smtp.gmail.com
+        server_port: 465
+        username: ${{ secrets.SMTP_USER }}
+        password: ${{ secrets.SMTP_PASS }}
+        subject: "New peptide/self-assembly papers for $(date +'%Y-%m-%d')"
+        to: nuno.costa@tum.de
+        from: arXiv Scraper <${{ secrets.SMTP_USER }}>
+        body: |
+          $(cat notify_email.txt)
+
+    - name: Clean up notify file
+      run: rm -f notify_email.txt
 
     - name: Setup Pages
       uses: actions/configure-pages@v5
