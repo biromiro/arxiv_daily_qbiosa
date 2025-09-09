@@ -84,7 +84,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
     run_date = date.today()
-    num_days_to_run = 90
+    num_days_to_run = 3
 
     if args.date:
         try:
