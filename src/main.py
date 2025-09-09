@@ -110,7 +110,7 @@ if __name__ == '__main__':
             for p in papers:
                 f.write(f"- {p.get('title', 'Untitled')}, by {', '.join(p.get('authors', []))}\n")
             
-            pages_url = f"https://biromiro.github.io/arxiv_daily_qbiosa/daily_html/{run_date.isoformat()}.html"
+            pages_url = f"https://biromiro.github.io/arxiv\_daily\_qbiosa/daily\_html/{run_date.isoformat()}.html"
             f.write(f"\nView full report: {pages_url}\n")
     
     else:
