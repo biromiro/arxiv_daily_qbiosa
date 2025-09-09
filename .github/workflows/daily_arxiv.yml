@@ -57,7 +57,8 @@ jobs:
         subject: "New peptide/self-assembly papers"
         bcc: nuno.costa@tum.de
         from: GitHub Bot <${{ secrets.SMTP_USER }}>
-        bodyfile: notify_email.txt
+        html_body: file://notify_email.txt
+        convert_markdown: true
 
 
     - name: Clean up notify file
