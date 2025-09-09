@@ -1,14 +1,6 @@
-# Arxiv Daily AIGC
+# Arxiv Daily AIQBIO-SA
 
-This is an automated project designed to fetch the latest papers from the Computer Vision (cs.CV) field on arXiv daily, use AI (currently via OpenRouter API) to filter papers related to image/video/multimodal generation, generate structured JSON data and aesthetically pleasing HTML pages, and finally automatically deploy the results to GitHub Pages via GitHub Actions.
-
-## Features
-
-1.  **Data Fetching**: Automatically fetches the latest papers from the `cs.CV` field on arXiv daily.
-2.  **AI Filtering**: Uses LLM to intelligently filter papers related to image/video/multimodal generation themes and scores the value of the papers across different dimensions.
-3.  **Data Storage**: Saves the filtered paper information (title, abstract, link, etc.) as date-named JSON files (stored in the `daily_json/` directory).
-4.  **Web Page Generation**: Generates daily HTML reports based on the JSON data using a preset template (stored in the `daily_html/` directory) and updates the main entry page `index.html`.
-5.  **Automated Deployment**: Implements the complete process of daily scheduled fetching, filtering, generation, and deployment to GitHub Pages via GitHub Actions.
+This is an automated project designed to fetch the latest papers from the Quantitative Biology (q-bio) field on arXiv daily, use AI to filter papers related to machine learning for peptides aggregates/self-assembly, generate structured JSON data and aesthetically pleasing HTML pages, and finally automatically deploy the results to GitHub Pages via GitHub Actions. Forked from: https://github.com/onion-liu/arxiv_daily_aigc 
 
 ## Tech Stack
 
@@ -22,7 +14,7 @@ This is an automated project designed to fetch the latest papers from the Comput
 1.  **Clone Repository**:
     ```bash
     git clone <your-repository-url>
-    cd arxiv_daily_aigc
+    cd arxiv_daily_qbiosa
     ```
 
 2.  **Create and Activate Virtual Environment** (Recommended):
