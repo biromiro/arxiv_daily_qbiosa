@@ -91,7 +91,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
     run_date = date.today()
-    num_days_to_run = 5
+    num_days_to_run = 3
 
     if args.date:
         try:
@@ -100,7 +100,7 @@ if __name__ == '__main__':
             logging.error("Invalid date format, use YYYY-MM-DD.")
             exit(1)
 
-    for offset in range(num_days_to_run - 1, 3, -1):
+    for offset in range(num_days_to_run - 1, -1, -1):
         papers = main(target_date=run_date - timedelta(days=offset))
 
     if papers:
