@@ -1,1 +1,28 @@
-[]
+[
+    {
+        "title": "The Role of Counterions in the Assembly of Charged Virus-Like Shells",
+        "summary": "Synthetic virus-like particles (VLP), designed from simplified building\nblocks, can reduce the complexity of native viral proteins and be tailored for\nspecific applications. Using molecular dynamics simulations, we investigate the\nrole of counterions (H2PO4-, PO43-, Cl-, and F-) in stabilizing a pre-assembled\nvirus-like shell formed by cationic peptides exemplified by synthetic\ncyclopeptide (sequence: cyc-Gln-DLeu-Arg-DLeu-Arg-DLeu-Arg-DLeu) VLP shells.\nOur findings reveal that polyatomic anions (H2PO4- and PO43-) facilitate stable\nassemblies by condensing on the VLP shell to higher degrees, thereby\nneutralizing Coulombic repulsion among the peptide building blocks. Cohesion is\nlargely promoted through the multidentate hydrogen bonds with arginine:\nSubstituting arginine by lysine in the system with H2PO4- leads to\ndestabilization of the structure. H2PO4- additionally engages in hydrophobic\ninteractions with leucine side chains. By contrast, monoatomic anions (Cl- and\nF-) show insufficient coordination to the peptides and fail to stabilize the\nassembly, while supplementing F- with excess 1M NaCl can recover the structural\nintegrity by screening electrostatic interactions. This study provides\nimportant insights into the role of counterions in molecular self-assembly and\nthe nature of their interactions with amino-acid side chains involved in the\ncooperative formation and stabilization of synthetic virus-like shells.",
+        "url": "http://arxiv.org/abs/2508.05723v1",
+        "published_date": "2025-08-07T16:02:50+00:00",
+        "updated_date": "2025-08-07T16:02:50+00:00",
+        "categories": [
+            "physics.chem-ph"
+        ],
+        "authors": [
+            "Ya-Wen Hsiao",
+            "Magnus Hedström",
+            "Maxim G Ryadnov",
+            "David J Bray",
+            "Jason Crain"
+        ],
+        "pdf_url": "http://arxiv.org/pdf/2508.05723v1",
+        "tldr": "This paper uses molecular dynamics simulations to investigate how different counterions (H2PO4-, PO43-, Cl-, F-) affect the stability of virus-like shells (VLPs) formed by cationic cyclopeptides. Polyatomic anions (H2PO4- and PO43-) stabilize the VLP shell by neutralizing charge repulsion, while monoatomic anions (Cl- and F-) do not.",
+        "explanation": "The study employs MD simulations to examine the role of counterions in the self-assembly of virus-like particles composed of cationic cyclopeptides. The simulations reveal that polyatomic anions facilitate stable assemblies by condensing on the VLP shell, effectively neutralizing the repulsive electrostatic forces between the peptide building blocks. Key interactions, such as multidentate hydrogen bonds with arginine and hydrophobic interactions with leucine, are identified as promoting cohesion, especially in the presence of H2PO4-. Monoatomic anions are found to be insufficient for stabilization. The paper discusses implications for VLP design and potential applications.",
+        "interests_alignment": "This paper aligns well with my research interests in peptide self-assembly, particularly the computational simulation of peptide structure and assembly. The explicit focus on counterion effects and the use of MD simulations to understand the underlying mechanisms are highly relevant. Understanding the role and the kind of interactions can greatly enhance the design principles of peptides and peptide-based biomaterials.",
+        "relevance_score": 9,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    }
+]

@@ -1,1 +1,66 @@
-[]
+[
+    {
+        "title": "Flow Matching Meets Biology and Life Science: A Survey",
+        "summary": "Over the past decade, advances in generative modeling, such as generative\nadversarial networks, masked autoencoders, and diffusion models, have\nsignificantly transformed biological research and discovery, enabling\nbreakthroughs in molecule design, protein generation, drug discovery, and\nbeyond. At the same time, biological applications have served as valuable\ntestbeds for evaluating the capabilities of generative models. Recently, flow\nmatching has emerged as a powerful and efficient alternative to diffusion-based\ngenerative modeling, with growing interest in its application to problems in\nbiology and life sciences. This paper presents the first comprehensive survey\nof recent developments in flow matching and its applications in biological\ndomains. We begin by systematically reviewing the foundations and variants of\nflow matching, and then categorize its applications into three major areas:\nbiological sequence modeling, molecule generation and design, and peptide and\nprotein generation. For each, we provide an in-depth review of recent progress.\nWe also summarize commonly used datasets and software tools, and conclude with\na discussion of potential future directions. The corresponding curated\nresources are available at\nhttps://github.com/Violet24K/Awesome-Flow-Matching-Meets-Biology.",
+        "url": "http://arxiv.org/abs/2507.17731v1",
+        "published_date": "2025-07-23T17:44:29+00:00",
+        "updated_date": "2025-07-23T17:44:29+00:00",
+        "categories": [
+            "cs.LG",
+            "cs.AI"
+        ],
+        "authors": [
+            "Zihao Li",
+            "Zhichen Zeng",
+            "Xiao Lin",
+            "Feihao Fang",
+            "Yanru Qu",
+            "Zhe Xu",
+            "Zhining Liu",
+            "Xuying Ning",
+            "Tianxin Wei",
+            "Ge Liu",
+            "Hanghang Tong",
+            "Jingrui He"
+        ],
+        "pdf_url": "http://arxiv.org/pdf/2507.17731v1",
+        "tldr": "This paper surveys the recent advancements in flow matching (FM), a generative modeling technique, and its applications in biological sequence modeling, molecule generation/design, and protein generation. It also provides curated resources.",
+        "explanation": "The paper provides a comprehensive review of flow matching, a generative modeling technique that has recently gained traction in the field of biology and life sciences.  It starts by outlining the foundations of FM and its variants, categorizing its applications into biological sequence modeling, molecule generation and design, and peptide and protein generation. The authors also provide a summary of datasets and software tools, pointing out potential future directions in the field.  A curated resource is offered via a GitHub repository.",
+        "interests_alignment": "The paper directly aligns with my interests by covering machine learning for biomolecules (especially peptides and proteins), peptide/protein generation (self-assembly through protein design), and datasets used in these areas. The survey nature is particularly useful for identifying relevant resources in these interdisciplinary topics. The specific mentions of peptides and protein self-assembly are strong signals of alignment.",
+        "relevance_score": 9,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "pH-dependent interfacial rheology of polymer membranes assembled at liquid-liquid interfaces using hydrogen bonds",
+        "summary": "Self-assembly of polymers at liquid interfaces using non-covalent\ninteractions has emerged as a promising technique to reversibly produce\nself-healing membranes. Besides the assembly process, it is also crucial to\ncontrol the mechanical properties of these membranes. Here, we measure the\ninterfacial rheological properties of PMAA-PPO (polymethacrylic\nacidpolypropylene oxide) polymer membranes assembled using hydrogen bonds at\nliquid-oil interfaces. Varying the pH enables us to modify the degree of\nionization of the PMAA chains, and hence their ability to establish hydrogen\ninteractions with PPO. Frequency sweeps of the interfacial layers show a\ncrossover between a viscous regime at low frequencies and an elastic regime at\nhigh frequencies. The crossover elastic modulus decreases by half after one\nhour of the experiment over the pH range investigated, which can be accounted\nfor by a decrease of the layer thickness as pH increases. Furthermore we find\nthat the crossover frequency varies exponentially with the degree of ionization\nof PMAA. To account for these observations, we propose a simple picture where\nthe short PPO chains behave as non-covalent cross-linkers that bridge several\nPMAA chains. The dissociation rate and hence the crossover frequency are\ncontrolled by the number of PO units per PPO chain involved in the hydrogen\nbonds.",
+        "url": "http://arxiv.org/abs/2507.17355v1",
+        "published_date": "2025-07-23T09:37:19+00:00",
+        "updated_date": "2025-07-23T09:37:19+00:00",
+        "categories": [
+            "cond-mat.soft",
+            "physics.chem-ph"
+        ],
+        "authors": [
+            "Julien Dupré de Baubigny",
+            "Corentin Tregouet",
+            "Elena N. Govorun",
+            "Mathilde Reyssat",
+            "Patrick Perrin",
+            "Nadège Pantoustier",
+            "Thomas Salez",
+            "Cécile Monteux"
+        ],
+        "pdf_url": "http://arxiv.org/pdf/2507.17355v1",
+        "tldr": "This paper investigates the pH-dependent rheological properties of PMAA-PPO polymer membranes formed at liquid-liquid interfaces via hydrogen bonds, revealing changes in viscoelastic behavior and membrane thickness with varying pH. The authors propose a model where PPO chains act as crosslinkers between PMAA chains.",
+        "explanation": "The research focuses on the self-assembly of PMAA-PPO polymer membranes at liquid-liquid interfaces using hydrogen bonds. The study examines the interfacial rheology of these membranes as a function of pH, controlling the ionization of PMAA and its interaction with PPO. The experiments involve frequency sweeps to determine the viscous and elastic regimes, and the results show that the crossover elastic modulus and frequency are pH-dependent. The proposed model suggests that PPO chains serve as non-covalent crosslinkers, influencing the membrane's mechanical properties. The full text provides experimental details, including materials, methods, and further discussion of the results, reinforcing the conclusions made in the abstract.",
+        "interests_alignment": "While this paper does not directly deal with peptides, it explores self-assembly and resulting mechanical properties of biomimetic materials formed via non-covalent interactions (hydrogen bonds). I find the research relevant because the hydrogen bonds that guide the assembly of the material in this work are akin to those that guide peptide self-assembly. The study's focus on self-assembly and mechanical properties aligns with my interest in understanding and predicting structure formation within self-assembling systems.",
+        "relevance_score": 6,
+        "novelty_claim_score": 5,
+        "clarity_score": 8,
+        "potential_impact_score": 6,
+        "overall_priority_score": 6
+    }
+]

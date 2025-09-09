@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArXiv Peptide/Assembly Papers - July 26, 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg-color: #ffffff;
+      --text-color: #1e293b;
+      --text-muted-color: #64748b;
+      --header-color: #0f172a;
+      --highlight-primary: #14b8a6;
+      --highlight-secondary: #67e8f9;
+      --border-color: #e2e8f0;
+      --shadow-color: rgba(15, 23, 42, 0.08);
+    }
+    body { background-color: var(--bg-color); color: var(--text-color); font-family: 'Inter', sans-serif; overflow-x: hidden; line-height: 1.6; }
+    .bento-grid { display: grid; gap: 1.5rem; grid-template-columns: 1fr; padding-bottom: 4rem; }
+    .bento-item { background-color: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border-radius: 1rem; padding: 1.75rem; border: 1px solid rgba(226, 232, 240, 0.5); box-shadow: 0 4px 12px var(--shadow-color); transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; }
+    .bento-item:hover { transform: translateY(-6px); box-shadow: 0 10px 20px var(--shadow-color); }
+    .paper-title { font-size: 1.125rem; font-weight: 600; color: var(--highlight-primary); margin-bottom: 0.75rem; }
+    .paper-summary { font-size: 0.875rem; color: var(--text-muted-color); margin-bottom: 1.25rem; }
+    .paper-tldr { font-size: 0.95rem; color: #475569; margin: 0.75rem 0; font-weight: bold; }
+    details { margin: 0.75rem 0; }
+    details summary { cursor: pointer; font-weight: 600; color: var(--highlight-primary); }
+    details p { font-size: 0.85rem; color: #475569; margin: 0.5rem 0 0 1rem; }
+    .paper-link { display: inline-flex; align-items: center; font-size: 0.875rem; font-weight: 600; color: var(--highlight-primary); text-decoration: none; padding: 0.5rem 1rem; border-radius: 0.5rem; background-color: rgba(20, 184, 166, 0.08); border: 1px solid rgba(20, 184, 166, 0.2); transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; }
+    .paper-link:hover { background-color: rgba(20, 184, 166, 0.15); color: #0d9488; transform: translateY(-1px); }
+    .paper-authors { font-size: 0.75rem; color: var(--text-muted-color); margin-top: 1rem; font-style: italic; }
+    .header { text-align: center; margin-bottom: 3rem; padding-top: 3rem; }
+    .header h1 { font-size: 2.5rem; font-weight: 700; color: var(--header-color); margin-bottom: 0.5rem; }
+    .header p { font-size: 1.125rem; color: var(--text-muted-color); margin-top: 0.5rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+    .footer { text-align: center; color: var(--text-muted-color); font-size: 0.875rem; padding: 2rem 0; border-top: 1px solid var(--border-color); margin-top: 4rem; }
+    .line-graphic { height: 1px; background: linear-gradient(90deg, rgba(20, 184, 166, 0), var(--highlight-primary), rgba(20, 184, 166, 0)); opacity: 0.6; margin: 1.5rem 0; }
+    .paper-rating { margin: 1rem 0; color: #f59e0b; }
+    .paper-sub-ratings .rating-item i { color: #f59e0b; }
+  </style>
+</head>
+<body class="container mx-auto px-4 antialiased">
+
+  <motion.div initial="{ opacity: 0, y: -30 }" animate="{ opacity: 1, y: 0 }" transition="{ duration: 0.6, ease: 'easeOut' }" class="header" data-motion-element>
+    <h1>Peptide & Assembly Daily Papers</h1>
+    <p>Daily arXiv digest of machine learning for peptides, protein aggregation, and molecular self-assembly</p>
+    <p>July 26, 2025</p>
+    <div class="mt-4">
+        <a href="../list.html" class="text-teal-600 hover:underline">📚 View Full Report Archive</a>
+    </div>
+    <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div>
+  </motion.div>
+
+  <div class="bento-grid" id="paper-grid">
+    
+    <motion.div initial="{ opacity: 0, y: 50, scale: 0.9 }" whileInView="{ opacity: 1, y: 0, scale: 1 }" viewport="{ once: true, amount: 0.2 }" transition="{ duration: 0.5, delay: 0.0, ease: 'easeOut' }" class="bento-item" data-motion-element>
+      <h2 class="paper-title">Latent-X: An Atom-level Frontier Model for De Novo Protein Binder Design</h2>
+      <p class="paper-summary">Traditional drug discovery relies on rounds of screening millions of
+candidate molecules with low success rates, making drug discovery time and
+resource intensive. To overcome this screening bottleneck, we introduce
+Latent-X, an all-atom protein design model that enables a new paradigm of
+precision AI design. Given a target protein epitope, Latent-X jointly generates
+the all atom structure and sequence of the protein binder and target, directly
+modelling the non-covalent interactions essential for specific binding. We
+demonstrate its efficacy across two therapeutically relevant modalities through
+extensive wet lab experiments, testing as few as 30-100 designs per target. For
+macrocyclic peptides, Latent-X achieves experimental hit rates exceeding 90% on
+all evaluated benchmark targets. For mini-binders, it consistently produces
+potent candidates against all evaluated benchmark targets, with binding
+affinities reaching the low nanomolar and picomolar range - comparable to those
+of approved therapeutics - whilst also being highly specific in mammalian
+display. In direct comparisons with the state-of-the-art models AlphaProteo,
+RFdiffusion and RFpeptides under identical conditions demonstrates, Latent-X
+generates binders with higher hit rates and better binding affinities, and
+uniquely creates structurally diverse binders, including complex beta-sheet
+folds. Its end-to-end process is an order of magnitude faster than existing
+multi-step computational pipelines. By drastically improving the efficiency and
+success rate of de novo design, Latent-X represents a significant advance
+towards push-button biologics discovery and a valuable tool for protein
+engineers. Latent-X is available at https://platform.latentlabs.com, enabling
+users to reliably generate de novo binders without AI infrastructure or coding.</p>
+
+      
+      <p class="paper-tldr"><strong>TLDR:</strong> Latent-X, a novel all-atom protein design model, achieves state-of-the-art performance in de novo protein binder design with high experimental hit rates and binding affinities for macrocyclic peptides and mini-binders, surpassing existing methods in speed, hit rate, and structural diversity.</p>
+      
+      
+      <details>
+        <summary>Explanation</summary>
+        <p>The paper introduces Latent-X, a new AI model for designing protein binders. It addresses the bottleneck in traditional drug discovery by jointly generating the structure and sequence of protein binders. The model's effectiveness is demonstrated through wet lab experiments for macrocyclic peptides and mini-binders, achieving high hit rates and binding affinities compared to existing methods like AlphaProteo, RFdiffusion, and RFpeptides. A key advantage is its speed and ability to produce structurally diverse binders with complex beta-sheet folds. The model is made available via a web platform.</p>
+      </details>
+      
+      
+      <details>
+        <summary>Research Alignment</summary>
+        <p>This paper strongly aligns with my research interests. It directly involves peptide/protein design (self-assembly aspect), utilizes machine learning for biomolecules, discusses a dataset (used for training and benchmarking), and focuses on computational screening to achieve desired structural and binding properties. The macrocyclic peptide work is particularly relevant to self-assembly principles.</p>
+      </details>
+      
+
+      
+      <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Relevance:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(10/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Novelty:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Clarity:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Potential Impact:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+          </div>
+          
+        
+      </div>
+      
+
+      
+      <div class="paper-rating">
+        <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+        
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star-half-alt"></i>
+          
+        
+        <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+      </div>
+      
+
+      <a href="http://arxiv.org/abs/2507.19375v1" target="_blank" class="paper-link">
+        <i class="fas fa-file-pdf mr-1"></i> Read Paper
+      </a>
+      
+      <p class="paper-authors">Authors: Latent Labs Team, Alex Bridgland, Jonathan Crabbé, Henry Kenlay, Daniella Pretorius, Sebastian M. Schmon, Agrin Hilmkil, Rebecca Bartke-Croughan, Robin Rombach, Michael Flashman, Tomas Matteson, Simon Mathis, Alexander W. R. Nelson, David Yuan, Annette Obika, Simon A. A. Kohl</p>
+      
+    </motion.div>
+    
+    <motion.div initial="{ opacity: 0, y: 50, scale: 0.9 }" whileInView="{ opacity: 1, y: 0, scale: 1 }" viewport="{ once: true, amount: 0.2 }" transition="{ duration: 0.5, delay: 0.05, ease: 'easeOut' }" class="bento-item" data-motion-element>
+      <h2 class="paper-title">pH-Driven Fluorescence in Solid-State Lysine</h2>
+      <p class="paper-summary">There is currently a growing interest in understanding the origins of
+intrinsic fluorescence as a way to design non-invasive probes for biophysical
+processes. In this regard, understanding how pH influences fluorescence in
+non-aromatic biomolecular assemblies is key to controlling their optical
+properties in realistic cellular conditions. Here, we combine experiments and
+theory to investigate the pH-dependent emission of solid-state L-Lysine (Lys).
+Lys aggregates prepared at different pH values using HCl and H$_2$SO$_4$
+exhibit protonation- and counterion-dependent morphology and fluorescence, as
+shown by microscopy and steady-state measurements. We find an enhancement in
+the fluorescence moving from acidic to basic conditions. To uncover the
+molecular origin of these trends, we performed non-adiabatic molecular dynamics
+simulations on three Lys crystal models representing distinct protonation
+states. Our simulations indicate that enhanced protonation under acidic
+conditions facilitates non-radiative decay via proton transfer, whereas basic
+conditions favor radiative decay. These findings highlight pH as a key factor
+tuning fluorescence in Lys assemblies, offering insights for designing pH
+responsive optical materials based on non-aromatic amino acids.</p>
+
+      
+      <p class="paper-tldr"><strong>TLDR:</strong> This paper combines experiments and non-adiabatic molecular dynamics simulations to investigate the pH-dependent fluorescence of solid-state L-Lysine (Lys) aggregates. They find that pH and counterions influence the morphology and fluorescence, with protonation facilitating non-radiative decay under acidic conditions and radiative decay in basic conditions.</p>
+      
+      
+      <details>
+        <summary>Explanation</summary>
+        <p>The paper investigates the pH-dependent fluorescence of solid-state lysine aggregates. The authors experimentally characterized lysine aggregates prepared at different pH values using microscopy and steady-state fluorescence measurements, finding enhanced fluorescence under basic conditions. To understand the mechanism, they performed non-adiabatic molecular dynamics simulations on lysine crystal models with varying protonation states. The simulations suggest that increased protonation in acidic conditions facilitates non-radiative decay via proton transfer, thus quenching fluorescence. The study highlights the role of pH in tuning fluorescence in lysine assemblies, which could inform the design of pH-responsive optical materials.</p>
+      </details>
+      
+      
+      <details>
+        <summary>Research Alignment</summary>
+        <p>This paper aligns well with my research interests. It directly addresses peptide self-assembly (or in this case, amino acid aggregation), uses computational simulations (non-adiabatic molecular dynamics) to understand the underlying mechanisms, and explores how environmental factors like pH influence the assembly and properties of the biomolecule. The findings on pH-responsive optical properties could be relevant for designing novel peptide-based materials.</p>
+      </details>
+      
+
+      
+      <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Relevance:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Novelty:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Clarity:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Potential Impact:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+          </div>
+          
+        
+      </div>
+      
+
+      
+      <div class="paper-rating">
+        <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+        
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="far fa-star"></i>
+          
+        
+        <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+      </div>
+      
+
+      <a href="http://arxiv.org/abs/2507.19241v1" target="_blank" class="paper-link">
+        <i class="fas fa-file-pdf mr-1"></i> Read Paper
+      </a>
+      
+      <p class="paper-authors">Authors: Marta Monti, Luca Cimmino, Gonzalo Díaz Mirón, Carlo Diaferia, Debarshi Banerjee, Martina Stella, Luigi Vitagliano, Antonella Accardo, Ali Hassanali</p>
+      
+    </motion.div>
+    
+    <motion.div initial="{ opacity: 0, y: 50, scale: 0.9 }" whileInView="{ opacity: 1, y: 0, scale: 1 }" viewport="{ once: true, amount: 0.2 }" transition="{ duration: 0.5, delay: 0.1, ease: 'easeOut' }" class="bento-item" data-motion-element>
+      <h2 class="paper-title">Exploring molecular assembly as a biosignature using mass spectrometry and machine learning</h2>
+      <p class="paper-summary">Molecular assembly offers a promising path to detect life beyond Earth, while
+minimizing assumptions based on terrestrial life. As mass spectrometers will be
+central to upcoming Solar System missions, predicting molecular assembly from
+their data without needing to elucidate unknown structures will be essential
+for unbiased life detection. An ideal agnostic biosignature must be
+interpretable and experimentally measurable. Here, we show that molecular
+assembly, a recently developed approach to measure objects that have been
+produced by evolution, satisfies both criteria. First, it is interpretable for
+life detection, as it reflects the assembly of molecules with their bonds as
+building blocks, in contrast to approaches that discount construction history.
+Second, it can be determined without structural elucidation, as it can be
+physically measured by mass spectrometry, a property that distinguishes it from
+other approaches that use structure-based information measures for molecular
+complexity. Whilst molecular assembly is directly measurable using mass
+spectrometry data, there are limits imposed by mission constraints. To address
+this, we developed a machine learning model that predicts molecular assembly
+with high accuracy, reducing error by three-fold compared to baseline models.
+Simulated data shows that even small instrumental inconsistencies can double
+model error, emphasizing the need for standardization. These results suggest
+that standardized mass spectrometry databases could enable accurate molecular
+assembly prediction, without structural elucidation, providing a
+proof-of-concept for future astrobiology missions.</p>
+
+      
+      <p class="paper-tldr"><strong>TLDR:</strong> This paper explores using machine learning to predict molecular assembly (MA) scores from mass spectrometry data for agnostic life detection in astrobiology, addressing limitations of traditional methods and emphasizing the need for standardized MS databases. Molecular assembly is defined as 'the length of its shortest construction pathway—that is, the minimum number of discrete steps required to build it from basic building blocks and objects in the assembly pool (i.e. intermediate objects produced in earlier steps that can be reused in subsequent ones)'</p>
+      
+      
+      <details>
+        <summary>Explanation</summary>
+        <p>The paper focuses on a novel approach to life detection by utilizing molecular assembly (MA), a measure of complexity based on the shortest construction pathway of a molecule. The authors address the challenge of determining MA from mass spectrometry (MS) data, particularly in the context of space missions where structural elucidation may be difficult. They develop a machine learning model that accurately predicts MA from MS data, reducing error compared to baseline models. The research also highlights the importance of standardized MS databases for accurate MA prediction. Furthermore, the paper compares MA with existing molecular complexity score to support the use of MA. The method section contains some descriptions on how the work has been done. Overall, the paper presents a valuable exploration of using machine learning for biosignature detection in astrobiology.</p>
+      </details>
+      
+      
+      <details>
+        <summary>Research Alignment</summary>
+        <p>While this paper focuses on general molecules for life detection, the machine learning methods to predict a physical property from molecules shares similar methodologies and techniques with machine learning for peptides and biomolecules. The exploration of new features and their prediction using ML relates to my research interest in computational structure simulation or screening for peptides.</p>
+      </details>
+      
+
+      
+      <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Relevance:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(6/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Novelty:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Clarity:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Potential Impact:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+          </div>
+          
+        
+      </div>
+      
+
+      
+      <div class="paper-rating">
+        <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+        
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star-half-alt"></i>
+          
+        
+          <i class="far fa-star"></i>
+          
+        
+        <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+      </div>
+      
+
+      <a href="http://arxiv.org/abs/2507.19057v1" target="_blank" class="paper-link">
+        <i class="fas fa-file-pdf mr-1"></i> Read Paper
+      </a>
+      
+      <p class="paper-authors">Authors: Lindsay A. Rutter, Abhishek Sharma, Ian Seet, David Obeh Alobo, An Goto, Leroy Cronin</p>
+      
+    </motion.div>
+    
+  </div>
+
+  <footer class="footer">
+    Generated on 2025-09-09 11:53:52 UTC.
+  </footer>
+
+</body>
+</html>

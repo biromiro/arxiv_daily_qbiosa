@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArXiv Peptide/Assembly Papers - September 05, 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg-color: #ffffff;
+      --text-color: #1e293b;
+      --text-muted-color: #64748b;
+      --header-color: #0f172a;
+      --highlight-primary: #14b8a6;
+      --highlight-secondary: #67e8f9;
+      --border-color: #e2e8f0;
+      --shadow-color: rgba(15, 23, 42, 0.08);
+    }
+    body { background-color: var(--bg-color); color: var(--text-color); font-family: 'Inter', sans-serif; overflow-x: hidden; line-height: 1.6; }
+    .bento-grid { display: grid; gap: 1.5rem; grid-template-columns: 1fr; padding-bottom: 4rem; }
+    .bento-item { background-color: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border-radius: 1rem; padding: 1.75rem; border: 1px solid rgba(226, 232, 240, 0.5); box-shadow: 0 4px 12px var(--shadow-color); transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; }
+    .bento-item:hover { transform: translateY(-6px); box-shadow: 0 10px 20px var(--shadow-color); }
+    .paper-title { font-size: 1.125rem; font-weight: 600; color: var(--highlight-primary); margin-bottom: 0.75rem; }
+    .paper-summary { font-size: 0.875rem; color: var(--text-muted-color); margin-bottom: 1.25rem; }
+    .paper-tldr { font-size: 0.95rem; color: #475569; margin: 0.75rem 0; font-weight: bold; }
+    details { margin: 0.75rem 0; }
+    details summary { cursor: pointer; font-weight: 600; color: var(--highlight-primary); }
+    details p { font-size: 0.85rem; color: #475569; margin: 0.5rem 0 0 1rem; }
+    .paper-link { display: inline-flex; align-items: center; font-size: 0.875rem; font-weight: 600; color: var(--highlight-primary); text-decoration: none; padding: 0.5rem 1rem; border-radius: 0.5rem; background-color: rgba(20, 184, 166, 0.08); border: 1px solid rgba(20, 184, 166, 0.2); transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; }
+    .paper-link:hover { background-color: rgba(20, 184, 166, 0.15); color: #0d9488; transform: translateY(-1px); }
+    .paper-authors { font-size: 0.75rem; color: var(--text-muted-color); margin-top: 1rem; font-style: italic; }
+    .header { text-align: center; margin-bottom: 3rem; padding-top: 3rem; }
+    .header h1 { font-size: 2.5rem; font-weight: 700; color: var(--header-color); margin-bottom: 0.5rem; }
+    .header p { font-size: 1.125rem; color: var(--text-muted-color); margin-top: 0.5rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+    .footer { text-align: center; color: var(--text-muted-color); font-size: 0.875rem; padding: 2rem 0; border-top: 1px solid var(--border-color); margin-top: 4rem; }
+    .line-graphic { height: 1px; background: linear-gradient(90deg, rgba(20, 184, 166, 0), var(--highlight-primary), rgba(20, 184, 166, 0)); opacity: 0.6; margin: 1.5rem 0; }
+    .paper-rating { margin: 1rem 0; color: #f59e0b; }
+    .paper-sub-ratings .rating-item i { color: #f59e0b; }
+  </style>
+</head>
+<body class="container mx-auto px-4 antialiased">
+
+  <motion.div initial="{ opacity: 0, y: -30 }" animate="{ opacity: 1, y: 0 }" transition="{ duration: 0.6, ease: 'easeOut' }" class="header" data-motion-element>
+    <h1>Peptide & Assembly Daily Papers</h1>
+    <p>Daily arXiv digest of machine learning for peptides, protein aggregation, and molecular self-assembly</p>
+    <p>September 05, 2025</p>
+    <div class="mt-4">
+        <a href="../list.html" class="text-teal-600 hover:underline">📚 View Full Report Archive</a>
+    </div>
+    <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div>
+  </motion.div>
+
+  <div class="bento-grid" id="paper-grid">
+    
+    <motion.div initial="{ opacity: 0, y: 50, scale: 0.9 }" whileInView="{ opacity: 1, y: 0, scale: 1 }" viewport="{ once: true, amount: 0.2 }" transition="{ duration: 0.5, delay: 0.0, ease: 'easeOut' }" class="bento-item" data-motion-element>
+      <h2 class="paper-title">Spin-to-charge conversion modulated by chiral molecules</h2>
+      <p class="paper-summary">Molecular chirality and electron spin are intricately intertwined via the
+fascinating phenomenon of chiral-induced spin selectivity (CISS), which has
+garnered considerable attention due to its extensive potential applications. A
+recent experiment has revealed that chiral molecules self-assembled on the gold
+surface can modulate the inverse spin Hall effect, providing an alternative
+platform for studying the interplay between chirality and spin transport. Our
+study uncovers that this modulation stems from the CISS effect, which enhances
+spin currents of one spin orientation while suppressing those of the opposite
+spin orientation. We provide numerical results that are highly consistent with
+the experimental phenomena and further investigate the influence of various
+factors on this modulation. This work offers a theoretical explanation of
+previously unexplained experimental findings, and the underlying physical
+mechanism broadens current perspectives on understanding and applying CISS.</p>
+
+      
+      <p class="paper-tldr"><strong>TLDR:</strong> This theoretical study explains how chiral molecules self-assembled on a gold surface modulate spin-to-charge conversion by enhancing spin currents of one orientation and suppressing the opposite, consistent with experimental observations and broadening understanding of CISS.</p>
+      
+      
+      <details>
+        <summary>Explanation</summary>
+        <p>The paper delves into the chiral-induced spin selectivity (CISS) effect and its modulation of the inverse spin Hall effect (ISHE) using numerical simulations. It theoretically explains experimental findings regarding chiral molecules self-assembled on gold surfaces. The study demonstrates that chiral molecules enhance specific spin currents while suppressing others, leading to asymmetric spin-to-charge conversion. The results are consistent with experimental data and offer insights into controlling spin transport at room temperature. The paper uses tight-binding models and non-equilibrium Green's function methods.</p>
+      </details>
+      
+      
+      <details>
+        <summary>Research Alignment</summary>
+        <p>While not directly focused on peptides, it involves self-assembly of chiral molecules on surfaces, a phenomenon that shares conceptual similarities with peptide self-assembly. Also, the study models a biomolecular phenomenon and thus is of strong potential relevance to my research interests. The paper focuses on theoretical methods and experimental validation of the CISS effect related to molecular chirality, which is of potential relevance to how chirality affects peptide interactions and aggregation.</p>
+      </details>
+      
+
+      
+      <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Relevance:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Novelty:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Clarity:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Potential Impact:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+          </div>
+          
+        
+      </div>
+      
+
+      
+      <div class="paper-rating">
+        <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+        
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star-half-alt"></i>
+          
+        
+          <i class="far fa-star"></i>
+          
+        
+        <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+      </div>
+      
+
+      <a href="http://arxiv.org/abs/2509.04021v1" target="_blank" class="paper-link">
+        <i class="fas fa-file-pdf mr-1"></i> Read Paper
+      </a>
+      
+      <p class="paper-authors">Authors: Peng-Yi Liu, Tian-Yi Zhang, Ai-Min Guo, Yossi Paltiel, Qing-Feng Sun</p>
+      
+    </motion.div>
+    
+  </div>
+
+  <footer class="footer">
+    Generated on 2025-09-09 11:53:53 UTC.
+  </footer>
+
+</body>
+</html>

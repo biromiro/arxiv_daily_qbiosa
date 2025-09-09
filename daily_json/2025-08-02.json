@@ -1,1 +1,31 @@
-[]
+[
+    {
+        "title": "Learning Potential Energy Surfaces of Hydrogen Atom Transfer Reactions in Peptides",
+        "summary": "Hydrogen atom transfer (HAT) reactions are essential in many biological\nprocesses, such as radical migration in damaged proteins, but their mechanistic\npathways remain incompletely understood. Simulating HAT is challenging due to\nthe need for quantum chemical accuracy at biologically relevant scales; thus,\nneither classical force fields nor DFT-based molecular dynamics are applicable.\nMachine-learned potentials offer an alternative, able to learn potential energy\nsurfaces (PESs) with near-quantum accuracy. However, training these models to\ngeneralize across diverse HAT configurations, especially at radical positions\nin proteins, requires tailored data generation and careful model selection.\nHere, we systematically generate HAT configurations in peptides to build large\ndatasets using semiempirical methods and DFT. We benchmark three graph neural\nnetwork architectures (SchNet, Allegro, and MACE) on their ability to learn HAT\nPESs and indirectly predict reaction barriers from energy predictions. MACE\nconsistently outperforms the others in energy, force, and barrier prediction,\nachieving a mean absolute error of 1.13 kcal/mol on out-of-distribution DFT\nbarrier predictions. This accuracy enables integration of ML potentials into\nlarge-scale collagen simulations to compute reaction rates from predicted\nbarriers, advancing mechanistic understanding of HAT and radical migration in\npeptides. We analyze scaling laws, model transferability, and cost-performance\ntrade-offs, and outline strategies for improvement by combining ML potentials\nwith transition state search algorithms and active learning. Our approach is\ngeneralizable to other biomolecular systems, enabling quantum-accurate\nsimulations of chemical reactivity in complex environments.",
+        "url": "http://arxiv.org/abs/2508.00578v1",
+        "published_date": "2025-08-01T12:21:49+00:00",
+        "updated_date": "2025-08-01T12:21:49+00:00",
+        "categories": [
+            "cs.LG",
+            "cond-mat.mtrl-sci",
+            "physics.chem-ph",
+            "physics.comp-ph",
+            "q-bio.BM"
+        ],
+        "authors": [
+            "Marlen Neubert",
+            "Patrick Reiser",
+            "Frauke Gräter",
+            "Pascal Friederich"
+        ],
+        "pdf_url": "http://arxiv.org/pdf/2508.00578v1",
+        "tldr": "This paper uses machine learning, specifically graph neural networks, to model the potential energy surfaces of hydrogen atom transfer (HAT) reactions in peptides. The MACE architecture achieved the best performance, enabling more accurate simulations of chemical reactivity in complex biological environments. This advances the mechanistic understanding of HAT and radical migration in peptides.",
+        "explanation": "The paper addresses the challenge of simulating hydrogen atom transfer (HAT) reactions in peptides, which are critical in biological processes but difficult to model accurately due to the need for quantum chemical accuracy at biologically relevant scales. The authors generated tailored datasets of HAT configurations in peptides using semiempirical methods and DFT, and then benchmarked three graph neural network architectures (SchNet, Allegro, and MACE) for learning potential energy surfaces (PESs). MACE outperformed the others in predicting energies, forces, and reaction barriers. The authors show how their ML models can be utilized to perform mechanistic studies of chemical reactions.",
+        "interests_alignment": "This paper aligns strongly with my interests. It uses machine learning (specifically graph neural networks) to study peptides. Specifically it uses machine learned potentials to simulate peptide dynamics, which is directly relevant to my research on peptide self-assembly, co-assembly, and aggregation. Datasets were also generated and the general idea of using ML for peptides in complex environments overlaps with my focus on computational screening and simulation. The scale of systems included in the work is also bio-molecule sized, rather than just small molecule, making the work more valuable to me than many other studies.",
+        "relevance_score": 10,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 9
+    }
+]

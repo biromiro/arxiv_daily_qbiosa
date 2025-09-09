@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArXiv Peptide/Assembly Papers - June 18, 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg-color: #ffffff;
+      --text-color: #1e293b;
+      --text-muted-color: #64748b;
+      --header-color: #0f172a;
+      --highlight-primary: #14b8a6;
+      --highlight-secondary: #67e8f9;
+      --border-color: #e2e8f0;
+      --shadow-color: rgba(15, 23, 42, 0.08);
+    }
+    body { background-color: var(--bg-color); color: var(--text-color); font-family: 'Inter', sans-serif; overflow-x: hidden; line-height: 1.6; }
+    .bento-grid { display: grid; gap: 1.5rem; grid-template-columns: 1fr; padding-bottom: 4rem; }
+    .bento-item { background-color: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border-radius: 1rem; padding: 1.75rem; border: 1px solid rgba(226, 232, 240, 0.5); box-shadow: 0 4px 12px var(--shadow-color); transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; }
+    .bento-item:hover { transform: translateY(-6px); box-shadow: 0 10px 20px var(--shadow-color); }
+    .paper-title { font-size: 1.125rem; font-weight: 600; color: var(--highlight-primary); margin-bottom: 0.75rem; }
+    .paper-summary { font-size: 0.875rem; color: var(--text-muted-color); margin-bottom: 1.25rem; }
+    .paper-tldr { font-size: 0.95rem; color: #475569; margin: 0.75rem 0; font-weight: bold; }
+    details { margin: 0.75rem 0; }
+    details summary { cursor: pointer; font-weight: 600; color: var(--highlight-primary); }
+    details p { font-size: 0.85rem; color: #475569; margin: 0.5rem 0 0 1rem; }
+    .paper-link { display: inline-flex; align-items: center; font-size: 0.875rem; font-weight: 600; color: var(--highlight-primary); text-decoration: none; padding: 0.5rem 1rem; border-radius: 0.5rem; background-color: rgba(20, 184, 166, 0.08); border: 1px solid rgba(20, 184, 166, 0.2); transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; }
+    .paper-link:hover { background-color: rgba(20, 184, 166, 0.15); color: #0d9488; transform: translateY(-1px); }
+    .paper-authors { font-size: 0.75rem; color: var(--text-muted-color); margin-top: 1rem; font-style: italic; }
+    .header { text-align: center; margin-bottom: 3rem; padding-top: 3rem; }
+    .header h1 { font-size: 2.5rem; font-weight: 700; color: var(--header-color); margin-bottom: 0.5rem; }
+    .header p { font-size: 1.125rem; color: var(--text-muted-color); margin-top: 0.5rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+    .footer { text-align: center; color: var(--text-muted-color); font-size: 0.875rem; padding: 2rem 0; border-top: 1px solid var(--border-color); margin-top: 4rem; }
+    .line-graphic { height: 1px; background: linear-gradient(90deg, rgba(20, 184, 166, 0), var(--highlight-primary), rgba(20, 184, 166, 0)); opacity: 0.6; margin: 1.5rem 0; }
+    .paper-rating { margin: 1rem 0; color: #f59e0b; }
+    .paper-sub-ratings .rating-item i { color: #f59e0b; }
+  </style>
+</head>
+<body class="container mx-auto px-4 antialiased">
+
+  <motion.div initial="{ opacity: 0, y: -30 }" animate="{ opacity: 1, y: 0 }" transition="{ duration: 0.6, ease: 'easeOut' }" class="header" data-motion-element>
+    <h1>Peptide & Assembly Daily Papers</h1>
+    <p>Daily arXiv digest of machine learning for peptides, protein aggregation, and molecular self-assembly</p>
+    <p>June 18, 2025</p>
+    <div class="mt-4">
+        <a href="../list.html" class="text-teal-600 hover:underline">📚 View Full Report Archive</a>
+    </div>
+    <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div>
+  </motion.div>
+
+  <div class="bento-grid" id="paper-grid">
+    
+    <motion.div initial="{ opacity: 0, y: 50, scale: 0.9 }" whileInView="{ opacity: 1, y: 0, scale: 1 }" viewport="{ once: true, amount: 0.2 }" transition="{ duration: 0.5, delay: 0.0, ease: 'easeOut' }" class="bento-item" data-motion-element>
+      <h2 class="paper-title">Inhibiting Alzheimer's Disease by Targeting Aggregation of Beta-Amyloid</h2>
+      <p class="paper-summary">Alzheimer's disease is characterized by dangerous amyloid plaques formed by
+deposits of the protein Beta-Amyloid aggregates in the brain. The specific
+amino acid sequence that is responsible for the aggregates of Beta-Amyloid is
+lys-leu-val-phe-phe (KLVFF). KLVFF aggregation inhibitors, which we design in
+this paper, prevent KLVFF from binding with itself to form oligomers or fibrils
+(and eventually plaques) that cause neuronal death. Our binder-blocker peptides
+are designed such that, on one side, they bind strongly to KLVFF, and on the
+other side, they disrupt critical interactions, thus preventing aggregation.
+Our methods use optimization techniques and molecular simulations and identify
+10 candidate sequences for trial of the 3.2 million possible sequences. This
+approach for inhibitor identification can be generalized to other diseases
+characterized by protein aggregation, such as Parkinson's, Huntington's, and
+prion diseases.</p>
+
+      
+      <p class="paper-tldr"><strong>TLDR:</strong> This paper describes a computational approach using optimization techniques and molecular simulations to design peptide inhibitors that target and prevent the aggregation of the KLVFF sequence of Beta-Amyloid, a key factor in Alzheimer's disease. They identified 10 candidate sequences out of 3.2 million.</p>
+      
+      
+      <details>
+        <summary>Explanation</summary>
+        <p>The paper addresses a significant problem: Alzheimer's disease and amyloid plaque formation. It focuses on inhibiting the aggregation of the KLVFF sequence, which is crucial for amyloid formation. The approach involves a computational design strategy using optimization and molecular simulations to identify potential peptide inhibitors. The paper claims to have identified 10 candidate sequences. The method is also said to be generalizable to other protein aggregation diseases. However, the paper was originally written in 2014, so the methods and results are likely outdated.</p>
+      </details>
+      
+      
+      <details>
+        <summary>Research Alignment</summary>
+        <p>This paper aligns well with my research interests, as it involves peptide self-assembly/aggregation and the use of computational methods for screening potential inhibitors. It also relates to peptide structure prediction and would contribute to the creation of datasets for peptide aggregation.</p>
+      </details>
+      
+
+      
+      <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Relevance:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Novelty:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(6/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Clarity:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Potential Impact:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+          </div>
+          
+        
+      </div>
+      
+
+      
+      <div class="paper-rating">
+        <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+        
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star-half-alt"></i>
+          
+        
+          <i class="far fa-star"></i>
+          
+        
+        <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+      </div>
+      
+
+      <a href="http://arxiv.org/abs/2506.14052v1" target="_blank" class="paper-link">
+        <i class="fas fa-file-pdf mr-1"></i> Read Paper
+      </a>
+      
+      <p class="paper-authors">Authors: Ananya Joshi, George Khoury, Christodoulas Floudas</p>
+      
+    </motion.div>
+    
+  </div>
+
+  <footer class="footer">
+    Generated on 2025-09-09 11:53:51 UTC.
+  </footer>
+
+</body>
+</html>

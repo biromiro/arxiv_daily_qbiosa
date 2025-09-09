@@ -1,1 +1,37 @@
-[]
+[
+    {
+        "title": "De novo design of alpha-helical peptide amphiphiles repairing fragmented collagen type I via supramolecular co-assembly",
+        "summary": "The hierarchical triple-helix structure of collagen type I, Col I, is\nessential for extracellular matrix support and integrity. However, current\nreconstruction strategies face challenges such as chain mismatch, preventing\nproper fibril formation. Here, we report a supramolecular co-assembly strategy\nusing a de novo-designed alpha-helical peptide amphiphile (APA) of just seven\namino acids. The APA features a hydrophobic palmitic acid tail, which\nstabilizes the helical structure and promotes co-assembly upon interaction with\ncomplementary molecular structures. This minimal design enables selective\nrecognition of fragmented collagen (FC), restoring triple-helix conformation\nand guiding fibre formation. We applied this mechanism to engineer FC-rich\nnanofat (NF) into a mechanically reinforced biomaterial. Integration of APA-NF\nwith coaxial 3D printing enabled spatial control of structure and function. In\na porcine model, this platform enhanced in situ vascularized adipose tissue\nregeneration. Our results demonstrate that hierarchical reconstruction of\ncollagen via peptide-guided supramolecular assembly offers a promising strategy\nfor soft tissue repair.",
+        "url": "http://arxiv.org/abs/2507.14577v1",
+        "published_date": "2025-07-19T11:30:00+00:00",
+        "updated_date": "2025-07-19T11:30:00+00:00",
+        "categories": [
+            "physics.chem-ph"
+        ],
+        "authors": [
+            "Shanshan Su",
+            "Jie Yang",
+            "Guo Zhang",
+            "Zhiquan Yu",
+            "Yuxuan Chen",
+            "Alexander van Teijlingen",
+            "Dawen Yu",
+            "Tong Li",
+            "Yubin Ke",
+            "Hua Yang",
+            "Haoran Zhang",
+            "Jialong Chen",
+            "Jiaming Sun",
+            "Yuanhao Wu"
+        ],
+        "pdf_url": "http://arxiv.org/pdf/2507.14577v1",
+        "tldr": "This paper presents a de novo designed alpha-helical peptide amphiphile (APA) for repairing fragmented collagen type I (Col I) via supramolecular co-assembly. The APA stabilizes triple-helix conformation, guides fiber formation, and enhances soft tissue regeneration in a porcine model when integrated with nanofat (NF) and coaxial 3D printing.",
+        "explanation": "The paper addresses the challenge of repairing fragmented collagen, a key component of the extracellular matrix. It introduces a novel APA designed to selectively recognize fragmented collagen, restore its triple-helix structure, and guide fibril formation. The application of this APA in engineering nanofat (NF) into a mechanically reinforced biomaterial, coupled with 3D printing for spatial control, demonstrates a promising strategy for soft tissue repair. The in vivo validation in a porcine model further strengthens the potential translational value of this research.",
+        "interests_alignment": "This paper aligns well with my interests. The core of the work involves peptide self-assembly and co-assembly, which is a central theme in my research. The design of the peptide, the investigation of its self-assembly behavior, and the application for biomaterials are all relevant. The potential for using machine learning to optimize the peptide design or simulate the assembly process in future work also makes this interesting.",
+        "relevance_score": 9,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]

@@ -1,1 +1,31 @@
-[]
+[
+    {
+        "title": "Automated Construction of Artificial Lattice Structures with Designer Electronic States",
+        "summary": "Manipulating matter with a scanning tunneling microscope (STM) enables\ncreation of atomically defined artificial structures that host designer quantum\nstates. However, the time-consuming nature of the manipulation process, coupled\nwith the sensitivity of the STM tip, constrains the exploration of diverse\nconfigurations and limits the size of designed features. In this study, we\npresent a reinforcement learning (RL)-based framework for creating artificial\nstructures by spatially manipulating carbon monoxide (CO) molecules on a copper\nsubstrate using the STM tip. The automated workflow combines molecule detection\nand manipulation, employing deep learning-based object detection to locate CO\nmolecules and linear assignment algorithms to allocate these molecules to\ndesignated target sites. We initially perform molecule maneuvering based on\nrandomized parameter sampling for sample bias, tunneling current setpoint and\nmanipulation speed. This dataset is then structured into an action trajectory\nused to train an RL agent. The model is subsequently deployed on the STM for\nreal-time fine-tuning of manipulation parameters during structure construction.\nOur approach incorporates path planning protocols coupled with active drift\ncompensation to enable atomically precise fabrication of structures with\nsignificantly reduced human input while realizing larger-scale artificial\nlattices with desired electronic properties. To underpin of efficiency of our\napproach we demonstrate the automated construction of an extended artificial\ngraphene lattice and confirm the existence of characteristic Dirac point in its\nelectronic structure. Further challenges to RL-based structural assembly\nscalability are discussed.",
+        "url": "http://arxiv.org/abs/2508.02581v1",
+        "published_date": "2025-08-04T16:38:45+00:00",
+        "updated_date": "2025-08-04T16:38:45+00:00",
+        "categories": [
+            "cond-mat.mtrl-sci",
+            "cs.LG"
+        ],
+        "authors": [
+            "Ganesh Narasimha",
+            "Mykola Telychko",
+            "Wooin Yang",
+            "Arthur P. Baddorf",
+            "P. Ganesh",
+            "An-Ping Li",
+            "Rama Vasudevan"
+        ],
+        "pdf_url": "http://arxiv.org/pdf/2508.02581v1",
+        "tldr": "This paper presents a reinforcement learning-based framework for automated construction of artificial lattices with designer electronic states using a scanning tunneling microscope (STM). They demonstrate the automated construction of an extended artificial graphene lattice and confirm the existence of a characteristic Dirac point.",
+        "explanation": "The paper addresses the time-consuming and delicate nature of manipulating matter at the atomic level using STM by introducing an automated workflow driven by reinforcement learning (RL). The framework combines deep learning for molecule detection, linear assignment algorithms for molecule allocation, and RL for real-time fine-tuning of manipulation parameters. They successfully create an extended artificial graphene lattice, confirming the presence of desired electronic properties, specifically the Dirac point. The paper also discusses the challenges to scalability.",
+        "interests_alignment": "While the paper does not directly deal with peptides, the use of machine learning (specifically reinforcement learning) to control the assembly of molecules into designed structures is relevant to the broader area of biomolecular and peptide self-assembly. The problem of controlling molecular arrangements to achieve desired properties and the use of ML is something I'm interested in. The construction of lattices could serve as a metaphor for peptide assembly.",
+        "relevance_score": 4,
+        "novelty_claim_score": 7,
+        "clarity_score": 8,
+        "potential_impact_score": 7,
+        "overall_priority_score": 6
+    }
+]

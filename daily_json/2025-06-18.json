@@ -1,25 +1,26 @@
 [
     {
-        "title": "Align Your Flow: Scaling Continuous-Time Flow Map Distillation",
-        "summary": "Diffusion- and flow-based models have emerged as state-of-the-art generative\nmodeling approaches, but they require many sampling steps. Consistency models\ncan distill these models into efficient one-step generators; however, unlike\nflow- and diffusion-based methods, their performance inevitably degrades when\nincreasing the number of steps, which we show both analytically and\nempirically. Flow maps generalize these approaches by connecting any two noise\nlevels in a single step and remain effective across all step counts. In this\npaper, we introduce two new continuous-time objectives for training flow maps,\nalong with additional novel training techniques, generalizing existing\nconsistency and flow matching objectives. We further demonstrate that\nautoguidance can improve performance, using a low-quality model for guidance\nduring distillation, and an additional boost can be achieved by adversarial\nfinetuning, with minimal loss in sample diversity. We extensively validate our\nflow map models, called Align Your Flow, on challenging image generation\nbenchmarks and achieve state-of-the-art few-step generation performance on both\nImageNet 64x64 and 512x512, using small and efficient neural networks. Finally,\nwe show text-to-image flow map models that outperform all existing\nnon-adversarially trained few-step samplers in text-conditioned synthesis.",
-        "url": "http://arxiv.org/abs/2506.14603v1",
-        "published_date": "2025-06-17T15:06:07+00:00",
-        "updated_date": "2025-06-17T15:06:07+00:00",
+        "title": "Inhibiting Alzheimer's Disease by Targeting Aggregation of Beta-Amyloid",
+        "summary": "Alzheimer's disease is characterized by dangerous amyloid plaques formed by\ndeposits of the protein Beta-Amyloid aggregates in the brain. The specific\namino acid sequence that is responsible for the aggregates of Beta-Amyloid is\nlys-leu-val-phe-phe (KLVFF). KLVFF aggregation inhibitors, which we design in\nthis paper, prevent KLVFF from binding with itself to form oligomers or fibrils\n(and eventually plaques) that cause neuronal death. Our binder-blocker peptides\nare designed such that, on one side, they bind strongly to KLVFF, and on the\nother side, they disrupt critical interactions, thus preventing aggregation.\nOur methods use optimization techniques and molecular simulations and identify\n10 candidate sequences for trial of the 3.2 million possible sequences. This\napproach for inhibitor identification can be generalized to other diseases\ncharacterized by protein aggregation, such as Parkinson's, Huntington's, and\nprion diseases.",
+        "url": "http://arxiv.org/abs/2506.14052v1",
+        "published_date": "2025-06-16T23:20:33+00:00",
+        "updated_date": "2025-06-16T23:20:33+00:00",
         "categories": [
-            "cs.CV",
-            "cs.LG"
+            "q-bio.QM"
         ],
         "authors": [
-            "Amirmojtaba Sabour",
-            "Sanja Fidler",
-            "Karsten Kreis"
+            "Ananya Joshi",
+            "George Khoury",
+            "Christodoulas Floudas"
         ],
-        "tldr": "The paper introduces \"Align Your Flow,\" a new approach to training continuous-time flow maps for few-step image generation, achieving state-of-the-art results on ImageNet and text-to-image synthesis.",
-        "tldr_zh": "本文介绍了一种名为“Align Your Flow”的新方法，用于训练连续时间流图，以进行少步图像生成，并在 ImageNet 和文本到图像合成方面取得了最先进的成果。",
+        "pdf_url": "http://arxiv.org/pdf/2506.14052v1",
+        "tldr": "This paper describes a computational approach using optimization techniques and molecular simulations to design peptide inhibitors that target and prevent the aggregation of the KLVFF sequence of Beta-Amyloid, a key factor in Alzheimer's disease. They identified 10 candidate sequences out of 3.2 million.",
+        "explanation": "The paper addresses a significant problem: Alzheimer's disease and amyloid plaque formation. It focuses on inhibiting the aggregation of the KLVFF sequence, which is crucial for amyloid formation. The approach involves a computational design strategy using optimization and molecular simulations to identify potential peptide inhibitors. The paper claims to have identified 10 candidate sequences. The method is also said to be generalizable to other protein aggregation diseases. However, the paper was originally written in 2014, so the methods and results are likely outdated.",
+        "interests_alignment": "This paper aligns well with my research interests, as it involves peptide self-assembly/aggregation and the use of computational methods for screening potential inhibitors. It also relates to peptide structure prediction and would contribute to the creation of datasets for peptide aggregation.",
         "relevance_score": 9,
-        "novelty_claim_score": 8,
-        "clarity_score": 9,
-        "potential_impact_score": 8,
-        "overall_priority_score": 8
+        "novelty_claim_score": 6,
+        "clarity_score": 8,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
     }
 ]

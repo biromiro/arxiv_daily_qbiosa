@@ -1,48 +1,29 @@
 [
     {
-        "title": "TaleForge: Interactive Multimodal System for Personalized Story Creation",
-        "summary": "Storytelling is a deeply personal and creative process, yet existing methods\noften treat users as passive consumers, offering generic plots with limited\npersonalization. This undermines engagement and immersion, especially where\nindividual style or appearance is crucial. We introduce TaleForge, a\npersonalized story-generation system that integrates large language models\n(LLMs) and text-to-image diffusion to embed users' facial images within both\nnarratives and illustrations. TaleForge features three interconnected modules:\nStory Generation, where LLMs create narratives and character descriptions from\nuser prompts; Personalized Image Generation, merging users' faces and outfit\nchoices into character illustrations; and Background Generation, creating scene\nbackdrops that incorporate personalized characters. A user study demonstrated\nheightened engagement and ownership when individuals appeared as protagonists.\nParticipants praised the system's real-time previews and intuitive controls,\nthough they requested finer narrative editing tools. TaleForge advances\nmultimodal storytelling by aligning personalized text and imagery to create\nimmersive, user-centric experiences.",
-        "url": "http://arxiv.org/abs/2506.21832v1",
-        "published_date": "2025-06-27T00:45:38+00:00",
-        "updated_date": "2025-06-27T00:45:38+00:00",
+        "title": "Droplet growth, Ostwald's rule, and emergence of order in Fused in Sarcoma",
+        "summary": "The low complexity domain of Fused in Sarcoma (FUS-LC consisting of 214\nresidues) undergoes phase separation, resulting in a dense liquid-like phase\nthat forms early and slowly matures to reach ordered gel-like state on long\ntime scales. Upon maturation, core-1, comprising of the 57 residues (39-95) in\nthe N-terminus become structured, resulting in the formation of a\nnon-polymorphic fibril. The truncated FUS-LC-C (residues 110-214) construct\nforms a fibril in which core-2 (residues 112-150) adopts a $\\beta$-sheet\nstructure. Using coarse-grained monomer SOP-IDP model simulations of FUS-LC, we\npredict that residues 155-190 in the C-terminal (core-3) form rapidly, followed\nby core-2, and finally core-1. The time scale of formation of the cores and\ntheir stabilities are inversely correlated, as anticipated by the Ostwald's\nrule of stages. Unbiased multichain simulations show that the chemical\npotentials in the two phases are equal and the calculated densities of the\ndense and dilute phases are in agreement with experiments. The dense phase,\nwhich forms by a nucleation mechanism, coarsens over time by a process that is\nreminiscent of Ostwald ripening. AlphaFold predictions of the core-3 structure\nand the simulations show that $\\beta$-strand emerges in the core-3 region early\nduring the droplet formation, and drives the initiation of FUS-LC assembly. The\ntechniques introduced here are general and could be used to probe assembly of\nother IDPs such as TDP-43, which shares many features with FUS-LC.",
+        "url": "http://arxiv.org/abs/2506.21792v1",
+        "published_date": "2025-06-26T22:23:04+00:00",
+        "updated_date": "2025-06-26T22:23:04+00:00",
         "categories": [
-            "cs.CV"
+            "cond-mat.soft",
+            "q-bio.BM"
         ],
         "authors": [
-            "Minh-Loi Nguyen",
-            "Quang-Khai Le",
-            "Tam V. Nguyen",
-            "Minh-Triet Tran",
-            "Trung-Nghia Le"
+            "Farkhad Maksudov",
+            "Mauro L. Mugnai",
+            "Laura Dominguez",
+            "Dmitrii Makarov",
+            "D. Thirumalai"
         ],
-        "tldr": "TaleForge is a personalized story generation system using LLMs and text-to-image diffusion, embedding user faces into narratives and illustrations, reportedly increasing engagement.",
-        "tldr_zh": "TaleForge是一个个性化的故事生成系统，它使用大型语言模型和文本到图像扩散技术，将用户面部嵌入到叙事和插图中，据称可以提高用户参与度。",
+        "pdf_url": "http://arxiv.org/pdf/2506.21792v1",
+        "tldr": "This paper combines coarse-grained simulations, AlphaFold predictions, and experimental data to investigate the phase separation and self-assembly of the FUS-LC protein, revealing the critical role of core-3 and supporting Ostwald's rule of stages in the assembly process.",
+        "explanation": "The paper delves into the mechanism of droplet growth during phase separation in Fused in Sarcoma (FUS) using coarse-grained simulations and AlphaFold predictions. Key findings include the early formation of core-3 driving FUS-LC assembly, agreement with Ostwald's rule of stages, and validation of simulation results against experimental data. The study examines nucleation, Ostwald ripening, and the role of interchain interactions. It pinpoints the specific residues (164-176) within core-3 as crucial for initiating phase separation and validates predicted structural models against experimental observations, suggesting techniques can be applied to other IDPs such as TDP-43.",
+        "interests_alignment": "The paper is highly relevant to my research interests, as it focuses on peptide self-assembly/aggregation, uses machine learning (AlphaFold) for structure prediction, and employs computational simulations methods to study the assembly process of a low complexity domain, which is analogous to peptide assembly in many ways. Applying a coarse-grained model to a specific protein addresses a fundamental question common across different biomolecular self-assembly, and specifically mentions applicability to other IDPs.",
         "relevance_score": 9,
         "novelty_claim_score": 7,
-        "clarity_score": 9,
-        "potential_impact_score": 7,
-        "overall_priority_score": 8
-    },
-    {
-        "title": "Exploring Image Generation via Mutually Exclusive Probability Spaces and Local Correlation Hypothesis",
-        "summary": "We propose two theoretical frameworks, the Mutually Exclusive Probability\nSpace (MESP) and the Local Correlation Hypothesis (LCH), to explore a potential\nlimitation in probabilistic generative models; namely that learning global\ndistributions leads to memorization rather than generative behavior. MESP\nemerges from our rethinking of the Variational Autoencoder (VAE). We observe\nthat latent variable distributions in VAE exhibit overlap, which leads to an\noptimization conflict between the reconstruction loss and KL-divergence loss. A\nlower bound based on the overlap coefficient is proposed. We refer to this\nphenomenon as Mutually Exclusive Probability Spaces. Based on MESP, a Binary\nLatent Autoencoder (BL-AE) is proposed to encode images into binary latent\nrepresentations. These binary latents are used as the input to our\nAutoregressive Random Variable Model (ARVM), a modified autoregressive model\noutputting histograms. Our ARVM achieves competitive FID scores, outperforming\nstate-of-the-art methods on standard datasets. However, such scores reflect\nmemorization rather than generation. To address this issue, we propose the\nLocal Correlation Hypothesis (LCH), which posits that generative capability\narising from local correlations among latent variables. Comprehensive\nexperiments and discussions are conducted to validate our frameworks.",
-        "url": "http://arxiv.org/abs/2506.21731v1",
-        "published_date": "2025-06-26T19:32:29+00:00",
-        "updated_date": "2025-06-26T19:32:29+00:00",
-        "categories": [
-            "cs.CV",
-            "cs.AI"
-        ],
-        "authors": [
-            "Chenqiu Zhao",
-            "Anup Basu"
-        ],
-        "tldr": "This paper introduces two frameworks, MESP and LCH, to address memorization issues in probabilistic generative models, proposing a Binary Latent Autoencoder and Autoregressive Random Variable Model. It emphasizes the importance of local correlations for genuine generative behavior, even if global metrics like FID are good.",
-        "tldr_zh": "本文提出了两个框架，MESP和LCH，旨在解决概率生成模型中的记忆化问题，并提出了二元潜在自编码器和自回归随机变量模型。它强调了局部相关性对于真正的生成行为的重要性，即使全局指标如FID表现良好。",
-        "relevance_score": 8,
-        "novelty_claim_score": 7,
         "clarity_score": 8,
-        "potential_impact_score": 7,
-        "overall_priority_score": 7
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
     }
 ]

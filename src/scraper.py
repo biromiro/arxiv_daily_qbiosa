@@ -1,45 +1,55 @@
 import arxiv
+from arxiv2text import arxiv_to_md
 import logging
 from datetime import date, timedelta, datetime, timezone
 from typing import List, Dict, Optional, Any
 
-# Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-
-def fetch_cv_papers(category: str = 'cs.CV', max_results: int = 500, specified_date: Optional[date] = None) -> List[Dict[str, Any]]:
-    """Fetches papers from the specified category submitted on arXiv for a given date.
+def fetch_peptide_related_papers(
+    categories: Optional[List[str]] = None,
+    keywords: Optional[List[str]] = None,
+    max_results: int = 500,
+    specified_date: Optional[date] = None
+) -> List[Dict[str, Any]]:
+    """
+    Fetch peptide/self-assembly/aggregation-related papers from arXiv.
 
     Args:
-        category (str): The arXiv category (e.g., 'cs.CV', 'cs.AI').
-        max_results (int): The maximum number of results to retrieve.
-        specified_date (Optional[date]): The specific date to fetch papers for (UTC).
-                                         Defaults to today UTC date.
+        categories (List[str], optional): arXiv categories to search in.
+            Defaults to ["q-bio.BM", "cs.LG", "physics.chem-ph", "q-bio.QM"].
+        keywords (List[str], optional): Keywords to include in search query.
+            Defaults to ["peptide", "self-assembly", "aggregation", "dataset", "machine learning"].
+        max_results (int): Maximum number of results to retrieve.
+        specified_date (date, optional): Restrict to submissions on this UTC date.
 
     Returns:
-        List[Dict[str, Any]]: A list of dictionaries, where each dictionary contains
-                              the 'title', 'summary', 'url', 'published_date',
-                              'updated_date', 'categories', and 'authors' of a paper.
-                              Returns an empty list if an error occurs or no papers are found.
+        List[Dict[str, Any]]: Metadata for matching papers.
     """
+    if categories is None:
+        categories = ["q-bio.BM", "cs.LG", "physics.chem-ph", "q-bio.QM"]
+
+    if keywords is None:
+        keywords = ["peptide", "self-assembly", "assembly", "co-assembly", "supramolecular"]
+
     if specified_date is None:
-        # Default to today (UTC)
         specified_date = datetime.now(timezone.utc).date()
         logging.info(f"No date specified, defaulting to {specified_date.strftime('%Y-%m-%d')} UTC.")
     else:
-        logging.info(f"Fetching papers for specified date: {specified_date.strftime('%Y-%m-%d')} UTC.")
-    
-    # 将specified_date转为datetime
-    specified_date = datetime.combine(specified_date, datetime.min.time())
-    specified_date = specified_date - timedelta(hours=6) # 转换到arxiv时区
+        logging.info(f"Fetching papers for {specified_date.strftime('%Y-%m-%d')} UTC.")
 
-    # Format for arXiv API: YYYYMMDDHHMM
-    start_time = specified_date - timedelta(days=1)
+    # Adjust for arXiv submission time (approx.)
+    specified_dt = datetime.combine(specified_date, datetime.min.time())
+    specified_dt = specified_dt - timedelta(hours=6)
+
+    start_time = specified_dt - timedelta(days=1)
     start_time_str = start_time.strftime('%Y%m%d%H%M')
-    end_time_str = specified_date.strftime('%Y%m%d%H%M')
+    end_time_str = specified_dt.strftime('%Y%m%d%H%M')
 
-    # Construct the search query
-    query = f'cat:{category} AND submittedDate:[{start_time_str} TO {end_time_str}]'
+    # Construct combined query
+    category_part = " OR ".join([f"cat:{c}" for c in categories])
+    keyword_part = " OR ".join([f"all:{k}" for k in keywords])
+    query = f"({category_part}) AND ({keyword_part}) AND submittedDate:[{start_time_str} TO {end_time_str}]"
     logging.info(f"Using arXiv query: {query}")
 
     client = arxiv.Client()
@@ -52,8 +62,6 @@ def fetch_cv_papers(category: str = 'cs.CV', max_results: int = 500, specified_d
     papers: List[Dict[str, Any]] = []
     try:
         results = client.results(search)
-        # Iterate through the generator
-        count = 0
         for result in results:
             papers.append({
                 'title': result.title,
@@ -63,35 +71,18 @@ def fetch_cv_papers(category: str = 'cs.CV', max_results: int = 500, specified_d
                 'updated_date': result.updated,
                 'categories': result.categories,
                 'authors': [author.name for author in result.authors],
+                'pdf_url': result.links[1].href if len(result.links) > 1 else None,
             })
-            count += 1
-        logging.info(f"Successfully fetched {count} papers submitted on {specified_date.strftime('%Y-%m-%d')} from {category}.")
+        logging.info(f"Fetched {len(papers)} papers for {specified_date.strftime('%Y-%m-%d')}.")
 
-    except arxiv.arxiv.UnexpectedEmptyPageError as e:
-        logging.warning(f"arXiv query returned an empty page (potentially no results for the date/query): {e}")
-        # This might not be a critical error, could just mean no papers found
-    except arxiv.arxiv.HTTPError as e:
-        logging.error(f"HTTP error during arXiv search: {e}")
     except Exception as e:
-        logging.error(f"An unexpected error occurred during arXiv search: {e}", exc_info=True)
-        # Log the full traceback for unexpected errors
+        logging.error(f"Error during arXiv search: {e}", exc_info=True)
 
     return papers
 
 if __name__ == '__main__':
-    logging.info("Starting arXiv paper fetching example...")
-    # Example usage: Fetch papers for a specific date
-    # Note: Using a future date like 2025 will likely return 0 results unless arXiv data exists for it.
-    # Use a recent past date for better testing.
-    # example_date = date.today() - timedelta(days=4) # Example: 4 days ago
-    example_date = date(2025, 4, 26) # Or a specific past date known to have papers
-
-    logging.info(f"Fetching papers for {example_date.strftime('%Y-%m-%d')}...")
-    latest_papers = fetch_cv_papers(category='cs.CV', max_results=500, specified_date=example_date)
-
-    if latest_papers:
-        logging.info(f"--- Found {len(latest_papers)} Papers ---")
-        for i, paper in enumerate(latest_papers):
-            print(f"{i+1}. {paper['title']}. published_date: {paper['published_date']}.")
-    else:
-        print(f"No papers found for {example_date} or an error occurred.")
+    example_date = date.today() - timedelta(days=2)
+    papers = fetch_peptide_related_papers(specified_date=example_date)
+    print(f"Found {len(papers)} papers on {example_date}:")
+    for i, p in enumerate(papers[:10]):
+        print(f"{i+1}. {p['title']}")

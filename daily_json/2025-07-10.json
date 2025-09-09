@@ -1,27 +1,59 @@
 [
     {
-        "title": "Denoising Multi-Beta VAE: Representation Learning for Disentanglement and Generation",
-        "summary": "Disentangled and interpretable latent representations in generative models\ntypically come at the cost of generation quality. The $\\beta$-VAE framework\nintroduces a hyperparameter $\\beta$ to balance disentanglement and\nreconstruction quality, where setting $\\beta > 1$ introduces an information\nbottleneck that favors disentanglement over sharp, accurate reconstructions. To\naddress this trade-off, we propose a novel generative modeling framework that\nleverages a range of $\\beta$ values to learn multiple corresponding latent\nrepresentations. First, we obtain a slew of representations by training a\nsingle variational autoencoder (VAE), with a new loss function that controls\nthe information retained in each latent representation such that the higher\n$\\beta$ value prioritize disentanglement over reconstruction fidelity. We then,\nintroduce a non-linear diffusion model that smoothly transitions latent\nrepresentations corresponding to different $\\beta$ values. This model denoises\ntowards less disentangled and more informative representations, ultimately\nleading to (almost) lossless representations, enabling sharp reconstructions.\nFurthermore, our model supports sample generation without input images,\nfunctioning as a standalone generative model. We evaluate our framework in\nterms of both disentanglement and generation quality. Additionally, we observe\nsmooth transitions in the latent spaces with respect to changes in $\\beta$,\nfacilitating consistent manipulation of generated outputs.",
-        "url": "http://arxiv.org/abs/2507.06613v1",
-        "published_date": "2025-07-09T07:29:41+00:00",
-        "updated_date": "2025-07-09T07:29:41+00:00",
+        "title": "Targeting Melanoma-Specific Tyrosinase: Cyclic Peptide Disrupts Actin Dynamics for Precision Apoptosis Induction",
+        "summary": "Melanoma is an aggressive and highly metastatic cancer that exhibits stubborn\nresistance to conventional therapies, highlighting the need for novel\ntreatments. Existing therapeutic strategies often suffer from systemic\ntoxicity, poor efficacy and fast-gained drug resistance. In this study, we\ndesigned a cyclic peptide system (c-RGDKYQ) that takes the advantage of the\noverexpression of tyrosinase in melanoma cells to trigger enzyme-mediated\noxidation and self-assembly. The assembled peptide nanostructures can\nselectively disrupt the actin cytoskeleton, impairing cancer cellular\nfunctions, e.g., motility, adhesion, and proliferation, ultimately leading to\napoptosis. This approach does not rely on external drug payloads or complex\ndelivery mechanisms. c-RGDKYQ exhibits high selectivity for melanoma cells,\nstrongly suppressing tumor growth in a murine model with minimal systemic\ntoxicity. Our findings illuminate that, through targeting tyrosinase, c-RGDKYQ\nmay be an enzyme-responsive alternative to conventional treatments for\nmelanoma.",
+        "url": "http://arxiv.org/abs/2507.06534v1",
+        "published_date": "2025-07-09T04:27:30+00:00",
+        "updated_date": "2025-07-09T04:27:30+00:00",
         "categories": [
-            "cs.LG",
-            "cs.AI",
-            "cs.CV"
+            "q-bio.BM"
         ],
         "authors": [
-            "Anshuk Uppal",
-            "Yuhta Takida",
-            "Chieh-Hsin Lai",
-            "Yuki Mitsufuji"
+            "Ruoyang Zhao",
+            "Xiaowei Wang",
+            "Jiajia Hu",
+            "Qingqing Sun",
+            "Xinmin Zhao",
+            "Jun Guo",
+            "Feng Zhang",
+            "Min Wu"
         ],
-        "tldr": "This paper introduces a multi-beta VAE framework that learns disentangled latent representations with varying degrees of disentanglement by using different beta values and a diffusion model to transition between these representations, aiming to improve both disentanglement and generation quality.",
-        "tldr_zh": "该论文提出了一个多beta VAE框架，通过使用不同的beta值并利用扩散模型在不同表示之间转换，学习具有不同程度解耦的潜在表示，旨在提高解耦性和生成质量。",
+        "pdf_url": "http://arxiv.org/pdf/2507.06534v1",
+        "tldr": "This paper presents a cyclic peptide (c-RGDKYQ) that targets melanoma by exploiting the overexpression of tyrosinase. Upon tyrosinase-mediated oxidation, the peptide self-assembles into nanostructures that disrupt the actin cytoskeleton, leading to apoptosis in melanoma cells both in vitro and in vivo with minimal systemic toxicity.",
+        "explanation": "The study designs a cyclic peptide that selectively targets melanoma cells. The peptide (c-RGDKYQ) self-assembles into nanostructures upon oxidation by tyrosinase, an enzyme overexpressed in melanoma. These nanostructures disrupt the actin cytoskeleton, impairing cell motility, adhesion, and proliferation, ultimately inducing apoptosis. The research includes in vitro studies demonstrating selective cytotoxicity and disrupted actin filaments, as well as in vivo studies in a murine model showing significant tumor growth suppression with minimal toxicity. This approach avoids external drug payloads or complex delivery mechanisms.",
+        "interests_alignment": "This paper aligns well with my research interests in peptide self-assembly and its application in biomedicine. The use of a cyclic peptide that self-assembles upon enzymatic activation is particularly interesting. Also the link to peptide sequence with the overall functionality is relevant. Although no machine learning is used in this project, the data on peptide sequences relating structure and function may be useful for future machine learning projects, making this applicable to my future research goals.",
         "relevance_score": 8,
         "novelty_claim_score": 7,
-        "clarity_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Open, Reproducible Calculation of Assembly Indices",
+        "summary": "We present assembly-theory, a Rust package for computing assembly indices of\ncovalently bonded molecular structures. This is a key complexity measure of\nassembly theory, a recent theoretical framework quantifying selection across\ndiverse systems, most importantly chemistry. assembly-theory is designed for\nresearchers and practitioners alike, providing (i) extensible, high-performance\nimplementations of assembly index calculation algorithms, (ii) comprehensive\nbenchmarks against which current and future algorithmic improvements can be\ntested, and (iii) Python bindings and RDKit-compatible data loaders to support\nintegration with existing computational pipelines.",
+        "url": "http://arxiv.org/abs/2507.08852v1",
+        "published_date": "2025-07-08T23:07:11+00:00",
+        "updated_date": "2025-07-08T23:07:11+00:00",
+        "categories": [
+            "physics.chem-ph"
+        ],
+        "authors": [
+            "Devansh Vimal",
+            "Garrett Parzych",
+            "Olivia M. Smith",
+            "Devendra Parkar",
+            "Sean Bergen",
+            "Joshua J. Daymude",
+            "Cole Mathis"
+        ],
+        "pdf_url": "http://arxiv.org/pdf/2507.08852v1",
+        "tldr": "The paper introduces 'assembly-theory', a Rust package for calculating assembly indices of covalently bonded molecules, offering a high-performance, extensible, and reproducible tool with Python bindings, designed to quantify selection in chemical systems. It addresses the computational challenges in assembly theory with cross platform support, memory safety and convenient parallelism.",
+        "explanation": "This paper presents a software package, 'assembly-theory', implemented in Rust, for calculating assembly indices. Assembly theory is a framework useful in quantifying selection in chemical systems. The authors emphasize the package's high performance, extensibility, and reproducibility. Key features include implementation of assembly index calculation algorithms, comprehensive benchmarks, and Python/RDKit integration. The paper addresses the need for efficient and accessible tools in this domain, given that existing solutions may be approximate, closed-source, platform-dependent, or written in less common languages. The tests and benchmarks performed show that the Rust implementation outperforms other implementations (Go).",
+        "interests_alignment": "While not directly focused on peptides, the paper aligns with my broader interest in computational tools for biomolecules and quantifying molecular structure. The concept of assembly indices, as a measure of molecular complexity and selection, could potentially be adapted or applied in the context of peptide self-assembly. The software's ability to integrate with existing computational pipelines (via Python bindings) and work with molecular structures also makes it potentially relevant to tools I use. Also, the topic of molecular assembly is very close to peptide self-assembly.",
+        "relevance_score": 5,
+        "novelty_claim_score": 7,
+        "clarity_score": 9,
         "potential_impact_score": 7,
-        "overall_priority_score": 7
+        "overall_priority_score": 6
     }
 ]

@@ -1,89 +1,53 @@
 [
     {
-        "title": "Lumos-1: On Autoregressive Video Generation from a Unified Model Perspective",
-        "summary": "Autoregressive large language models (LLMs) have unified a vast range of\nlanguage tasks, inspiring preliminary efforts in autoregressive video\ngeneration. Existing autoregressive video generators either diverge from\nstandard LLM architectures, depend on bulky external text encoders, or incur\nprohibitive latency due to next-token decoding. In this paper, we introduce\nLumos-1, an autoregressive video generator that retains the LLM architecture\nwith minimal architectural modifications. To inject spatiotemporal correlations\nin LLMs, we identify the efficacy of incorporating 3D RoPE and diagnose its\nimbalanced frequency spectrum ranges. Therefore, we propose MM-RoPE, a RoPE\nscheme that preserves the original textual RoPE while providing comprehensive\nfrequency spectra and scaled 3D positions for modeling multimodal\nspatiotemporal data. Moreover, Lumos-1 resorts to a token dependency strategy\nthat obeys intra-frame bidirectionality and inter-frame temporal causality.\nBased on this dependency strategy, we identify the issue of frame-wise loss\nimbalance caused by spatial information redundancy and solve it by proposing\nAutoregressive Discrete Diffusion Forcing (AR-DF). AR-DF introduces temporal\ntube masking during training with a compatible inference-time masking policy to\navoid quality degradation. By using memory-efficient training techniques, we\npre-train Lumos-1 on only 48 GPUs, achieving performance comparable to EMU3 on\nGenEval, COSMOS-Video2World on VBench-I2V, and OpenSoraPlan on VBench-T2V. Code\nand models are available at https://github.com/alibaba-damo-academy/Lumos.",
-        "url": "http://arxiv.org/abs/2507.08801v1",
-        "published_date": "2025-07-11T17:59:42+00:00",
-        "updated_date": "2025-07-11T17:59:42+00:00",
+        "title": "Generation of structure-guided pMHC-I libraries using Diffusion Models",
+        "summary": "Personalized vaccines and T-cell immunotherapies depend critically on\nidentifying peptide-MHC class I (pMHC-I) interactions capable of eliciting\npotent immune responses. However, current benchmarks and models inherit biases\npresent in mass-spectrometry and binding-assay datasets, limiting discovery of\nnovel peptide ligands. To address this issue, we introduce a structure-guided\nbenchmark of pMHC-I peptides designed using diffusion models conditioned on\ncrystal structure interaction distances. Spanning twenty high-priority HLA\nalleles, this benchmark is independent of previously characterized peptides yet\nreproduces canonical anchor residue preferences, indicating structural\ngeneralization without experimental dataset bias. Using this resource, we\ndemonstrate that state-of-the-art sequence-based predictors perform poorly at\nrecognizing the binding potential of these structurally stable designs,\nindicating allele-specific limitations invisible in conventional evaluations.\nOur geometry-aware design pipeline yields peptides with high predicted\nstructural integrity and higher residue diversity than existing datasets,\nrepresenting a key resource for unbiased model training and evaluation. Our\ncode, and data are available at: https://github.com/sermare/struct-mhc-dev.",
+        "url": "http://arxiv.org/abs/2507.08902v2",
+        "published_date": "2025-07-11T08:29:18+00:00",
+        "updated_date": "2025-08-21T06:39:45+00:00",
         "categories": [
-            "cs.CV",
-            "cs.AI",
-            "cs.MM"
+            "q-bio.QM",
+            "cs.AI"
         ],
         "authors": [
-            "Hangjie Yuan",
-            "Weihua Chen",
-            "Jun Cen",
-            "Hu Yu",
-            "Jingyun Liang",
-            "Shuning Chang",
-            "Zhihui Lin",
-            "Tao Feng",
-            "Pengwei Liu",
-            "Jiazheng Xing",
-            "Hao Luo",
-            "Jiasheng Tang",
-            "Fan Wang",
-            "Yi Yang"
+            "Sergio Mares",
+            "Ariel Espinoza Weinberger",
+            "Nilah M. Ioannidis"
         ],
-        "tldr": "Lumos-1 is an autoregressive video generator built upon LLM architecture with modifications like MM-RoPE and AR-DF to improve spatiotemporal modeling and training efficiency, achieving competitive performance with fewer resources.",
-        "tldr_zh": "Lumos-1是一个基于LLM架构的自回归视频生成器，通过MM-RoPE和AR-DF等改进来提高时空建模和训练效率，并以更少的资源实现了有竞争力的性能。",
+        "pdf_url": "http://arxiv.org/pdf/2507.08902v2",
+        "tldr": "This paper introduces a diffusion model-based approach to generate a novel, structurally-guided pMHC-I peptide library, addressing biases in existing datasets and revealing limitations in current sequence-based prediction models.",
+        "explanation": "The paper addresses the problem of biases in existing pMHC-I datasets which limits the discovery of novel peptide ligands for personalized vaccines and T-cell immunotherapies. The authors propose a structure-guided benchmark of pMHC-I peptides designed using diffusion models, conditioning on crystal structure interaction distances. The generated library spans multiple HLA alleles, is independent of previously characterized peptides, and reproduces canonical anchor residue preferences, indicating structural generalization without experimental dataset bias. Performance of state-of-the-art sequence-based predictors is poor on this dataset, highlighting limitations not visible in conventional evaluations.  The code and data are publicly available.",
+        "interests_alignment": "This work strongly aligns with my research interests. It involves machine learning (diffusion models) for biomolecules (peptides, MHC-I complexes), addresses dataset biases which is an important consideration when training models, and computationally designs peptide structures with certain properties (binding affinity for MHC-I). This is likely a valuable paper for generating ideas and potentially useable insights.",
         "relevance_score": 10,
-        "novelty_claim_score": 8,
-        "clarity_score": 9,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
         "potential_impact_score": 8,
         "overall_priority_score": 9
     },
     {
-        "title": "Vision Foundation Models as Effective Visual Tokenizers for Autoregressive Image Generation",
-        "summary": "Leveraging the powerful representations of pre-trained vision foundation\nmodels -- traditionally used for visual comprehension -- we explore a novel\ndirection: building an image tokenizer directly atop such models, a largely\nunderexplored area. Specifically, we employ a frozen vision foundation model as\nthe encoder of our tokenizer. To enhance its effectiveness, we introduce two\nkey components: (1) a region-adaptive quantization framework that reduces\nredundancy in the pre-trained features on regular 2D grids, and (2) a semantic\nreconstruction objective that aligns the tokenizer's outputs with the\nfoundation model's representations to preserve semantic fidelity. Based on\nthese designs, our proposed image tokenizer, VFMTok, achieves substantial\nimprovements in image reconstruction and generation quality, while also\nenhancing token efficiency. It further boosts autoregressive (AR) generation --\nachieving a gFID of 2.07 on ImageNet benchmarks, while accelerating model\nconvergence by three times, and enabling high-fidelity class-conditional\nsynthesis without the need for classifier-free guidance (CFG). The code will be\nreleased publicly to benefit the community.",
-        "url": "http://arxiv.org/abs/2507.08441v1",
-        "published_date": "2025-07-11T09:32:45+00:00",
-        "updated_date": "2025-07-11T09:32:45+00:00",
+        "title": "AmpLyze: A Deep Learning Model for Predicting the Hemolytic Concentration",
+        "summary": "Red-blood-cell lysis (HC50) is the principal safety barrier for\nantimicrobial-peptide (AMP) therapeutics, yet existing models only say \"toxic\"\nor \"non-toxic.\" AmpLyze closes this gap by predicting the actual HC50 value\nfrom sequence alone and explaining the residues that drive toxicity. The model\ncouples residue-level ProtT5/ESM2 embeddings with sequence-level descriptors in\ndual local and global branches, aligned by a cross-attention module and trained\nwith log-cosh loss for robustness to assay noise. The optimal AmpLyze model\nreaches a PCC of 0.756 and an MSE of 0.987, outperforming classical regressors\nand the state-of-the-art. Ablations confirm that both branches are essential,\nand cross-attention adds a further 1% PCC and 3% MSE improvement.\nExpected-Gradients attributions reveal known toxicity hotspots and suggest\nsafer substitutions. By turning hemolysis assessment into a quantitative,\nsequence-based, and interpretable prediction, AmpLyze facilitates AMP design\nand offers a practical tool for early-stage toxicity screening.",
+        "url": "http://arxiv.org/abs/2507.08162v2",
+        "published_date": "2025-07-10T20:47:06+00:00",
+        "updated_date": "2025-08-13T23:59:49+00:00",
         "categories": [
-            "cs.CV",
+            "q-bio.BM",
             "cs.AI"
         ],
         "authors": [
-            "Anlin Zheng",
-            "Xin Wen",
-            "Xuanyang Zhang",
-            "Chuofan Ma",
-            "Tiancai Wang",
-            "Gang Yu",
-            "Xiangyu Zhang",
-            "Xiaojuan Qi"
+            "Peng Qiu",
+            "Hanqi Feng",
+            "Meng-Chun Zhang",
+            "Barnabas Poczos"
         ],
-        "tldr": "The paper introduces VFMTok, a novel image tokenizer built upon pre-trained vision foundation models, achieving substantial improvements in image generation quality and token efficiency, especially in autoregressive generation.",
-        "tldr_zh": "该论文介绍了VFMTok，一种基于预训练视觉基础模型的新型图像标记器，在图像生成质量和标记效率方面取得了显著提升，尤其是在自回归生成方面。",
+        "pdf_url": "http://arxiv.org/pdf/2507.08162v2",
+        "tldr": "AmpLyze, a deep learning model, quantitatively predicts the hemolytic concentration (HC50) of antimicrobial peptides from their sequence, outperforming existing methods and providing residue-level interpretability to facilitate safer AMP design.",
+        "explanation": "This paper presents a new deep learning model, AmpLyze, designed to predict the hemolytic concentration (HC50) of antimicrobial peptides (AMPs). HC50 is a critical safety metric, and current models often only provide a binary 'toxic' or 'non-toxic' classification. AmpLyze bridges this gap by predicting the actual HC50 value from the peptide sequence itself. The model uses a dual-branch architecture incorporating residue-level embeddings from ProtT5/ESM2 and sequence-level descriptors, aligned using cross-attention and trained with a log-cosh loss function. The model outperforms classical regressors and existing state-of-the-art methods. Ablation studies confirm the importance of all components. Expected-Gradients are used for model interpretation, revealing known toxicity hotspots and suggesting safer substitutions. Key benefits claimed are quantitative prediction, sequence-based approach, and interpretability which helps in AMP design and early-stage toxicity screening.",
+        "interests_alignment": "This paper is highly aligned with my research interests. It focuses on machine learning for biomolecules (peptides), specifically for predicting peptide properties relevant to their function and toxicity. The use of deep learning models and the emphasis on interpretability are also key aspects that resonate with my interests. The connection to AMP design could relate to peptide self-assembly if the AMP mechanism involves self-assembly or membrane disruption via assembly.",
         "relevance_score": 9,
         "novelty_claim_score": 8,
         "clarity_score": 9,
         "potential_impact_score": 8,
-        "overall_priority_score": 8
-    },
-    {
-        "title": "Upsample What Matters: Region-Adaptive Latent Sampling for Accelerated Diffusion Transformers",
-        "summary": "Diffusion transformers have emerged as an alternative to U-net-based\ndiffusion models for high-fidelity image and video generation, offering\nsuperior scalability. However, their heavy computation remains a major obstacle\nto real-world deployment. Existing acceleration methods primarily exploit the\ntemporal dimension such as reusing cached features across diffusion timesteps.\nHere, we propose Region-Adaptive Latent Upsampling (RALU), a training-free\nframework that accelerates inference along spatial dimension. RALU performs\nmixed-resolution sampling across three stages: 1) low-resolution denoising\nlatent diffusion to efficiently capture global semantic structure, 2)\nregion-adaptive upsampling on specific regions prone to artifacts at\nfull-resolution, and 3) all latent upsampling at full-resolution for detail\nrefinement. To stabilize generations across resolution transitions, we leverage\nnoise-timestep rescheduling to adapt the noise level across varying\nresolutions. Our method significantly reduces computation while preserving\nimage quality by achieving up to 7.0$\\times$ speed-up on FLUX and 3.0$\\times$\non Stable Diffusion 3 with minimal degradation. Furthermore, RALU is\ncomplementary to existing temporal accelerations such as caching methods, thus\ncan be seamlessly integrated to further reduce inference latency without\ncompromising generation quality.",
-        "url": "http://arxiv.org/abs/2507.08422v1",
-        "published_date": "2025-07-11T09:07:43+00:00",
-        "updated_date": "2025-07-11T09:07:43+00:00",
-        "categories": [
-            "cs.CV",
-            "eess.IV"
-        ],
-        "authors": [
-            "Wongi Jeong",
-            "Kyungryeol Lee",
-            "Hoigi Seo",
-            "Se Young Chun"
-        ],
-        "tldr": "This paper introduces Region-Adaptive Latent Upsampling (RALU), a training-free method to accelerate diffusion transformer inference by performing mixed-resolution sampling to reduce computational cost with minimal image quality degradation. It shows significant speed-ups on FLUX and Stable Diffusion 3 and is compatible with existing temporal acceleration techniques.",
-        "tldr_zh": "本文介绍了一种名为区域自适应潜在上采样（RALU）的免训练方法，通过执行混合分辨率采样来加速扩散 Transformer 的推理，从而在最小图像质量损失的情况下降低计算成本。它在 FLUX 和 Stable Diffusion 3 上显示出显著的加速效果，并且与现有的时间加速技术兼容。",
-        "relevance_score": 9,
-        "novelty_claim_score": 8,
-        "clarity_score": 9,
-        "potential_impact_score": 8,
-        "overall_priority_score": 8
+        "overall_priority_score": 9
     }
 ]

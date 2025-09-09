@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArXiv Peptide/Assembly Papers - July 16, 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg-color: #ffffff;
+      --text-color: #1e293b;
+      --text-muted-color: #64748b;
+      --header-color: #0f172a;
+      --highlight-primary: #14b8a6;
+      --highlight-secondary: #67e8f9;
+      --border-color: #e2e8f0;
+      --shadow-color: rgba(15, 23, 42, 0.08);
+    }
+    body { background-color: var(--bg-color); color: var(--text-color); font-family: 'Inter', sans-serif; overflow-x: hidden; line-height: 1.6; }
+    .bento-grid { display: grid; gap: 1.5rem; grid-template-columns: 1fr; padding-bottom: 4rem; }
+    .bento-item { background-color: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border-radius: 1rem; padding: 1.75rem; border: 1px solid rgba(226, 232, 240, 0.5); box-shadow: 0 4px 12px var(--shadow-color); transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; }
+    .bento-item:hover { transform: translateY(-6px); box-shadow: 0 10px 20px var(--shadow-color); }
+    .paper-title { font-size: 1.125rem; font-weight: 600; color: var(--highlight-primary); margin-bottom: 0.75rem; }
+    .paper-summary { font-size: 0.875rem; color: var(--text-muted-color); margin-bottom: 1.25rem; }
+    .paper-tldr { font-size: 0.95rem; color: #475569; margin: 0.75rem 0; font-weight: bold; }
+    details { margin: 0.75rem 0; }
+    details summary { cursor: pointer; font-weight: 600; color: var(--highlight-primary); }
+    details p { font-size: 0.85rem; color: #475569; margin: 0.5rem 0 0 1rem; }
+    .paper-link { display: inline-flex; align-items: center; font-size: 0.875rem; font-weight: 600; color: var(--highlight-primary); text-decoration: none; padding: 0.5rem 1rem; border-radius: 0.5rem; background-color: rgba(20, 184, 166, 0.08); border: 1px solid rgba(20, 184, 166, 0.2); transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; }
+    .paper-link:hover { background-color: rgba(20, 184, 166, 0.15); color: #0d9488; transform: translateY(-1px); }
+    .paper-authors { font-size: 0.75rem; color: var(--text-muted-color); margin-top: 1rem; font-style: italic; }
+    .header { text-align: center; margin-bottom: 3rem; padding-top: 3rem; }
+    .header h1 { font-size: 2.5rem; font-weight: 700; color: var(--header-color); margin-bottom: 0.5rem; }
+    .header p { font-size: 1.125rem; color: var(--text-muted-color); margin-top: 0.5rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+    .footer { text-align: center; color: var(--text-muted-color); font-size: 0.875rem; padding: 2rem 0; border-top: 1px solid var(--border-color); margin-top: 4rem; }
+    .line-graphic { height: 1px; background: linear-gradient(90deg, rgba(20, 184, 166, 0), var(--highlight-primary), rgba(20, 184, 166, 0)); opacity: 0.6; margin: 1.5rem 0; }
+    .paper-rating { margin: 1rem 0; color: #f59e0b; }
+    .paper-sub-ratings .rating-item i { color: #f59e0b; }
+  </style>
+</head>
+<body class="container mx-auto px-4 antialiased">
+
+  <motion.div initial="{ opacity: 0, y: -30 }" animate="{ opacity: 1, y: 0 }" transition="{ duration: 0.6, ease: 'easeOut' }" class="header" data-motion-element>
+    <h1>Peptide & Assembly Daily Papers</h1>
+    <p>Daily arXiv digest of machine learning for peptides, protein aggregation, and molecular self-assembly</p>
+    <p>July 16, 2025</p>
+    <div class="mt-4">
+        <a href="../list.html" class="text-teal-600 hover:underline">📚 View Full Report Archive</a>
+    </div>
+    <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div>
+  </motion.div>
+
+  <div class="bento-grid" id="paper-grid">
+    
+    <motion.div initial="{ opacity: 0, y: 50, scale: 0.9 }" whileInView="{ opacity: 1, y: 0, scale: 1 }" viewport="{ once: true, amount: 0.2 }" transition="{ duration: 0.5, delay: 0.0, ease: 'easeOut' }" class="bento-item" data-motion-element>
+      <h2 class="paper-title">BioScore: A Foundational Scoring Function For Diverse Biomolecular Complexes</h2>
+      <p class="paper-summary">Structural assessment of biomolecular complexes is vital for translating
+molecular models into functional insights, shaping our understanding of biology
+and aiding drug discovery. However, current structure-based scoring functions
+often lack generalizability across diverse biomolecular systems. We present
+BioScore, a foundational scoring function that addresses key challenges -- data
+sparsity, cross-system representation, and task compatibility -- through a
+dual-scale geometric graph learning framework with tailored modules for
+structure assessment and affinity prediction. BioScore supports a wide range of
+tasks, including affinity prediction, conformation ranking, and structure-based
+virtual screening. Evaluated on 16 benchmarks spanning proteins, nucleic acids,
+small molecules, and carbohydrates, BioScore consistently outperforms or
+matches 70 traditional and deep learning methods. Our newly proposed PPI
+Benchmark further enables comprehensive evaluation of protein-protein complex
+scoring. BioScore demonstrates broad applicability: (1) pretraining on
+mixed-structure data boosts protein-protein affinity prediction by up to 40%
+and antigen-antibody binding correlation by over 90%; (2) cross-system
+generalizability enables zero- and few-shot prediction with up to 71%
+correlation gain; and (3) its unified representation captures chemically
+challenging systems such as cyclic peptides, improving affinity prediction by
+over 60%. BioScore establishes a robust and generalizable framework for
+structural assessment across complex biomolecular landscapes.</p>
+
+      
+      <p class="paper-tldr"><strong>TLDR:</strong> BioScore, a novel geometric graph learning framework, achieves state-of-the-art performance in scoring, ranking, and screening diverse biomolecular complexes, addressing limitations of current scoring functions in generalizability across different systems and data sparsity.</p>
+      
+      
+      <details>
+        <summary>Explanation</summary>
+        <p>The paper introduces BioScore, a new scoring function for biomolecular complexes that utilizes a dual-scale geometric graph learning approach. It addresses challenges like data sparsity, cross-system representation, and task compatibility. The core innovation lies in its unified representation that works across proteins, nucleic acids, small molecules, and carbohydrates. Evaluated on 16 benchmarks, BioScore outperforms or matches 70 other methods, including deep learning techniques. Notably, it introduces a new PPI benchmark and demonstrates significant improvements in affinity prediction and generalization across various biomolecular systems and in chemically challenging spaces.</p>
+      </details>
+      
+      
+      <details>
+        <summary>Research Alignment</summary>
+        <p>This paper aligns well with my interest in machine learning for biomolecules and peptide self-assembly in several aspects. First, it focuses quite broadly on biomolecules, and while not solely peptides, it includes benchmarks on cyclic peptides, and should be generalizable to peptide complexes. Second, the paper also provides useful data involving binding affinities and structural information for multiple molecules. Third, the method aims to tackle general problems such as affinity prediction, structure evaluation, and virtual screening, which are relevant to computational screening or simulations of peptide structure/assembly.</p>
+      </details>
+      
+
+      
+      <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Relevance:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Novelty:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Clarity:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Potential Impact:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+          </div>
+          
+        
+      </div>
+      
+
+      
+      <div class="paper-rating">
+        <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+        
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="far fa-star"></i>
+          
+        
+        <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+      </div>
+      
+
+      <a href="http://arxiv.org/abs/2507.10877v1" target="_blank" class="paper-link">
+        <i class="fas fa-file-pdf mr-1"></i> Read Paper
+      </a>
+      
+      <p class="paper-authors">Authors: Yuchen Zhu, Jihong Chen, Yitong Li, Xiaomin Fang, Xianbin Ye, Jingzhou He, Xujun Zhang, Jingxuan Ge, Chao Shen, Xiaonan Zhang, Tingjun Hou, Chang-Yu Hsieh</p>
+      
+    </motion.div>
+    
+    <motion.div initial="{ opacity: 0, y: 50, scale: 0.9 }" whileInView="{ opacity: 1, y: 0, scale: 1 }" viewport="{ once: true, amount: 0.2 }" transition="{ duration: 0.5, delay: 0.05, ease: 'easeOut' }" class="bento-item" data-motion-element>
+      <h2 class="paper-title">Diffusion Decoding for Peptide De Novo Sequencing</h2>
+      <p class="paper-summary">Peptide de novo sequencing is a method used to reconstruct amino acid
+sequences from tandem mass spectrometry data without relying on existing
+protein sequence databases. Traditional deep learning approaches, such as
+Casanovo, mainly utilize autoregressive decoders and predict amino acids
+sequentially. Subsequently, they encounter cascading errors and fail to
+leverage high-confidence regions effectively. To address these issues, this
+paper investigates using diffusion decoders adapted for the discrete data
+domain. These decoders provide a different approach, allowing sequence
+generation to start from any peptide segment, thereby enhancing prediction
+accuracy. We experiment with three different diffusion decoder designs,
+knapsack beam search, and various loss functions. We find knapsack beam search
+did not improve performance metrics and simply replacing the transformer
+decoder with a diffusion decoder lowered performance. Although peptide
+precision and recall were still 0, the best diffusion decoder design with the
+DINOISER loss function obtained a statistically significant improvement in
+amino acid recall by 0.373 compared to the baseline autoregressive
+decoder-based Casanovo model. These findings highlight the potential of
+diffusion decoders to not only enhance model sensitivity but also drive
+significant advancements in peptide de novo sequencing.</p>
+
+      
+      <p class="paper-tldr"><strong>TLDR:</strong> This paper explores the use of diffusion decoders for peptide de novo sequencing, finding that while direct replacement of autoregressive decoders doesn't improve performance, using a DINOISER loss function significantly enhances amino acid recall.</p>
+      
+      
+      <details>
+        <summary>Explanation</summary>
+        <p>The paper addresses the problem of peptide de novo sequencing using tandem mass spectrometry data. It investigates the use of diffusion decoders, adapted for discrete data, as an alternative to traditional autoregressive decoders (like Casanovo's). The authors experimented with several diffusion decoder designs, knapsack beam search, and various loss functions. They found that directly replacing the transformer decoder with a diffusion decoder lowered performance and that knapsack beam search didn't improve things. However, using DINOISER loss function with diffusion decoders led to a statistically significant improvement in amino acid recall. The paper claims that this suggests that diffusion decoders have the potential to improve sensitivity and drive advancements in peptide de novo sequencing.</p>
+      </details>
+      
+      
+      <details>
+        <summary>Research Alignment</summary>
+        <p>The paper aligns with my interest in machine learning for peptides and biomolecules. Specifically, it explores a novel machine learning approach (diffusion models) for peptide sequencing, a crucial step for understanding peptide identity within larger biological contexts, particularly in proteomics and related fields. While it doesn't directly address peptide *self-assembly*, accurate sequencing is a pre-requisite to the experimental and computational analysis of eventual assembly behaviours. This makes it tangentially relevant. The work does not directly generate datasets, and focuses on improving model performance with existing datasets.</p>
+      </details>
+      
+
+      
+      <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Relevance:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Novelty:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Clarity:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Potential Impact:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+          </div>
+          
+        
+      </div>
+      
+
+      
+      <div class="paper-rating">
+        <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+        
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star-half-alt"></i>
+          
+        
+          <i class="far fa-star"></i>
+          
+        
+        <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+      </div>
+      
+
+      <a href="http://arxiv.org/abs/2507.10955v1" target="_blank" class="paper-link">
+        <i class="fas fa-file-pdf mr-1"></i> Read Paper
+      </a>
+      
+      <p class="paper-authors">Authors: Chi-en Amy Tai, Alexander Wong</p>
+      
+    </motion.div>
+    
+  </div>
+
+  <footer class="footer">
+    Generated on 2025-09-09 11:53:52 UTC.
+  </footer>
+
+</body>
+</html>

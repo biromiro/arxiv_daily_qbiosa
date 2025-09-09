@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArXiv Peptide/Assembly Papers - August 22, 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg-color: #ffffff;
+      --text-color: #1e293b;
+      --text-muted-color: #64748b;
+      --header-color: #0f172a;
+      --highlight-primary: #14b8a6;
+      --highlight-secondary: #67e8f9;
+      --border-color: #e2e8f0;
+      --shadow-color: rgba(15, 23, 42, 0.08);
+    }
+    body { background-color: var(--bg-color); color: var(--text-color); font-family: 'Inter', sans-serif; overflow-x: hidden; line-height: 1.6; }
+    .bento-grid { display: grid; gap: 1.5rem; grid-template-columns: 1fr; padding-bottom: 4rem; }
+    .bento-item { background-color: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border-radius: 1rem; padding: 1.75rem; border: 1px solid rgba(226, 232, 240, 0.5); box-shadow: 0 4px 12px var(--shadow-color); transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; }
+    .bento-item:hover { transform: translateY(-6px); box-shadow: 0 10px 20px var(--shadow-color); }
+    .paper-title { font-size: 1.125rem; font-weight: 600; color: var(--highlight-primary); margin-bottom: 0.75rem; }
+    .paper-summary { font-size: 0.875rem; color: var(--text-muted-color); margin-bottom: 1.25rem; }
+    .paper-tldr { font-size: 0.95rem; color: #475569; margin: 0.75rem 0; font-weight: bold; }
+    details { margin: 0.75rem 0; }
+    details summary { cursor: pointer; font-weight: 600; color: var(--highlight-primary); }
+    details p { font-size: 0.85rem; color: #475569; margin: 0.5rem 0 0 1rem; }
+    .paper-link { display: inline-flex; align-items: center; font-size: 0.875rem; font-weight: 600; color: var(--highlight-primary); text-decoration: none; padding: 0.5rem 1rem; border-radius: 0.5rem; background-color: rgba(20, 184, 166, 0.08); border: 1px solid rgba(20, 184, 166, 0.2); transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; }
+    .paper-link:hover { background-color: rgba(20, 184, 166, 0.15); color: #0d9488; transform: translateY(-1px); }
+    .paper-authors { font-size: 0.75rem; color: var(--text-muted-color); margin-top: 1rem; font-style: italic; }
+    .header { text-align: center; margin-bottom: 3rem; padding-top: 3rem; }
+    .header h1 { font-size: 2.5rem; font-weight: 700; color: var(--header-color); margin-bottom: 0.5rem; }
+    .header p { font-size: 1.125rem; color: var(--text-muted-color); margin-top: 0.5rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+    .footer { text-align: center; color: var(--text-muted-color); font-size: 0.875rem; padding: 2rem 0; border-top: 1px solid var(--border-color); margin-top: 4rem; }
+    .line-graphic { height: 1px; background: linear-gradient(90deg, rgba(20, 184, 166, 0), var(--highlight-primary), rgba(20, 184, 166, 0)); opacity: 0.6; margin: 1.5rem 0; }
+    .paper-rating { margin: 1rem 0; color: #f59e0b; }
+    .paper-sub-ratings .rating-item i { color: #f59e0b; }
+  </style>
+</head>
+<body class="container mx-auto px-4 antialiased">
+
+  <motion.div initial="{ opacity: 0, y: -30 }" animate="{ opacity: 1, y: 0 }" transition="{ duration: 0.6, ease: 'easeOut' }" class="header" data-motion-element>
+    <h1>Peptide & Assembly Daily Papers</h1>
+    <p>Daily arXiv digest of machine learning for peptides, protein aggregation, and molecular self-assembly</p>
+    <p>August 22, 2025</p>
+    <div class="mt-4">
+        <a href="../list.html" class="text-teal-600 hover:underline">📚 View Full Report Archive</a>
+    </div>
+    <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div>
+  </motion.div>
+
+  <div class="bento-grid" id="paper-grid">
+    
+    <motion.div initial="{ opacity: 0, y: 50, scale: 0.9 }" whileInView="{ opacity: 1, y: 0, scale: 1 }" viewport="{ once: true, amount: 0.2 }" transition="{ duration: 0.5, delay: 0.0, ease: 'easeOut' }" class="bento-item" data-motion-element>
+      <h2 class="paper-title">GridFF: Efficient Simulation of Organic Molecules on Rigid Substrates</h2>
+      <p class="paper-summary">We present GridFF, an efficient method for simulating molecules on rigid
+substrates, derived from techniques used in protein-ligand docking in
+biochemistry. By projecting molecule-substrate interactions onto precomputed
+spatial grids with tricubic B-spline interpolation, GridFF reduces the
+computational cost by orders of magnitude compared to traditional pairwise
+atomistic models, without compromising the accuracy of forces or trajectories.
+The CPU implementation of GridFF in the open-source FireCore package provides a
+100-1000x speedup over all-atom simulations using LAMMPS, while the GPU
+implementation - running thousands of system replicas in parallel - samples
+millions of configurations per second, enabling an exhaustive exploration of
+the configuration space of small flexible molecules on surfaces within minutes.
+Furthermore, as demonstrated in our previous application of a similar technique
+to high-resolution scanning probe microscopy, GridFF can be extended beyond
+empirical pairwise potentials to those derived from ab initio electron
+densities. Altogether, this unlocks accurate high-throughput modeling of
+molecular self-assembly, adsorption, and scanning probe manipulation in surface
+science.</p>
+
+      
+      <p class="paper-tldr"><strong>TLDR:</strong> GridFF is presented as a computationally efficient method for simulating organic molecules on rigid substrates, achieving significant speedups compared to traditional atomistic simulations while maintaining accuracy. The method is applied to problems in surface science, including molecular self-assembly and SPM manipulation.</p>
+      
+      
+      <details>
+        <summary>Explanation</summary>
+        <p>This paper introduces GridFF, a method that uses precomputed spatial grids and B-spline interpolation to model molecule-substrate interactions. This approach significantly reduces computational cost compared to traditional atomistic simulations. The paper claims a 100-1000x speedup on CPU and even faster sampling on GPU. It is claimed that this unlocks accurate, high-throughput modeling of molecular self-assembly, adsorption, and SPM manipulation. The method's accuracy is demonstrated with PTCDA on NaCl, showing good agreement with LAMMPS simulations, including scenarios with surface defects.</p>
+      </details>
+      
+      
+      <details>
+        <summary>Research Alignment</summary>
+        <p>The paper is tangentially relevant to my interests, particularly in the 'computational screening or simulation of structure or assembly/aggregation of peptides' area. While the paper focuses on generic organic molecules on surfaces, the GridFF method could potentially be adapted for simulating peptide self-assembly on surfaces or interfaces, especially if the substrate can be considered rigid. The application to molecular self-assembly is directly relevant.</p>
+      </details>
+      
+
+      
+      <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Relevance:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(6/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Novelty:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Clarity:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Potential Impact:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(7/10)</span>
+          </div>
+          
+        
+      </div>
+      
+
+      
+      <div class="paper-rating">
+        <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+        
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="far fa-star"></i>
+          
+        
+          <i class="far fa-star"></i>
+          
+        
+        <span class="text-xs text-gray-500 ml-1">(6/10)</span>
+      </div>
+      
+
+      <a href="http://arxiv.org/abs/2508.15522v1" target="_blank" class="paper-link">
+        <i class="fas fa-file-pdf mr-1"></i> Read Paper
+      </a>
+      
+      <p class="paper-authors">Authors: Indranil Mal, Milan Kočí, Paolo Nicolini, Prokop Hapala</p>
+      
+    </motion.div>
+    
+  </div>
+
+  <footer class="footer">
+    Generated on 2025-09-09 11:53:53 UTC.
+  </footer>
+
+</body>
+</html>

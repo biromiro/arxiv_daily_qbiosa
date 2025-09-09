@@ -1,0 +1,28 @@
+[
+    {
+        "title": "Crystal Structure Prediction with a Geometric Permutation-Invariant Loss Function",
+        "summary": "Crystalline structure prediction remains an open challenge in materials\ndesign. Despite recent advances in computational materials science, accurately\npredicting the three-dimensional crystal structures of organic materials--an\nessential first step for designing materials with targeted properties--remains\nelusive. In this work, we address the problem of molecular assembly, where a\nset $\\mathcal{S}$ of identical rigid molecules is packed to form a crystalline\nstructure. Existing state-of-the-art models typically rely on computationally\nexpensive, iterative flow-matching approaches. We propose a novel loss function\nthat correctly captures key geometric molecular properties while maintaining\npermutation invariance over $\\mathcal{S}$. We achieve this via a differentiable\nlinear assignment scheme based on the Sinkhorn algorithm. Remarkably, we show\nthat even a simple regression using our method {\\em SinkFast} significantly\noutperforms more complex flow-matching approaches on the COD-Cluster17\nbenchmark, a curated subset of the Crystallography Open Database (COD).",
+        "url": "http://arxiv.org/abs/2509.00832v2",
+        "published_date": "2025-08-31T13:03:08+00:00",
+        "updated_date": "2025-09-05T10:10:19+00:00",
+        "categories": [
+            "cs.LG",
+            "cond-mat.mtrl-sci"
+        ],
+        "authors": [
+            "Emmanuel Jehanno",
+            "Romain Menegaux",
+            "Julien Mairal",
+            "Sergei Grudinin"
+        ],
+        "pdf_url": "http://arxiv.org/pdf/2509.00832v2",
+        "tldr": "This paper introduces a novel permutation-invariant loss function using the Sinkhorn algorithm for crystal structure prediction of organic molecules, outperforming existing flow-matching approaches on the COD-Cluster17 benchmark.",
+        "explanation": "The paper addresses the challenge of predicting the crystalline structure of organic molecules by proposing a new loss function that captures geometric properties while being invariant to the permutation of molecules. They use a differentiable linear assignment scheme based on the Sinkhorn algorithm and demonstrate that their method, SinkFast, outperforms more complex flow-matching approaches on the COD-Cluster17 benchmark. The work combines property prediction and material design for molecular assembly prediction.",
+        "interests_alignment": "This paper aligns well with the research interests related to machine learning for biomolecules, specifically peptides assembled into crystals. While not about peptides directly, the methodology for predicting molecular assembly is relevant. The use of machine learning to predict structure is also highly relevant. The creation and use of more appropriate and complete datasets is also something I am particularly interested in.",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 8
+    }
+]

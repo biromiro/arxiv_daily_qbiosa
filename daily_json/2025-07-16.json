@@ -1,1 +1,60 @@
-[]
+[
+    {
+        "title": "BioScore: A Foundational Scoring Function For Diverse Biomolecular Complexes",
+        "summary": "Structural assessment of biomolecular complexes is vital for translating\nmolecular models into functional insights, shaping our understanding of biology\nand aiding drug discovery. However, current structure-based scoring functions\noften lack generalizability across diverse biomolecular systems. We present\nBioScore, a foundational scoring function that addresses key challenges -- data\nsparsity, cross-system representation, and task compatibility -- through a\ndual-scale geometric graph learning framework with tailored modules for\nstructure assessment and affinity prediction. BioScore supports a wide range of\ntasks, including affinity prediction, conformation ranking, and structure-based\nvirtual screening. Evaluated on 16 benchmarks spanning proteins, nucleic acids,\nsmall molecules, and carbohydrates, BioScore consistently outperforms or\nmatches 70 traditional and deep learning methods. Our newly proposed PPI\nBenchmark further enables comprehensive evaluation of protein-protein complex\nscoring. BioScore demonstrates broad applicability: (1) pretraining on\nmixed-structure data boosts protein-protein affinity prediction by up to 40%\nand antigen-antibody binding correlation by over 90%; (2) cross-system\ngeneralizability enables zero- and few-shot prediction with up to 71%\ncorrelation gain; and (3) its unified representation captures chemically\nchallenging systems such as cyclic peptides, improving affinity prediction by\nover 60%. BioScore establishes a robust and generalizable framework for\nstructural assessment across complex biomolecular landscapes.",
+        "url": "http://arxiv.org/abs/2507.10877v1",
+        "published_date": "2025-07-15T00:41:58+00:00",
+        "updated_date": "2025-07-15T00:41:58+00:00",
+        "categories": [
+            "physics.chem-ph",
+            "cs.LG",
+            "physics.bio-ph"
+        ],
+        "authors": [
+            "Yuchen Zhu",
+            "Jihong Chen",
+            "Yitong Li",
+            "Xiaomin Fang",
+            "Xianbin Ye",
+            "Jingzhou He",
+            "Xujun Zhang",
+            "Jingxuan Ge",
+            "Chao Shen",
+            "Xiaonan Zhang",
+            "Tingjun Hou",
+            "Chang-Yu Hsieh"
+        ],
+        "pdf_url": "http://arxiv.org/pdf/2507.10877v1",
+        "tldr": "BioScore, a novel geometric graph learning framework, achieves state-of-the-art performance in scoring, ranking, and screening diverse biomolecular complexes, addressing limitations of current scoring functions in generalizability across different systems and data sparsity.",
+        "explanation": "The paper introduces BioScore, a new scoring function for biomolecular complexes that utilizes a dual-scale geometric graph learning approach. It addresses challenges like data sparsity, cross-system representation, and task compatibility. The core innovation lies in its unified representation that works across proteins, nucleic acids, small molecules, and carbohydrates. Evaluated on 16 benchmarks, BioScore outperforms or matches 70 other methods, including deep learning techniques. Notably, it introduces a new PPI benchmark and demonstrates significant improvements in affinity prediction and generalization across various biomolecular systems and in chemically challenging spaces.",
+        "interests_alignment": "This paper aligns well with my interest in machine learning for biomolecules and peptide self-assembly in several aspects. First, it focuses quite broadly on biomolecules, and while not solely peptides, it includes benchmarks on cyclic peptides, and should be generalizable to peptide complexes. Second, the paper also provides useful data involving binding affinities and structural information for multiple molecules. Third, the method aims to tackle general problems such as affinity prediction, structure evaluation, and virtual screening, which are relevant to computational screening or simulations of peptide structure/assembly.",
+        "relevance_score": 8,
+        "novelty_claim_score": 9,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    },
+    {
+        "title": "Diffusion Decoding for Peptide De Novo Sequencing",
+        "summary": "Peptide de novo sequencing is a method used to reconstruct amino acid\nsequences from tandem mass spectrometry data without relying on existing\nprotein sequence databases. Traditional deep learning approaches, such as\nCasanovo, mainly utilize autoregressive decoders and predict amino acids\nsequentially. Subsequently, they encounter cascading errors and fail to\nleverage high-confidence regions effectively. To address these issues, this\npaper investigates using diffusion decoders adapted for the discrete data\ndomain. These decoders provide a different approach, allowing sequence\ngeneration to start from any peptide segment, thereby enhancing prediction\naccuracy. We experiment with three different diffusion decoder designs,\nknapsack beam search, and various loss functions. We find knapsack beam search\ndid not improve performance metrics and simply replacing the transformer\ndecoder with a diffusion decoder lowered performance. Although peptide\nprecision and recall were still 0, the best diffusion decoder design with the\nDINOISER loss function obtained a statistically significant improvement in\namino acid recall by 0.373 compared to the baseline autoregressive\ndecoder-based Casanovo model. These findings highlight the potential of\ndiffusion decoders to not only enhance model sensitivity but also drive\nsignificant advancements in peptide de novo sequencing.",
+        "url": "http://arxiv.org/abs/2507.10955v1",
+        "published_date": "2025-07-15T03:38:01+00:00",
+        "updated_date": "2025-07-15T03:38:01+00:00",
+        "categories": [
+            "cs.LG"
+        ],
+        "authors": [
+            "Chi-en Amy Tai",
+            "Alexander Wong"
+        ],
+        "pdf_url": "http://arxiv.org/pdf/2507.10955v1",
+        "tldr": "This paper explores the use of diffusion decoders for peptide de novo sequencing, finding that while direct replacement of autoregressive decoders doesn't improve performance, using a DINOISER loss function significantly enhances amino acid recall.",
+        "explanation": "The paper addresses the problem of peptide de novo sequencing using tandem mass spectrometry data. It investigates the use of diffusion decoders, adapted for discrete data, as an alternative to traditional autoregressive decoders (like Casanovo's). The authors experimented with several diffusion decoder designs, knapsack beam search, and various loss functions. They found that directly replacing the transformer decoder with a diffusion decoder lowered performance and that knapsack beam search didn't improve things. However, using DINOISER loss function with diffusion decoders led to a statistically significant improvement in amino acid recall. The paper claims that this suggests that diffusion decoders have the potential to improve sensitivity and drive advancements in peptide de novo sequencing.",
+        "interests_alignment": "The paper aligns with my interest in machine learning for peptides and biomolecules. Specifically, it explores a novel machine learning approach (diffusion models) for peptide sequencing, a crucial step for understanding peptide identity within larger biological contexts, particularly in proteomics and related fields. While it doesn't directly address peptide *self-assembly*, accurate sequencing is a pre-requisite to the experimental and computational analysis of eventual assembly behaviours. This makes it tangentially relevant. The work does not directly generate datasets, and focuses on improving model performance with existing datasets.",
+        "relevance_score": 7,
+        "novelty_claim_score": 8,
+        "clarity_score": 9,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
+    }
+]

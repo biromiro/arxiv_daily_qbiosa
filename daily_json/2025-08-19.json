@@ -1,53 +1,51 @@
 [
     {
-        "title": "Compact Attention: Exploiting Structured Spatio-Temporal Sparsity for Fast Video Generation",
-        "summary": "The computational demands of self-attention mechanisms pose a critical\nchallenge for transformer-based video generation, particularly in synthesizing\nultra-long sequences. Current approaches, such as factorized attention and\nfixed sparse patterns, fail to fully exploit the inherent spatio-temporal\nredundancies in video data. Through systematic analysis of video diffusion\ntransformers (DiT), we uncover a key insight: Attention matrices exhibit\nstructured, yet heterogeneous sparsity patterns, where specialized heads\ndynamically attend to distinct spatiotemporal regions (e.g., local pattern,\ncross-shaped pattern, or global pattern). Existing sparse attention methods\neither impose rigid constraints or introduce significant overhead, limiting\ntheir effectiveness. To address this, we propose Compact Attention, a\nhardware-aware acceleration framework featuring three innovations: 1) Adaptive\ntiling strategies that approximate diverse spatial interaction patterns via\ndynamic tile grouping, 2) Temporally varying windows that adjust sparsity\nlevels based on frame proximity, and 3) An automated configuration search\nalgorithm that optimizes sparse patterns while preserving critical attention\npathways. Our method achieves 1.6~2.5x acceleration in attention computation on\nsingle-GPU setups while maintaining comparable visual quality with\nfull-attention baselines. This work provides a principled approach to unlocking\nefficient long-form video generation through structured sparsity exploitation.\nProject Page: https://yo-ava.github.io/Compact-Attention.github.io/",
-        "url": "http://arxiv.org/abs/2508.12969v1",
-        "published_date": "2025-08-18T14:45:42+00:00",
-        "updated_date": "2025-08-18T14:45:42+00:00",
+        "title": "aims-PAX: Parallel Active eXploration for the automated construction of Machine Learning Force Fields",
+        "summary": "Recent advances in machine learning force fields (MLFF) have significantly\nextended the capabilities of atomistic simulations. This progress highlights\nthe critical need for reliable reference datasets, accurate MLFFs, and,\ncrucially, efficient active learning strategies to enable robust modeling of\ncomplex chemical and materials systems. Here, we introduce aims-PAX, an\nautomated, multi-trajectory active learning framework that streamlines the\ndevelopment of MLFFs. Designed for both experts and newcomers, aims-PAX offers\na modular, high-performance workflow that couples flexible sampling with\nscalable training across CPU and GPU architectures. Built on the widely adopted\nab initio code FHI-aims, the framework seamlessly integrates with\nstate-of-the-art ML models and supports pretraining using general-purpose (or\n\"foundational\") models for rapid deployment in diverse systems. We demonstrate\nthe capabilities of aims-PAX on two challenging systems: a highly flexible\npeptide and bulk CsPbI$_3$ perovskite. Across these cases, aims-PAX achieves a\nreduction of up to two orders of magnitude in the number of required reference\ncalculations and enables over 20x speedup in AL cycle time through optimized\nresource utilization. This positions aims-PAX as a powerful and versatile\nplatform for next-generation ML-driven atomistic simulations in both academic\nand industrial settings.",
+        "url": "http://arxiv.org/abs/2508.12888v1",
+        "published_date": "2025-08-18T12:40:46+00:00",
+        "updated_date": "2025-08-18T12:40:46+00:00",
         "categories": [
-            "cs.CV"
+            "physics.chem-ph"
         ],
         "authors": [
-            "Qirui Li",
-            "Guangcong Zheng",
-            "Qi Zhao",
-            "Jie Li",
-            "Bin Dong",
-            "Yiwu Yao",
-            "Xi Li"
+            "Tobias Henkes",
+            "Shubham Sharma",
+            "Alexandre Tkatchenko",
+            "Mariana Rossi",
+            "Igor Poltavskyi"
         ],
-        "tldr": "This paper introduces Compact Attention, a hardware-aware acceleration framework that leverages structured spatio-temporal sparsity in attention matrices to improve the efficiency of transformer-based video generation, achieving 1.6-2.5x speedup with comparable visual quality.",
-        "tldr_zh": "本文介绍了 Compact Attention，这是一个硬件感知的加速框架，它利用注意力矩阵中结构化的时空稀疏性来提高基于 transformer 的视频生成的效率，在保持可比视觉质量的同时实现了 1.6-2.5 倍的加速。",
-        "relevance_score": 10,
+        "pdf_url": "http://arxiv.org/pdf/2508.12888v1",
+        "tldr": "The paper introduces aims-PAX, an automated active learning framework for constructing machine learning force fields (MLFFs), demonstrating significant reductions in reference calculations and AL cycle time on peptide and perovskite systems.",
+        "explanation": "The paper presents aims-PAX, a new automated active learning framework designed to simplify the development of MLFFs. It's built on the ab initio code FHI-aims, integrates with modern ML models, and supports pretraining with general-purpose models. The framework offers efficient sampling and scalable training on CPUs and GPUs. The authors validate aims-PAX on simulations of a flexible peptide and bulk CsPbI3 perovskite, reporting a significant reduction in the number of necessary reference calculations and a considerable speedup in the active learning cycle. These results suggest a powerful tool for ML-driven atomistic simulations.",
+        "interests_alignment": "The study shows the use of machine learning to accelerate atomistic simulation of peptides, specifically focusing on the creation of a force field. This directly aligns with my interests in machine learning for peptides and datasets of peptide structure, and the use of computation to study their structure.",
+        "relevance_score": 9,
         "novelty_claim_score": 8,
         "clarity_score": 9,
-        "potential_impact_score": 9,
+        "potential_impact_score": 8,
         "overall_priority_score": 9
     },
     {
-        "title": "Next Visual Granularity Generation",
-        "summary": "We propose a novel approach to image generation by decomposing an image into\na structured sequence, where each element in the sequence shares the same\nspatial resolution but differs in the number of unique tokens used, capturing\ndifferent level of visual granularity. Image generation is carried out through\nour newly introduced Next Visual Granularity (NVG) generation framework, which\ngenerates a visual granularity sequence beginning from an empty image and\nprogressively refines it, from global layout to fine details, in a structured\nmanner. This iterative process encodes a hierarchical, layered representation\nthat offers fine-grained control over the generation process across multiple\ngranularity levels. We train a series of NVG models for class-conditional image\ngeneration on the ImageNet dataset and observe clear scaling behavior. Compared\nto the VAR series, NVG consistently outperforms it in terms of FID scores (3.30\n-> 3.03, 2.57 ->2.44, 2.09 -> 2.06). We also conduct extensive analysis to\nshowcase the capability and potential of the NVG framework. Our code and models\nwill be released.",
-        "url": "http://arxiv.org/abs/2508.12811v1",
-        "published_date": "2025-08-18T10:47:37+00:00",
-        "updated_date": "2025-08-18T10:47:37+00:00",
+        "title": "Deep Learning Model for Amyloidogenicity Prediction using a Pre-trained Protein LLM",
+        "summary": "The prediction of amyloidogenicity in peptides and proteins remains a focal\npoint of ongoing bioinformatics. The crucial step in this field is to apply\nadvanced computational methodologies. Many recent approaches to predicting\namyloidogenicity within proteins are highly based on evolutionary motifs and\nthe individual properties of amino acids. It is becoming increasingly evident\nthat the sequence information-based features show high predictive performance.\nConsequently, our study evaluated the contextual features of protein sequences\nobtained from a pretrained protein large language model leveraging\nbidirectional LSTM and GRU to predict amyloidogenic regions in peptide and\nprotein sequences. Our method achieved an accuracy of 84.5% on 10-fold\ncross-validation and an accuracy of 83% in the test dataset. Our results\ndemonstrate competitive performance, highlighting the potential of LLMs in\nenhancing the accuracy of amyloid prediction.",
+        "url": "http://arxiv.org/abs/2508.12575v1",
+        "published_date": "2025-08-18T02:21:48+00:00",
+        "updated_date": "2025-08-18T02:21:48+00:00",
         "categories": [
-            "cs.CV",
+            "cs.LG",
             "cs.AI",
-            "cs.LG"
+            "q-bio.QM"
         ],
         "authors": [
-            "Yikai Wang",
-            "Zhouxia Wang",
-            "Zhonghua Wu",
-            "Qingyi Tao",
-            "Kang Liao",
-            "Chen Change Loy"
+            "Zohra Yagoub",
+            "Hafida Bouziane"
         ],
-        "tldr": "The paper introduces a Next Visual Granularity (NVG) generation framework that decomposes image generation into progressively refined visual granularity sequences, outperforming VAR series on ImageNet.",
-        "tldr_zh": "本文提出了一种下一代视觉粒度（NVG）生成框架，该框架将图像生成分解为逐步细化的视觉粒度序列，在ImageNet上优于VAR系列。",
+        "pdf_url": "http://arxiv.org/abs/2508.12575v1",
+        "tldr": "This paper presents a deep learning model leveraging a pre-trained protein LLM and bidirectional LSTM/GRU networks to predict amyloidogenic regions, achieving 84.5% accuracy in cross-validation and 83% in testing.",
+        "explanation": "The paper explores the use of protein Large Language Models (LLMs) to enhance amyloidogenicity prediction. It uses contextual features extracted from an LLM and feeds them into bidirectional LSTM and GRU networks. The results show competitive performance compared to existing methods, suggesting that LLMs can improve the accuracy of amyloid prediction. The abstract highlights the method's accuracy on both cross-validation and test datasets, indicating a level of robustness.",
+        "interests_alignment": "This paper aligns well with the research interests, specifically in machine learning for peptides and biomolecules, and peptide aggregation. The prediction of amyloidogenicity is directly related to peptide aggregation research. The use of LLMs is also a modern approach in the field of peptide ML that I'm interested in.",
         "relevance_score": 9,
-        "novelty_claim_score": 8,
+        "novelty_claim_score": 7,
         "clarity_score": 8,
         "potential_impact_score": 7,
         "overall_priority_score": 8

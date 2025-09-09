@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArXiv Peptide/Assembly Papers - July 12, 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg-color: #ffffff;
+      --text-color: #1e293b;
+      --text-muted-color: #64748b;
+      --header-color: #0f172a;
+      --highlight-primary: #14b8a6;
+      --highlight-secondary: #67e8f9;
+      --border-color: #e2e8f0;
+      --shadow-color: rgba(15, 23, 42, 0.08);
+    }
+    body { background-color: var(--bg-color); color: var(--text-color); font-family: 'Inter', sans-serif; overflow-x: hidden; line-height: 1.6; }
+    .bento-grid { display: grid; gap: 1.5rem; grid-template-columns: 1fr; padding-bottom: 4rem; }
+    .bento-item { background-color: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border-radius: 1rem; padding: 1.75rem; border: 1px solid rgba(226, 232, 240, 0.5); box-shadow: 0 4px 12px var(--shadow-color); transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; }
+    .bento-item:hover { transform: translateY(-6px); box-shadow: 0 10px 20px var(--shadow-color); }
+    .paper-title { font-size: 1.125rem; font-weight: 600; color: var(--highlight-primary); margin-bottom: 0.75rem; }
+    .paper-summary { font-size: 0.875rem; color: var(--text-muted-color); margin-bottom: 1.25rem; }
+    .paper-tldr { font-size: 0.95rem; color: #475569; margin: 0.75rem 0; font-weight: bold; }
+    details { margin: 0.75rem 0; }
+    details summary { cursor: pointer; font-weight: 600; color: var(--highlight-primary); }
+    details p { font-size: 0.85rem; color: #475569; margin: 0.5rem 0 0 1rem; }
+    .paper-link { display: inline-flex; align-items: center; font-size: 0.875rem; font-weight: 600; color: var(--highlight-primary); text-decoration: none; padding: 0.5rem 1rem; border-radius: 0.5rem; background-color: rgba(20, 184, 166, 0.08); border: 1px solid rgba(20, 184, 166, 0.2); transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; }
+    .paper-link:hover { background-color: rgba(20, 184, 166, 0.15); color: #0d9488; transform: translateY(-1px); }
+    .paper-authors { font-size: 0.75rem; color: var(--text-muted-color); margin-top: 1rem; font-style: italic; }
+    .header { text-align: center; margin-bottom: 3rem; padding-top: 3rem; }
+    .header h1 { font-size: 2.5rem; font-weight: 700; color: var(--header-color); margin-bottom: 0.5rem; }
+    .header p { font-size: 1.125rem; color: var(--text-muted-color); margin-top: 0.5rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+    .footer { text-align: center; color: var(--text-muted-color); font-size: 0.875rem; padding: 2rem 0; border-top: 1px solid var(--border-color); margin-top: 4rem; }
+    .line-graphic { height: 1px; background: linear-gradient(90deg, rgba(20, 184, 166, 0), var(--highlight-primary), rgba(20, 184, 166, 0)); opacity: 0.6; margin: 1.5rem 0; }
+    .paper-rating { margin: 1rem 0; color: #f59e0b; }
+    .paper-sub-ratings .rating-item i { color: #f59e0b; }
+  </style>
+</head>
+<body class="container mx-auto px-4 antialiased">
+
+  <motion.div initial="{ opacity: 0, y: -30 }" animate="{ opacity: 1, y: 0 }" transition="{ duration: 0.6, ease: 'easeOut' }" class="header" data-motion-element>
+    <h1>Peptide & Assembly Daily Papers</h1>
+    <p>Daily arXiv digest of machine learning for peptides, protein aggregation, and molecular self-assembly</p>
+    <p>July 12, 2025</p>
+    <div class="mt-4">
+        <a href="../list.html" class="text-teal-600 hover:underline">📚 View Full Report Archive</a>
+    </div>
+    <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div>
+  </motion.div>
+
+  <div class="bento-grid" id="paper-grid">
+    
+    <motion.div initial="{ opacity: 0, y: 50, scale: 0.9 }" whileInView="{ opacity: 1, y: 0, scale: 1 }" viewport="{ once: true, amount: 0.2 }" transition="{ duration: 0.5, delay: 0.0, ease: 'easeOut' }" class="bento-item" data-motion-element>
+      <h2 class="paper-title">Generation of structure-guided pMHC-I libraries using Diffusion Models</h2>
+      <p class="paper-summary">Personalized vaccines and T-cell immunotherapies depend critically on
+identifying peptide-MHC class I (pMHC-I) interactions capable of eliciting
+potent immune responses. However, current benchmarks and models inherit biases
+present in mass-spectrometry and binding-assay datasets, limiting discovery of
+novel peptide ligands. To address this issue, we introduce a structure-guided
+benchmark of pMHC-I peptides designed using diffusion models conditioned on
+crystal structure interaction distances. Spanning twenty high-priority HLA
+alleles, this benchmark is independent of previously characterized peptides yet
+reproduces canonical anchor residue preferences, indicating structural
+generalization without experimental dataset bias. Using this resource, we
+demonstrate that state-of-the-art sequence-based predictors perform poorly at
+recognizing the binding potential of these structurally stable designs,
+indicating allele-specific limitations invisible in conventional evaluations.
+Our geometry-aware design pipeline yields peptides with high predicted
+structural integrity and higher residue diversity than existing datasets,
+representing a key resource for unbiased model training and evaluation. Our
+code, and data are available at: https://github.com/sermare/struct-mhc-dev.</p>
+
+      
+      <p class="paper-tldr"><strong>TLDR:</strong> This paper introduces a diffusion model-based approach to generate a novel, structurally-guided pMHC-I peptide library, addressing biases in existing datasets and revealing limitations in current sequence-based prediction models.</p>
+      
+      
+      <details>
+        <summary>Explanation</summary>
+        <p>The paper addresses the problem of biases in existing pMHC-I datasets which limits the discovery of novel peptide ligands for personalized vaccines and T-cell immunotherapies. The authors propose a structure-guided benchmark of pMHC-I peptides designed using diffusion models, conditioning on crystal structure interaction distances. The generated library spans multiple HLA alleles, is independent of previously characterized peptides, and reproduces canonical anchor residue preferences, indicating structural generalization without experimental dataset bias. Performance of state-of-the-art sequence-based predictors is poor on this dataset, highlighting limitations not visible in conventional evaluations.  The code and data are publicly available.</p>
+      </details>
+      
+      
+      <details>
+        <summary>Research Alignment</summary>
+        <p>This work strongly aligns with my research interests. It involves machine learning (diffusion models) for biomolecules (peptides, MHC-I complexes), addresses dataset biases which is an important consideration when training models, and computationally designs peptide structures with certain properties (binding affinity for MHC-I). This is likely a valuable paper for generating ideas and potentially useable insights.</p>
+      </details>
+      
+
+      
+      <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Relevance:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(10/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Novelty:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Clarity:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Potential Impact:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+          </div>
+          
+        
+      </div>
+      
+
+      
+      <div class="paper-rating">
+        <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+        
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star-half-alt"></i>
+          
+        
+        <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+      </div>
+      
+
+      <a href="http://arxiv.org/abs/2507.08902v2" target="_blank" class="paper-link">
+        <i class="fas fa-file-pdf mr-1"></i> Read Paper
+      </a>
+      
+      <p class="paper-authors">Authors: Sergio Mares, Ariel Espinoza Weinberger, Nilah M. Ioannidis</p>
+      
+    </motion.div>
+    
+    <motion.div initial="{ opacity: 0, y: 50, scale: 0.9 }" whileInView="{ opacity: 1, y: 0, scale: 1 }" viewport="{ once: true, amount: 0.2 }" transition="{ duration: 0.5, delay: 0.05, ease: 'easeOut' }" class="bento-item" data-motion-element>
+      <h2 class="paper-title">AmpLyze: A Deep Learning Model for Predicting the Hemolytic Concentration</h2>
+      <p class="paper-summary">Red-blood-cell lysis (HC50) is the principal safety barrier for
+antimicrobial-peptide (AMP) therapeutics, yet existing models only say "toxic"
+or "non-toxic." AmpLyze closes this gap by predicting the actual HC50 value
+from sequence alone and explaining the residues that drive toxicity. The model
+couples residue-level ProtT5/ESM2 embeddings with sequence-level descriptors in
+dual local and global branches, aligned by a cross-attention module and trained
+with log-cosh loss for robustness to assay noise. The optimal AmpLyze model
+reaches a PCC of 0.756 and an MSE of 0.987, outperforming classical regressors
+and the state-of-the-art. Ablations confirm that both branches are essential,
+and cross-attention adds a further 1% PCC and 3% MSE improvement.
+Expected-Gradients attributions reveal known toxicity hotspots and suggest
+safer substitutions. By turning hemolysis assessment into a quantitative,
+sequence-based, and interpretable prediction, AmpLyze facilitates AMP design
+and offers a practical tool for early-stage toxicity screening.</p>
+
+      
+      <p class="paper-tldr"><strong>TLDR:</strong> AmpLyze, a deep learning model, quantitatively predicts the hemolytic concentration (HC50) of antimicrobial peptides from their sequence, outperforming existing methods and providing residue-level interpretability to facilitate safer AMP design.</p>
+      
+      
+      <details>
+        <summary>Explanation</summary>
+        <p>This paper presents a new deep learning model, AmpLyze, designed to predict the hemolytic concentration (HC50) of antimicrobial peptides (AMPs). HC50 is a critical safety metric, and current models often only provide a binary 'toxic' or 'non-toxic' classification. AmpLyze bridges this gap by predicting the actual HC50 value from the peptide sequence itself. The model uses a dual-branch architecture incorporating residue-level embeddings from ProtT5/ESM2 and sequence-level descriptors, aligned using cross-attention and trained with a log-cosh loss function. The model outperforms classical regressors and existing state-of-the-art methods. Ablation studies confirm the importance of all components. Expected-Gradients are used for model interpretation, revealing known toxicity hotspots and suggesting safer substitutions. Key benefits claimed are quantitative prediction, sequence-based approach, and interpretability which helps in AMP design and early-stage toxicity screening.</p>
+      </details>
+      
+      
+      <details>
+        <summary>Research Alignment</summary>
+        <p>This paper is highly aligned with my research interests. It focuses on machine learning for biomolecules (peptides), specifically for predicting peptide properties relevant to their function and toxicity. The use of deep learning models and the emphasis on interpretability are also key aspects that resonate with my interests. The connection to AMP design could relate to peptide self-assembly if the AMP mechanism involves self-assembly or membrane disruption via assembly.</p>
+      </details>
+      
+
+      
+      <div class="paper-sub-ratings" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; font-size: 0.8em;">
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Relevance:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Novelty:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Clarity:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star-half-alt"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+          </div>
+          
+        
+          
+          <div class="rating-item">
+            <span class="rating-label">Potential Impact:</span>
+            
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="fas fa-star"></i>
+              
+            
+              <i class="far fa-star"></i>
+              
+            
+            <span class="text-xs text-gray-500 ml-1">(8/10)</span>
+          </div>
+          
+        
+      </div>
+      
+
+      
+      <div class="paper-rating">
+        <span class="rating-label" style="color: #000; font-weight: bold;">Overall:</span>
+        
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star"></i>
+          
+        
+          <i class="fas fa-star-half-alt"></i>
+          
+        
+        <span class="text-xs text-gray-500 ml-1">(9/10)</span>
+      </div>
+      
+
+      <a href="http://arxiv.org/abs/2507.08162v2" target="_blank" class="paper-link">
+        <i class="fas fa-file-pdf mr-1"></i> Read Paper
+      </a>
+      
+      <p class="paper-authors">Authors: Peng Qiu, Hanqi Feng, Meng-Chun Zhang, Barnabas Poczos</p>
+      
+    </motion.div>
+    
+  </div>
+
+  <footer class="footer">
+    Generated on 2025-09-09 11:53:52 UTC.
+  </footer>
+
+</body>
+</html>

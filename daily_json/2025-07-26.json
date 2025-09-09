@@ -1,30 +1,97 @@
 [
     {
-        "title": "Back to the Features: DINO as a Foundation for Video World Models",
-        "summary": "We present DINO-world, a powerful generalist video world model trained to\npredict future frames in the latent space of DINOv2. By leveraging a\npre-trained image encoder and training a future predictor on a large-scale\nuncurated video dataset, DINO-world learns the temporal dynamics of diverse\nscenes, from driving and indoor scenes to simulated environments. We show that\nDINO-world outperforms previous models on a variety of video prediction\nbenchmarks, e.g. segmentation and depth forecasting, and demonstrates strong\nunderstanding of intuitive physics. Furthermore, we show that it is possible to\nfine-tune the predictor on observation-action trajectories. The resulting\naction-conditioned world model can be used for planning by simulating candidate\ntrajectories in latent space.",
-        "url": "http://arxiv.org/abs/2507.19468v1",
-        "published_date": "2025-07-25T17:54:10+00:00",
-        "updated_date": "2025-07-25T17:54:10+00:00",
+        "title": "Latent-X: An Atom-level Frontier Model for De Novo Protein Binder Design",
+        "summary": "Traditional drug discovery relies on rounds of screening millions of\ncandidate molecules with low success rates, making drug discovery time and\nresource intensive. To overcome this screening bottleneck, we introduce\nLatent-X, an all-atom protein design model that enables a new paradigm of\nprecision AI design. Given a target protein epitope, Latent-X jointly generates\nthe all atom structure and sequence of the protein binder and target, directly\nmodelling the non-covalent interactions essential for specific binding. We\ndemonstrate its efficacy across two therapeutically relevant modalities through\nextensive wet lab experiments, testing as few as 30-100 designs per target. For\nmacrocyclic peptides, Latent-X achieves experimental hit rates exceeding 90% on\nall evaluated benchmark targets. For mini-binders, it consistently produces\npotent candidates against all evaluated benchmark targets, with binding\naffinities reaching the low nanomolar and picomolar range - comparable to those\nof approved therapeutics - whilst also being highly specific in mammalian\ndisplay. In direct comparisons with the state-of-the-art models AlphaProteo,\nRFdiffusion and RFpeptides under identical conditions demonstrates, Latent-X\ngenerates binders with higher hit rates and better binding affinities, and\nuniquely creates structurally diverse binders, including complex beta-sheet\nfolds. Its end-to-end process is an order of magnitude faster than existing\nmulti-step computational pipelines. By drastically improving the efficiency and\nsuccess rate of de novo design, Latent-X represents a significant advance\ntowards push-button biologics discovery and a valuable tool for protein\nengineers. Latent-X is available at https://platform.latentlabs.com, enabling\nusers to reliably generate de novo binders without AI infrastructure or coding.",
+        "url": "http://arxiv.org/abs/2507.19375v1",
+        "published_date": "2025-07-25T15:25:22+00:00",
+        "updated_date": "2025-07-25T15:25:22+00:00",
         "categories": [
-            "cs.CV"
+            "q-bio.BM"
         ],
         "authors": [
-            "Federico Baldassarre",
-            "Marc Szafraniec",
-            "Basile Terver",
-            "Vasil Khalidov",
-            "Francisco Massa",
-            "Yann LeCun",
-            "Patrick Labatut",
-            "Maximilian Seitzer",
-            "Piotr Bojanowski"
+            "Latent Labs Team",
+            "Alex Bridgland",
+            "Jonathan Crabbé",
+            "Henry Kenlay",
+            "Daniella Pretorius",
+            "Sebastian M. Schmon",
+            "Agrin Hilmkil",
+            "Rebecca Bartke-Croughan",
+            "Robin Rombach",
+            "Michael Flashman",
+            "Tomas Matteson",
+            "Simon Mathis",
+            "Alexander W. R. Nelson",
+            "David Yuan",
+            "Annette Obika",
+            "Simon A. A. Kohl"
         ],
-        "tldr": "DINO-world uses a DINOv2 image encoder to train a future predictor on a large video dataset, demonstrating strong performance in video prediction and action-conditioned planning.",
-        "tldr_zh": "DINO-world利用DINOv2图像编码器，通过在大型视频数据集上训练未来预测器，在视频预测和动作条件规划方面表现出色。",
-        "relevance_score": 8,
-        "novelty_claim_score": 7,
+        "pdf_url": "http://arxiv.org/pdf/2507.19375v1",
+        "tldr": "Latent-X, a novel all-atom protein design model, achieves state-of-the-art performance in de novo protein binder design with high experimental hit rates and binding affinities for macrocyclic peptides and mini-binders, surpassing existing methods in speed, hit rate, and structural diversity.",
+        "explanation": "The paper introduces Latent-X, a new AI model for designing protein binders. It addresses the bottleneck in traditional drug discovery by jointly generating the structure and sequence of protein binders. The model's effectiveness is demonstrated through wet lab experiments for macrocyclic peptides and mini-binders, achieving high hit rates and binding affinities compared to existing methods like AlphaProteo, RFdiffusion, and RFpeptides. A key advantage is its speed and ability to produce structurally diverse binders with complex beta-sheet folds. The model is made available via a web platform.",
+        "interests_alignment": "This paper strongly aligns with my research interests. It directly involves peptide/protein design (self-assembly aspect), utilizes machine learning for biomolecules, discusses a dataset (used for training and benchmarking), and focuses on computational screening to achieve desired structural and binding properties. The macrocyclic peptide work is particularly relevant to self-assembly principles.",
+        "relevance_score": 10,
+        "novelty_claim_score": 9,
         "clarity_score": 9,
-        "potential_impact_score": 8,
+        "potential_impact_score": 9,
+        "overall_priority_score": 9
+    },
+    {
+        "title": "pH-Driven Fluorescence in Solid-State Lysine",
+        "summary": "There is currently a growing interest in understanding the origins of\nintrinsic fluorescence as a way to design non-invasive probes for biophysical\nprocesses. In this regard, understanding how pH influences fluorescence in\nnon-aromatic biomolecular assemblies is key to controlling their optical\nproperties in realistic cellular conditions. Here, we combine experiments and\ntheory to investigate the pH-dependent emission of solid-state L-Lysine (Lys).\nLys aggregates prepared at different pH values using HCl and H$_2$SO$_4$\nexhibit protonation- and counterion-dependent morphology and fluorescence, as\nshown by microscopy and steady-state measurements. We find an enhancement in\nthe fluorescence moving from acidic to basic conditions. To uncover the\nmolecular origin of these trends, we performed non-adiabatic molecular dynamics\nsimulations on three Lys crystal models representing distinct protonation\nstates. Our simulations indicate that enhanced protonation under acidic\nconditions facilitates non-radiative decay via proton transfer, whereas basic\nconditions favor radiative decay. These findings highlight pH as a key factor\ntuning fluorescence in Lys assemblies, offering insights for designing pH\nresponsive optical materials based on non-aromatic amino acids.",
+        "url": "http://arxiv.org/abs/2507.19241v1",
+        "published_date": "2025-07-25T13:06:06+00:00",
+        "updated_date": "2025-07-25T13:06:06+00:00",
+        "categories": [
+            "physics.chem-ph",
+            "physics.bio-ph"
+        ],
+        "authors": [
+            "Marta Monti",
+            "Luca Cimmino",
+            "Gonzalo Díaz Mirón",
+            "Carlo Diaferia",
+            "Debarshi Banerjee",
+            "Martina Stella",
+            "Luigi Vitagliano",
+            "Antonella Accardo",
+            "Ali Hassanali"
+        ],
+        "pdf_url": "http://arxiv.org/pdf/2507.19241v1",
+        "tldr": "This paper combines experiments and non-adiabatic molecular dynamics simulations to investigate the pH-dependent fluorescence of solid-state L-Lysine (Lys) aggregates. They find that pH and counterions influence the morphology and fluorescence, with protonation facilitating non-radiative decay under acidic conditions and radiative decay in basic conditions.",
+        "explanation": "The paper investigates the pH-dependent fluorescence of solid-state lysine aggregates. The authors experimentally characterized lysine aggregates prepared at different pH values using microscopy and steady-state fluorescence measurements, finding enhanced fluorescence under basic conditions. To understand the mechanism, they performed non-adiabatic molecular dynamics simulations on lysine crystal models with varying protonation states. The simulations suggest that increased protonation in acidic conditions facilitates non-radiative decay via proton transfer, thus quenching fluorescence. The study highlights the role of pH in tuning fluorescence in lysine assemblies, which could inform the design of pH-responsive optical materials.",
+        "interests_alignment": "This paper aligns well with my research interests. It directly addresses peptide self-assembly (or in this case, amino acid aggregation), uses computational simulations (non-adiabatic molecular dynamics) to understand the underlying mechanisms, and explores how environmental factors like pH influence the assembly and properties of the biomolecule. The findings on pH-responsive optical properties could be relevant for designing novel peptide-based materials.",
+        "relevance_score": 9,
+        "novelty_claim_score": 7,
+        "clarity_score": 8,
+        "potential_impact_score": 7,
         "overall_priority_score": 8
+    },
+    {
+        "title": "Exploring molecular assembly as a biosignature using mass spectrometry and machine learning",
+        "summary": "Molecular assembly offers a promising path to detect life beyond Earth, while\nminimizing assumptions based on terrestrial life. As mass spectrometers will be\ncentral to upcoming Solar System missions, predicting molecular assembly from\ntheir data without needing to elucidate unknown structures will be essential\nfor unbiased life detection. An ideal agnostic biosignature must be\ninterpretable and experimentally measurable. Here, we show that molecular\nassembly, a recently developed approach to measure objects that have been\nproduced by evolution, satisfies both criteria. First, it is interpretable for\nlife detection, as it reflects the assembly of molecules with their bonds as\nbuilding blocks, in contrast to approaches that discount construction history.\nSecond, it can be determined without structural elucidation, as it can be\nphysically measured by mass spectrometry, a property that distinguishes it from\nother approaches that use structure-based information measures for molecular\ncomplexity. Whilst molecular assembly is directly measurable using mass\nspectrometry data, there are limits imposed by mission constraints. To address\nthis, we developed a machine learning model that predicts molecular assembly\nwith high accuracy, reducing error by three-fold compared to baseline models.\nSimulated data shows that even small instrumental inconsistencies can double\nmodel error, emphasizing the need for standardization. These results suggest\nthat standardized mass spectrometry databases could enable accurate molecular\nassembly prediction, without structural elucidation, providing a\nproof-of-concept for future astrobiology missions.",
+        "url": "http://arxiv.org/abs/2507.19057v1",
+        "published_date": "2025-07-25T08:19:15+00:00",
+        "updated_date": "2025-07-25T08:19:15+00:00",
+        "categories": [
+            "cs.LG"
+        ],
+        "authors": [
+            "Lindsay A. Rutter",
+            "Abhishek Sharma",
+            "Ian Seet",
+            "David Obeh Alobo",
+            "An Goto",
+            "Leroy Cronin"
+        ],
+        "pdf_url": "http://arxiv.org/pdf/2507.19057v1",
+        "tldr": "This paper explores using machine learning to predict molecular assembly (MA) scores from mass spectrometry data for agnostic life detection in astrobiology, addressing limitations of traditional methods and emphasizing the need for standardized MS databases. Molecular assembly is defined as 'the length of its shortest construction pathway—that is, the minimum number of discrete steps required to build it from basic building blocks and objects in the assembly pool (i.e. intermediate objects produced in earlier steps that can be reused in subsequent ones)'",
+        "explanation": "The paper focuses on a novel approach to life detection by utilizing molecular assembly (MA), a measure of complexity based on the shortest construction pathway of a molecule. The authors address the challenge of determining MA from mass spectrometry (MS) data, particularly in the context of space missions where structural elucidation may be difficult. They develop a machine learning model that accurately predicts MA from MS data, reducing error compared to baseline models. The research also highlights the importance of standardized MS databases for accurate MA prediction. Furthermore, the paper compares MA with existing molecular complexity score to support the use of MA. The method section contains some descriptions on how the work has been done. Overall, the paper presents a valuable exploration of using machine learning for biosignature detection in astrobiology.",
+        "interests_alignment": "While this paper focuses on general molecules for life detection, the machine learning methods to predict a physical property from molecules shares similar methodologies and techniques with machine learning for peptides and biomolecules. The exploration of new features and their prediction using ML relates to my research interest in computational structure simulation or screening for peptides.",
+        "relevance_score": 6,
+        "novelty_claim_score": 7,
+        "clarity_score": 8,
+        "potential_impact_score": 7,
+        "overall_priority_score": 7
     }
 ]

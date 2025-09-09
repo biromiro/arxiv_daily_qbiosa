@@ -1,35 +1,47 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>最新 ArXiv AIGC 报告</title>
+    <title>Latest ArXiv AI Report</title>
     <style>
         html, body {
             margin: 0;
             padding: 0;
-            height: 100%; /* Use percentage height */
+            height: 100%;
             display: flex;
             flex-direction: column;
             font-family: sans-serif;
         }
         #content-wrapper {
-            flex: 1 1 auto; /* Grow, shrink, basis auto */
-            overflow: hidden; /* Contain the iframe */
-            position: relative; /* Needed for absolute positioning of iframe if required */
+            flex: 1 1 auto;
+            overflow: hidden;
+            position: relative;
         }
         iframe {
             border: none;
             width: 100%;
-            height: 100%; /* Make iframe fill its container */
-            display: block; /* Ensure iframe is treated as a block element */
+            height: 100%;
+            display: block;
         }
         #footer {
-            flex-shrink: 0; /* Prevent footer from shrinking */
-            height: 40px; /* Give footer a fixed height */
-            line-height: 40px; /* Vertically center text in footer */
+            flex-shrink: 0;
+            padding: 16px;
             text-align: center;
-            padding: 0; /* Remove padding if using line-height for centering */
-            border-top: 1px solid #eee; /* Optional: add a separator */
+            border-top: 1px solid #eee;
+            background-color: #f9fafb;
+        }
+        #footer a {
+            display: inline-block;
+            background-color: #0d9488;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+        }
+        #footer a:hover {
+            background-color: #0f766e;
         }
         #loading-message, #error-message {
             padding: 20px;
@@ -54,43 +66,37 @@
                 const reports = await response.json();
 
                 if (reports && reports.length > 0) {
-                    // Assuming reports are sorted newest first or we take the first one
                     const latestReportFile = reports[0]; 
                     const latestReportUrl = `./daily_html/${latestReportFile}`;
                     
                     iframe.src = latestReportUrl;
-                    // Update the main page title based on the loaded report
-                    document.title = `ArXiv AIGC 报告 - ${latestReportFile.replace('.html', '').replace(/_/g, '-')}`;
-                    loadingMessage.style.display = 'none'; // Hide loading message
-                    iframe.style.display = 'block'; // Show iframe
-
+                    document.title = `ArXiv AI Report - ${latestReportFile.replace('.html', '').replace(/_/g, '-')}`;
+                    loadingMessage.style.display = 'none';
+                    iframe.style.display = 'block';
                 } else {
-                    throw new Error('无法找到最新的报告文件。请确保 reports.json 文件存在且包含报告列表。');
+                    throw new Error('No reports found. Please ensure reports.json exists and contains report file names.');
                 }
             } catch (error) {
                 console.error('Error loading report:', error);
-                loadingMessage.style.display = 'none'; // Hide loading message
-                errorMessageDiv.innerHTML = `<p style="color: red; text-align: center; margin-top: 50px;">加载最新报告时出错: ${error.message} 请 <a href="./list.html">查看报告列表</a>。</p>`;
-                errorMessageDiv.style.display = 'block'; // Show error message
+                loadingMessage.style.display = 'none';
+                errorMessageDiv.innerHTML = `<p style="color: red; margin-top: 50px;">Error loading the latest report: ${error.message}. Please <a href="./list.html">view the full archive</a>.</p>`;
+                errorMessageDiv.style.display = 'block';
             }
         }
 
-        // Execute the loading function when the page loads
         window.onload = loadLatestReportIntoIframe;
     </script>
 </head>
 <body>
     <div id="content-wrapper">
         <div id="loading-message">
-            <p>正在加载最新报告，请稍候...</p>
+            <p>Loading the latest report, please wait...</p>
         </div>
-        <div id="error-message" style="display: none;">
-            <!-- Error messages will be displayed here -->
-        </div>
+        <div id="error-message" style="display: none;"></div>
         <iframe id="report-frame" style="display: none;"></iframe>
     </div>
     <div id="footer">
-        <a href="./list.html" style="color: #0d9488;">Historical Report List</a>
+        <a href="./list.html">📚 View Full Report Archive</a>
     </div>
 </body>
 </html>

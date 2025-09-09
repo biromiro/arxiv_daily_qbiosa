@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Aptamer-protein interaction prediction model based on transformer",
+        "summary": "Aptamers are single-stranded DNA/RNAs or short peptides with unique tertiary\nstructures that selectively bind to specific targets. They have great potential\nin the detection and medical fields. Here, we present SelfTrans-Ensemble, a\ndeep learning model that integrates sequence information models and structural\ninformation models to extract multi-scale features for predicting\naptamer-protein interactions (APIs). The model employs two pre-trained models,\nProtBert and RNA-FM, to encode protein and aptamer sequences, along with\nfeatures generated from primary sequence and secondary structural information.\nTo address the data imbalance in the aptamer dataset imbalance, we incorporated\nshort RNA-protein interaction data in the training set. This resulted in a\ntraining accuracy of 98.9% and a test accuracy of 88.0%, demonstrating the\nmodel's effectiveness in accurately predicting APIs. Additionally, analysis\nusing molecular simulation indicated that SelfTrans-Ensemble is sensitive to\naptamer sequence mutations. We anticipate that SelfTrans-Ensemble can offer a\nmore efficient and rapid process for aptamer screening.",
+        "url": "http://arxiv.org/abs/2506.16084v1",
+        "published_date": "2025-06-19T07:13:06+00:00",
+        "updated_date": "2025-06-19T07:13:06+00:00",
+        "categories": [
+            "q-bio.BM"
+        ],
+        "authors": [
+            "Zhichao Yan",
+            "Yue Kang",
+            "Buyong Ma"
+        ],
+        "pdf_url": "http://arxiv.org/pdf/2506.16084v1",
+        "tldr": "The paper presents SelfTrans-Ensemble, a deep learning model utilizing pre-trained protein and RNA sequence models (ProtBert and RNA-FM), along with structural information, to predict aptamer-protein interactions (APIs) with high accuracy. Molecular simulations further validate the model's sensitivity to aptamer mutations.",
+        "explanation": "This paper introduces a new deep learning model, SelfTrans-Ensemble, for predicting aptamer-protein interactions (APIs). The model combines sequence information via ProtBert and RNA-FM with structural information extracted from primary and secondary sequences. The authors address dataset imbalance by incorporating RNA-protein interaction data into the training set. The model boasts a training accuracy of 98.9% and a test accuracy of 88.0%. Furthermore, molecular simulation validates the model's sensitivity to mutations. The paper includes ablation studies to validate the design and compares the model performance against existing methods like Aptanet and AptaTrans.",
+        "interests_alignment": "The paper is highly relevant to my research interests. It focuses on machine learning for biomolecules (aptamers and proteins) and addresses a key problem in the field: predicting biomolecular interactions. The application of deep learning models such as transformers aligns well with my interests in employing machine learning techniques to understand biomolecular behavior. Furthermore, the use of molecular dynamics simulations for validation complements my interest in computational methods for studying biomolecular systems.",
+        "relevance_score": 9,
+        "novelty_claim_score": 7,
+        "clarity_score": 8,
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
+    }
+]

@@ -1,25 +1,31 @@
 [
     {
-        "title": "Performance Plateaus in Inference-Time Scaling for Text-to-Image Diffusion Without External Models",
-        "summary": "Recently, it has been shown that investing computing resources in searching\nfor good initial noise for a text-to-image diffusion model helps improve\nperformance. However, previous studies required external models to evaluate the\nresulting images, which is impossible on GPUs with small VRAM. For these\nreasons, we apply Best-of-N inference-time scaling to algorithms that optimize\nthe initial noise of a diffusion model without external models across multiple\ndatasets and backbones. We demonstrate that inference-time scaling for\ntext-to-image diffusion models in this setting quickly reaches a performance\nplateau, and a relatively small number of optimization steps suffices to\nachieve the maximum achievable performance with each algorithm.",
-        "url": "http://arxiv.org/abs/2506.12633v1",
-        "published_date": "2025-06-14T21:25:08+00:00",
-        "updated_date": "2025-06-14T21:25:08+00:00",
+        "title": "PDCNet: a benchmark and general deep learning framework for activity prediction of peptide-drug conjugates",
+        "summary": "Peptide-drug conjugates (PDCs) represent a promising therapeutic avenue for\nhuman diseases, particularly in cancer treatment. Systematic elucidation of\nstructure-activity relationships (SARs) and accurate prediction of the activity\nof PDCs are critical for the rational design and optimization of these\nconjugates. To this end, we carefully design and construct a benchmark PDCs\ndataset compiled from literature-derived collections and PDCdb database, and\nthen develop PDCNet, the first unified deep learning framework for forecasting\nthe activity of PDCs. The architecture systematically captures the complex\nfactors underlying anticancer decisions of PDCs in real-word scenarios through\na multi-level feature fusion framework that collaboratively characterizes and\nlearns the features of peptides, linkers, and payloads. Leveraging a curated\nPDCs benchmark dataset, comprehensive evaluation results show that PDCNet\ndemonstrates superior predictive capability, with the highest AUC, F1, MCC and\nBA scores of 0.9213, 0.7656, 0.7071 and 0.8388 for the test set, outperforming\neight established traditional machine learning models. Multi-level validations,\nincluding 5-fold cross-validation, threshold testing, ablation studies, model\ninterpretability analysis and external independent testing, further confirm the\nsuperiority, robustness, and usability of the PDCNet architecture. We\nanticipate that PDCNet represents a novel paradigm, incorporating both a\nbenchmark dataset and advanced models, which can accelerate the design and\ndiscovery of new PDC-based therapeutic agents.",
+        "url": "http://arxiv.org/abs/2506.12821v1",
+        "published_date": "2025-06-15T12:02:55+00:00",
+        "updated_date": "2025-06-15T12:02:55+00:00",
         "categories": [
-            "cs.CV",
-            "cs.LG"
+            "cs.LG",
+            "q-bio.BM"
         ],
         "authors": [
-            "Changhyun Choi",
-            "Sungha Kim",
-            "H. Jin Kim"
+            "Yun Liu",
+            "Jintu Huang",
+            "Yingying Zhu",
+            "Congrui Wen",
+            "Yu Pang",
+            "Ji-Quan Zhang",
+            "Ling Wang"
         ],
-        "tldr": "This paper investigates inference-time scaling for text-to-image diffusion models by optimizing initial noise without external models, finding performance plateaus after a small number of optimization steps.",
-        "tldr_zh": "本文研究了文本到图像扩散模型的推理时缩放，通过优化初始噪声且不依赖外部模型，发现性能在少量优化步骤后达到瓶颈。",
-        "relevance_score": 7,
-        "novelty_claim_score": 6,
+        "pdf_url": "http://arxiv.org/pdf/2506.12821v1",
+        "tldr": "The paper introduces PDCNet, a deep learning framework and benchmark dataset for predicting the activity of peptide-drug conjugates (PDCs), demonstrating superior performance compared to traditional machine learning models.",
+        "explanation": "This paper presents a new deep learning model, PDCNet, for predicting the activity of PDCs, which are important therapeutic agents, especially in cancer treatment. The authors constructed a benchmark dataset of PDCs and used it to train and validate their model. PDCNet leverages a multi-level feature fusion approach to capture the complex relationships between peptides, linkers, and payloads within PDCs. The abstract highlights PDCNet's superior performance against established machine learning methods, supported by comprehensive validation experiments including cross-validation, ablation studies, and interpretability analysis. The authors suggest that PDCNet can accelerate the design and discovery of new PDC-based therapeutics. The full text provides a thorough description of the dataset construction, model architecture, experimental results, and a detailed analysis using the SHAP algorithm.",
+        "interests_alignment": "This paper aligns well with my research interests in machine learning for peptides and biomolecules. Specifically, it focuses on a significant application of peptides (PDCs) and uses machine learning to predict their activity, a key property for therapeutic development. The construction of a new benchmark dataset is also of interest, as datasets are crucial for the advancement of machine learning in peptide research, though the peptide aspect is relatively minor compared to the drug design aspect here.",
+        "relevance_score": 8,
+        "novelty_claim_score": 8,
         "clarity_score": 9,
-        "potential_impact_score": 6,
-        "overall_priority_score": 6
+        "potential_impact_score": 8,
+        "overall_priority_score": 8
     }
 ]
