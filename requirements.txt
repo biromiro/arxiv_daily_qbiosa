@@ -1,3 +1,4 @@
 arxiv
+arxiv2text
 requests
 Jinja2
