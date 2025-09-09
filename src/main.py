@@ -54,10 +54,15 @@ def main(target_date: date):
             json.dump(filtered_papers, f, indent=4, ensure_ascii=False)
         logging.info(f"Saved filtered papers to {json_filepath}")
 
+
     logging.info("Generating HTML report...")
     if not os.path.exists(json_filepath):
         logging.error(f"Cannot find {json_filepath} to generate HTML.")
         return
+
+    
+    with open(json_filepath, 'r', encoding='utf-8') as f:
+        papers = json.load(f)
 
     try:
         generate_html_from_json(
@@ -77,6 +82,8 @@ def main(target_date: date):
 
     except Exception as e:
         logging.error(f"Error during HTML generation: {e}", exc_info=True)
+    
+    return papers
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Fetch/filter/generate reports on peptide/self-assembly ML papers.')
@@ -84,7 +91,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
     run_date = date.today()
-    num_days_to_run = 3
+    num_days_to_run = 5
 
     if args.date:
         try:
@@ -93,5 +100,21 @@ if __name__ == '__main__':
             logging.error("Invalid date format, use YYYY-MM-DD.")
             exit(1)
 
-    for offset in range(num_days_to_run - 1, -1, -1):
-        main(target_date=run_date - timedelta(days=offset))
+    for offset in range(num_days_to_run - 1, 3, -1):
+        papers = main(target_date=run_date - timedelta(days=offset))
+
+    if papers:
+        notify_flag = os.path.join(PROJECT_ROOT, "notify_email.txt")
+        with open(notify_flag, "w", encoding="utf-8") as f:
+            f.write(f"Found {len(papers)} new papers today, {run_date.isoformat()}\n\n")
+            for p in papers:
+                f.write(f"- {p.get('title', 'Untitled')}, by {', '.join(p.get('authors', []))}\n")
+            
+            pages_url = f"https://biromiro.github.io/arxiv_daily_qbiosa/daily_html/{run_date.isoformat()}.html"
+            f.write(f"\nView full report: {pages_url}\n")
+    
+    else:
+        logging.info("No new papers found today.")
+        notify_flag = os.path.join(PROJECT_ROOT, "notify_email.txt")
+        if os.path.exists(notify_flag):
+            os.remove(notify_flag)

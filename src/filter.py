@@ -97,7 +97,7 @@ def filter_papers_by_topic(papers: list, topic: str = None) -> list:
         except:
             score = 0
 
-        if score >= 7:
+        if score >= 6:
             filtered_papers.append(paper)
             logging.info(f"[KEEP] {i+1}/{len(papers)}: {title[:100]}...")
         else:
