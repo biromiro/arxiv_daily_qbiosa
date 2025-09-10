@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Asynchronous Message Passing for Addressing Oversquashing in Graph Neural Networks",
+        "summary": "Graph Neural Networks (GNNs) suffer from Oversquashing, which occurs when\ntasks require long-range interactions. The problem arises from the presence of\nbottlenecks that limit the propagation of messages among distant nodes.\nRecently, graph rewiring methods modify edge connectivity and are expected to\nperform well on long-range tasks. Yet, graph rewiring compromises the inductive\nbias, incurring significant information loss in solving the downstream task.\nFurthermore, increasing channel capacity may overcome information bottlenecks\nbut enhance the parameter complexity of the model. To alleviate these\nshortcomings, we propose an efficient model-agnostic framework that\nasynchronously updates node features, unlike traditional synchronous message\npassing GNNs. Our framework creates node batches in every layer based on the\nnode centrality values. The features of the nodes belonging to these batches\nwill only get updated. Asynchronous message updates process information\nsequentially across layers, avoiding simultaneous compression into\nfixed-capacity channels. We also theoretically establish that our proposed\nframework maintains higher feature sensitivity bounds compared to standard\nsynchronous approaches. Our framework is applied to six standard graph datasets\nand two long-range datasets to perform graph classification and achieves\nimpressive performances with a $5\\%$ and $4\\%$ improvements on REDDIT-BINARY\nand Peptides-struct, respectively.",
+        "url": "http://arxiv.org/abs/2509.06777v1",
+        "published_date": "2025-09-08T15:03:05+00:00",
+        "updated_date": "2025-09-08T15:03:05+00:00",
+        "categories": [
+            "cs.LG"
+        ],
+        "authors": [
+            "Kushal Bose",
+            "Swagatam Das"
+        ],
+        "pdf_url": "http://arxiv.org/pdf/2509.06777v1"
+    }
+]
