@@ -1,0 +1,24 @@
+[
+    {
+        "title": "An Assembly-Line Mechanism for In-Vitro Encapsulation of Fragmented Cargo in Virus-Like Particles",
+        "summary": "The ability of virus shells to encapsulate a wide range of functional\ncargoes, especially multiple cargoes - siRNAs, enzymes, and chromophores - has\nmade them an essential tool in biotechnology for advancing drug delivery\napplications and developing innovative new materials. Here we present a\nmechanistic study of the processes and pathways that lead to multiple cargo\nencapsulation in the co-assembly of virus shell proteins with ligand-coated\nnanoparticles. Based on the structural identification of different\nintermediates, enabled by the contrast in electron microscopy provided by the\nmetal nanoparticles that play the cargo role, we find that multiple cargo\nencapsulation occurs by self-assembly via a specific ``assembly line'' pathway\nthat is different from previously described \\emph{in vitro} assembly mechanisms\nof virus-like particles (VLP). The emerging model explains observations that\nare potentially important for delivery applications, for instance, the\npronounced nanoparticle size selectivity.",
+        "url": "http://arxiv.org/abs/2509.12409v1",
+        "published_date": "2025-09-15T19:58:33+00:00",
+        "updated_date": "2025-09-15T19:58:33+00:00",
+        "categories": [
+            "cond-mat.soft",
+            "q-bio.QM",
+            "q-bio.SC"
+        ],
+        "authors": [
+            "Ayesha Amjad",
+            "Irina Tsvetkova",
+            "Lena G. Lowry",
+            "David Gene Morgan",
+            "Roya Zandi",
+            "Paul van der Schoot",
+            "Bogdan Dragnea"
+        ],
+        "pdf_url": "http://arxiv.org/pdf/2509.12409v1"
+    }
+]
