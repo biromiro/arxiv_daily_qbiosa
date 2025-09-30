@@ -1,0 +1,25 @@
+[
+    {
+        "title": "De novo peptide sequencing rescoring and FDR estimation with Winnow",
+        "summary": "Machine learning has markedly advanced de novo peptide sequencing (DNS) for\nmass spectrometry-based proteomics. DNS tools offer a reliable way to identify\npeptides without relying on reference databases, extending proteomic analysis\nand unlocking applications into less-charted regions of the proteome. However,\nthey still face a key limitation. DNS tools lack principled methods for\nestimating false discovery rates (FDR) and instead rely on model-specific\nconfidence scores that are often miscalibrated. This limits trust in results,\nhinders cross-model comparisons and reduces validation success. Here we present\nWinnow, a model-agnostic framework for estimating FDR from calibrated DNS\noutputs. Winnow maps raw model scores to calibrated confidences using a neural\nnetwork trained on peptide-spectrum match (PSM)-derived features. From these\ncalibrated scores, Winnow computes PSM-specific error metrics and an\nexperiment-wide FDR estimate using a novel decoy-free FDR estimator. It\nsupports both zero-shot and dataset-specific calibration, enabling flexible\napplication via direct inference, fine-tuning, or training a custom model. We\ndemonstrate that, when applied to InstaNovo predictions, Winnow's calibrator\nimproves recall at fixed FDR thresholds, and its FDR estimator tracks true\nerror rates when benchmarked against reference proteomes and database search.\nWinnow ensures accurate FDR control across datasets, helping unlock the full\npotential of DNS.",
+        "url": "http://arxiv.org/abs/2509.24952v1",
+        "published_date": "2025-09-29T15:46:53+00:00",
+        "updated_date": "2025-09-29T15:46:53+00:00",
+        "categories": [
+            "q-bio.QM"
+        ],
+        "authors": [
+            "Amandla Mabona",
+            "Jemma Daniel",
+            "Henrik Servais Janssen Knudsen",
+            "Rachel Catzel",
+            "Kevin Michael Eloff",
+            "Erwin M. Schoof",
+            "Nicolas Lopez Carranza",
+            "Timothy P. Jenkins",
+            "Jeroen Van Goey",
+            "Konstantinos Kalogeropoulos"
+        ],
+        "pdf_url": "http://arxiv.org/pdf/2509.24952v1"
+    }
+]
