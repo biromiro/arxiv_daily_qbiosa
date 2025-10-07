@@ -1,0 +1,22 @@
+[
+    {
+        "title": "TCR-EML: Explainable Model Layers for TCR-pMHC Prediction",
+        "summary": "T cell receptor (TCR) recognition of peptide-MHC (pMHC) complexes is a\ncentral component of adaptive immunity, with implications for vaccine design,\ncancer immunotherapy, and autoimmune disease. While recent advances in machine\nlearning have improved prediction of TCR-pMHC binding, the most effective\napproaches are black-box transformer models that cannot provide a rationale for\npredictions. Post-hoc explanation methods can provide insight with respect to\nthe input but do not explicitly model biochemical mechanisms (e.g. known\nbinding regions), as in TCR-pMHC binding. ``Explain-by-design'' models (i.e.,\nwith architectural components that can be examined directly after training)\nhave been explored in other domains, but have not been used for TCR-pMHC\nbinding. We propose explainable model layers (TCR-EML) that can be incorporated\ninto protein-language model backbones for TCR-pMHC modeling. Our approach uses\nprototype layers for amino acid residue contacts drawn from known TCR-pMHC\nbinding mechanisms, enabling high-quality explanations for predicted TCR-pMHC\nbinding. Experiments of our proposed method on large-scale datasets demonstrate\ncompetitive predictive accuracy and generalization, and evaluation on the\nTCR-XAI benchmark demonstrates improved explainability compared with existing\napproaches.",
+        "url": "http://arxiv.org/abs/2510.04377v1",
+        "published_date": "2025-10-05T21:47:48+00:00",
+        "updated_date": "2025-10-05T21:47:48+00:00",
+        "categories": [
+            "q-bio.QM",
+            "cs.CE",
+            "cs.LG"
+        ],
+        "authors": [
+            "Jiarui Li",
+            "Zixiang Yin",
+            "Zhengming Ding",
+            "Samuel J. Landry",
+            "Ramgopal R. Mettu"
+        ],
+        "pdf_url": "http://arxiv.org/pdf/2510.04377v1"
+    }
+]
