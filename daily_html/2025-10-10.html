@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ArXiv Peptide/Assembly Papers - October 08, 2025</title>
+  <title>ArXiv Peptide/Assembly Papers - October 10, 2025</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -47,7 +47,7 @@
   <motion.div initial="{ opacity: 0, y: -30 }" animate="{ opacity: 1, y: 0 }" transition="{ duration: 0.6, ease: 'easeOut' }" class="header" data-motion-element>
     <h1>Peptide & Assembly Daily Papers</h1>
     <p>Daily arXiv digest of machine learning for peptides, protein aggregation, and molecular self-assembly</p>
-    <p>October 08, 2025</p>
+    <p>October 10, 2025</p>
     <div class="mt-4">
         <a href="../list.html" class="text-teal-600 hover:underline">📚 View Full Report Archive</a>
     </div>
@@ -56,8 +56,40 @@
 
   <div class="bento-grid" id="paper-grid">
     
-    <motion.div initial="{ opacity: 0 }" animate="{ opacity: 1 }" transition="{ duration: 0.5 }" class="bento-item col-span-full text-center text-gray-500" data-motion-element>
-      <p>No relevant papers found for this date.</p>
+    <motion.div initial="{ opacity: 0, y: 50, scale: 0.9 }" whileInView="{ opacity: 1, y: 0, scale: 1 }" viewport="{ once: true, amount: 0.2 }" transition="{ duration: 0.5, delay: 0.0, ease: 'easeOut' }" class="bento-item" data-motion-element>
+      <h2 class="paper-title">Transferable Generative Models Bridge Femtosecond to Nanosecond Time-Step Molecular Dynamics</h2>
+      <p class="paper-summary">Understanding molecular structure, dynamics, and reactivity requires bridging
+processes that occur across widely separated time scales. Conventional
+molecular dynamics simulations provide atomistic resolution, but their
+femtosecond time steps limit access to the slow conformational changes and
+relaxation processes that govern chemical function. Here, we introduce a deep
+generative modeling framework that accelerates sampling of molecular dynamics
+by four orders of magnitude while retaining physical realism. Applied to small
+organic molecules and peptides, the approach enables quantitative
+characterization of equilibrium ensembles and dynamical relaxation processes
+that were previously only accessible by costly brute-force simulation.
+Importantly, the method generalizes across chemical composition and system
+size, extrapolating to peptides larger than those used for training, and
+captures chemically meaningful transitions on extended time scales. By
+expanding the accessible range of molecular motions without sacrificing
+atomistic detail, this approach opens new opportunities for probing
+conformational landscapes, thermodynamics, and kinetics in systems central to
+chemistry and biophysics.</p>
+
+      
+      
+      
+
+      
+
+      
+
+      <a href="http://arxiv.org/abs/2510.07589v1" target="_blank" class="paper-link">
+        <i class="fas fa-file-pdf mr-1"></i> Read Paper
+      </a>
+      
+      <p class="paper-authors">Authors: Juan Viguera Diez, Mathias Schreiner, Simon Olsson</p>
+      
     </motion.div>
     
   </div>
