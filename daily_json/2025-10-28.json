@@ -1,0 +1,41 @@
+[
+    {
+        "title": "Size-consistent implementation of Hamiltonian simulation-based quantum-selected configuration interaction method for the supramolecular approach",
+        "summary": "The quantum-selected configuration interaction (QSCI) method is a promising\napproach for large-scale quantum chemical calculations on currently available\nquantum hardware. However, its naive implementation lacks size consistency,\nwhich is essential for accurate intermolecular interaction energy calculations\nusing the supramolecular approach. Here, we present a size-consistent\nimplementation of QSCI by sampling Slater determinants for the dimer in the\nlocalized molecular orbital basis, constructing the subspaces for the monomers\nand dimer, and augmenting the dimer subspace with additional determinants\nrequired for size consistency. Implemented within the Hamiltonian\nsimulation-based QSCI (HSB-QSCI) framework, our method numerically satisfies\nsize consistency for 4H/8H clusters, the FH dimer, and the FH--H$_2$O system.\nApplication to intermolecular interaction energy calculations of\nhydrogen-bonded FH dimer and FH--H$_2$O demonstrates that our approach\nreproduces complete active space-configuration interaction (CAS-CI) values with\nerrors below 0.04 kcal mol$^{-1}$.",
+        "url": "http://arxiv.org/abs/2510.23154v1",
+        "published_date": "2025-10-27T09:30:20+00:00",
+        "updated_date": "2025-10-27T09:30:20+00:00",
+        "categories": [
+            "quant-ph",
+            "physics.chem-ph"
+        ],
+        "authors": [
+            "Kenji Sugisaki"
+        ],
+        "pdf_url": "http://arxiv.org/pdf/2510.23154v1"
+    },
+    {
+        "title": "Mastering energy landscapes via liquid liquid phase separation to program active supramolecular coassembly from the nano to macro scale",
+        "summary": "The energy landscape dictates pathways and outcomes in supramolecular\nselfassembly, yet harnessing it from the nano to the macro scales remains a\nmajor challenge. Here, we demonstrate liquid liquid phase separation (LLPS) as\na powerful tool to navigate and engineer the energy landscapes of coassembly\nsystems comprising disordered proteins and peptides. We quantitatively map the\nenergy barriers and transition states governing structural transitions,\nenabling predictive on off control of assembly and hierarchical order from nano\nto macro scales. By integrating supramolecular biofabrication, we achieve\nspatially organized architectures with life like non equilibrium behaviour.\nCrucially, assembly stability and scalable selfsorting are shown to depend on\naccessing minimum energy states, regardless of whether the co assembled\nstructures are disordered or ordered. This work establishes energy landscape\nmediation via LLPS as a general framework for designing lifelike,\nhierarchically structured materials.",
+        "url": "http://arxiv.org/abs/2510.23017v1",
+        "published_date": "2025-10-27T05:25:22+00:00",
+        "updated_date": "2025-10-27T05:25:22+00:00",
+        "categories": [
+            "cond-mat.soft",
+            "cond-mat.mtrl-sci",
+            "physics.chem-ph"
+        ],
+        "authors": [
+            "Yuanhao Wu",
+            "Alexander van Teijlingen",
+            "Julie Watts",
+            "Zhiquan Yu",
+            "Shanshan Su",
+            "Jose Carlos RodriguezCabello",
+            "Lihi Abramovich",
+            "Tell Tuttle",
+            "Alvaro Mata"
+        ],
+        "pdf_url": "http://arxiv.org/pdf/2510.23017v1"
+    }
+]
