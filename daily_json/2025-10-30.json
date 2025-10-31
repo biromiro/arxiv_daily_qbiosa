@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Optimizing Mirror-Image Peptide Sequence Design for Data Storage via Peptide Bond Cleavage Prediction",
+        "summary": "Traditional non-biological storage media, such as hard drives, face\nlimitations in both storage density and lifespan due to the rapid growth of\ndata in the big data era. Mirror-image peptides composed of D-amino acids have\nemerged as a promising biological storage medium due to their high storage\ndensity, structural stability, and long lifespan. The sequencing of\nmirror-image peptides relies on \\textit{de-novo} technology. However, its\naccuracy is limited by the scarcity of tandem mass spectrometry datasets and\nthe challenges that current algorithms encounter when processing these peptides\ndirectly. This study is the first to propose improving sequencing accuracy\nindirectly by optimizing the design of mirror-image peptide sequences. In this\nwork, we introduce DBond, a deep neural network based model that integrates\nsequence features, precursor ion properties, and mass spectrometry\nenvironmental factors for the prediction of mirror-image peptide bond cleavage.\nIn this process, sequences with a high peptide bond cleavage ratio, which are\neasy to sequence, are selected. The main contributions of this study are as\nfollows. First, we constructed MiPD513, a tandem mass spectrometry dataset\ncontaining 513 mirror-image peptides. Second, we developed the peptide bond\ncleavage labeling algorithm (PBCLA), which generated approximately 12.5 million\nlabeled data based on MiPD513. Third, we proposed a dual prediction strategy\nthat combines multi-label and single-label classification. On an independent\ntest set, the single-label classification strategy outperformed other methods\nin both single and multiple peptide bond cleavage prediction tasks, offering a\nstrong foundation for sequence optimization.",
+        "url": "http://arxiv.org/abs/2510.25814v1",
+        "published_date": "2025-10-29T14:40:13+00:00",
+        "updated_date": "2025-10-29T14:40:13+00:00",
+        "categories": [
+            "q-bio.QM",
+            "cs.LG"
+        ],
+        "authors": [
+            "Yilong Lu",
+            "Si Chen",
+            "Songyan Gao",
+            "Han Liu",
+            "Xin Dong",
+            "Wenfeng Shen",
+            "Guangtai Ding"
+        ],
+        "pdf_url": "http://arxiv.org/pdf/2510.25814v1"
+    }
+]
