@@ -1,0 +1,49 @@
+[
+    {
+        "title": "Peptide2Mol: A Diffusion Model for Generating Small Molecules as Peptide Mimics for Targeted Protein Binding",
+        "summary": "Structure-based drug design has seen significant advancements with the\nintegration of artificial intelligence (AI), particularly in the generation of\nhit and lead compounds. However, most AI-driven approaches neglect the\nimportance of endogenous protein interactions with peptides, which may result\nin suboptimal molecule designs. In this work, we present Peptide2Mol, an\nE(3)-equivariant graph neural network diffusion model that generates small\nmolecules by referencing both the original peptide binders and their\nsurrounding protein pocket environments. Trained on large datasets and\nleveraging sophisticated modeling techniques, Peptide2Mol not only achieves\nstate-of-the-art performance in non-autoregressive generative tasks, but also\nproduces molecules with similarity to the original peptide binder.\nAdditionally, the model allows for molecule optimization and peptidomimetic\ndesign through a partial diffusion process. Our results highlight Peptide2Mol\nas an effective deep generative model for generating and optimizing bioactive\nsmall molecules from protein binding pockets.",
+        "url": "http://arxiv.org/abs/2511.04984v1",
+        "published_date": "2025-11-07T05:02:51+00:00",
+        "updated_date": "2025-11-07T05:02:51+00:00",
+        "categories": [
+            "cs.LG"
+        ],
+        "authors": [
+            "Xinheng He",
+            "Yijia Zhang",
+            "Haowei Lin",
+            "Xingang Peng",
+            "Xiangzhe Kong",
+            "Mingyu Li",
+            "Jianzhu Ma"
+        ],
+        "pdf_url": "http://arxiv.org/pdf/2511.04984v1"
+    },
+    {
+        "title": "A Standardized Benchmark for Multilabel Antimicrobial Peptide Classification",
+        "summary": "Antimicrobial peptides have emerged as promising molecules to combat\nantimicrobial resistance. However, fragmented datasets, inconsistent\nannotations, and the lack of standardized benchmarks hinder computational\napproaches and slow down the discovery of new candidates. To address these\nchallenges, we present the Expanded Standardized Collection for Antimicrobial\nPeptide Evaluation (ESCAPE), an experimental framework integrating over 80.000\npeptides from 27 validated repositories. Our dataset separates antimicrobial\npeptides from negative sequences and incorporates their functional annotations\ninto a biologically coherent multilabel hierarchy, capturing activities across\nantibacterial, antifungal, antiviral, and antiparasitic classes. Building on\nESCAPE, we propose a transformer-based model that leverages sequence and\nstructural information to predict multiple functional activities of peptides.\nOur method achieves up to a 2.56% relative average improvement in mean Average\nPrecision over the second-best method adapted for this task, establishing a new\nstate-of-the-art multilabel peptide classification. ESCAPE provides a\ncomprehensive and reproducible evaluation framework to advance AI-driven\nantimicrobial peptide research.",
+        "url": "http://arxiv.org/abs/2511.04814v1",
+        "published_date": "2025-11-06T21:10:48+00:00",
+        "updated_date": "2025-11-06T21:10:48+00:00",
+        "categories": [
+            "cs.LG",
+            "cs.AI",
+            "q-bio.BM",
+            "68T07, 62H30, 62P10",
+            "I.2.6; I.2.1; I.5.1; I.5.2"
+        ],
+        "authors": [
+            "Sebastian Ojeda",
+            "Rafael Velasquez",
+            "Nicolás Aparicio",
+            "Juanita Puentes",
+            "Paula Cárdenas",
+            "Nicolás Andrade",
+            "Gabriel González",
+            "Sergio Rincón",
+            "Carolina Muñoz-Camargo",
+            "Pablo Arbeláez"
+        ],
+        "pdf_url": "http://arxiv.org/pdf/2511.04814v1"
+    }
+]
