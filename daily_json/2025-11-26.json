@@ -1,0 +1,22 @@
+[
+    {
+        "title": "MLIPAudit: A benchmarking tool for Machine Learned Interatomic Potentials",
+        "summary": "Machine-learned interatomic potentials (MLIPs) promise to significantly advance atomistic simulations by delivering quantum-level accuracy for large molecular systems at a fraction of the computational cost of traditional electronic structure methods. While model hubs and categorisation efforts have emerged in recent years, it remains difficult to consistently discover, compare, and apply these models across diverse scenarios. The field still lacks a standardised and comprehensive framework for evaluating MLIP performance. We introduce MLIPAudit, an open, curated and modular benchmarking suite designed to assess the accuracy of MLIP models across a variety of application tasks. MLIPAudit offers a diverse collection of benchmark systems, including small organic compounds, molecular liquids, proteins and flexible peptides, along with pre-computed results for a range of pre-trained and published models. MLIPAudit also provides tools for users to evaluate their models using the same standardised pipeline. A continuously updated leaderboard tracks performance across benchmarks, enabling direct comparison on downstream tasks. By providing a unified, transparent reference framework for model validation and comparison, MLIPAudit aims to foster reproducibility, transparency, and community-driven progress in the development of MLIPs for complex molecular systems. In order to illustrate the use of the library, we present some benchmarks run on a series of internal models, along with publicly available ones (UMA-Small, MACE-OFF, MACE-MP). The library is available on GitHub at https://github.com/instadeepai/mlipaudit, on PyPI at https://pypi.org/project/mlipaudit/ under the Apache License 2.0, and the leaderboard can be accessed on HuggingFace at https://huggingface.co/spaces/InstaDeepAI/mlipaudit-leaderboard.",
+        "url": "http://arxiv.org/abs/2511.20487v1",
+        "published_date": "2025-11-25T16:54:51+00:00",
+        "updated_date": "2025-11-25T16:54:51+00:00",
+        "categories": [
+            "physics.chem-ph"
+        ],
+        "authors": [
+            "Leon Wehrhan",
+            "Lucien Walewski",
+            "Marie Bluntzer",
+            "Heloise Chomet",
+            "Jules Tilly",
+            "Christoph Brunken",
+            "Silvia Acosta-Gutiérrez"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2511.20487v1"
+    }
+]
