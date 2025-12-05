@@ -1,0 +1,21 @@
+[
+    {
+        "title": "Supramolecular approach-based intermolecular interaction energy calculations using quantum phase estimation algorithm",
+        "summary": "Accurate computation of non-covalent, intermolecular interaction energies is important to understand various chemical phenomena, and quantum computers are anticipated to accelerate it. Although the state-of-the-art quantum computers are still noisy and intermediate-scale ones, development of theoretical frameworks those are expected to work on a fault-tolerant quantum computer is an urgent issue. In this work, we explore resource-efficient implementation of the quantum phase estimation-based complete active space configuration interaction (QPE-CASCI) calculations, with the aid of the second-order Møller--Plesset perturbation theory (MP2)-based active space selection with Boys localized orbitals. We performed numerical simulations of QPE for the supramolecular approach-based intermolecular interaction energy calculations of the hydrogen-bonded water dimer, using 6 system and 6 ancilla qubits. With the aid of algorithmic error mitigation, the QPE-CASCI simulations achieved interaction energy predictions with an error of 0.02 kcal mol$^{-1}$ relative to the CASCI result, demonstrating the accuracy and efficiency of the proposed methodology. Preliminary results on quantum circuit compression for QPE are also presented to reduce the number of two-qubit gates and depth.",
+        "url": "http://arxiv.org/abs/2512.04587v1",
+        "published_date": "2025-12-04T09:00:48+00:00",
+        "updated_date": "2025-12-04T09:00:48+00:00",
+        "categories": [
+            "quant-ph",
+            "physics.chem-ph"
+        ],
+        "authors": [
+            "Yuhei Tachi",
+            "Akihiko Arakawa",
+            "Taisei Osawa",
+            "Masayoshi Terabe",
+            "Kenji Sugisaki"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2512.04587v1"
+    }
+]
