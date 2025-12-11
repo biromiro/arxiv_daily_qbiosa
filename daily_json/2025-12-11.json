@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Toward Closed-loop Molecular Discovery via Language Model, Property Alignment and Strategic Search",
+        "summary": "Drug discovery is a time-consuming and expensive process, with traditional high-throughput and docking-based virtual screening hampered by low success rates and limited scalability. Recent advances in generative modelling, including autoregressive, diffusion, and flow-based approaches, have enabled de novo ligand design beyond the limits of enumerative screening. Yet these models often suffer from inadequate generalization, limited interpretability, and an overemphasis on binding affinity at the expense of key pharmacological properties, thereby restricting their translational utility. Here we present Trio, a molecular generation framework integrating fragment-based molecular language modeling, reinforcement learning, and Monte Carlo tree search, for effective and interpretable closed-loop targeted molecular design. Through the three key components, Trio enables context-aware fragment assembly, enforces physicochemical and synthetic feasibility, and guides a balanced search between the exploration of novel chemotypes and the exploitation of promising intermediates within protein binding pockets. Experimental results show that Trio reliably achieves chemically valid and pharmacologically enhanced ligands, outperforming state-of-the-art approaches with improved binding affinity (+7.85%), drug-likeness (+11.10%) and synthetic accessibility (+12.05%), while expanding molecular diversity more than fourfold.",
+        "url": "http://arxiv.org/abs/2512.09566v1",
+        "published_date": "2025-12-10T11:59:42+00:00",
+        "updated_date": "2025-12-10T11:59:42+00:00",
+        "categories": [
+            "cs.AI",
+            "cs.LG"
+        ],
+        "authors": [
+            "Junkai Ji",
+            "Zhangfan Yang",
+            "Dong Xu",
+            "Ruibin Bai",
+            "Jianqiang Li",
+            "Tingjun Hou",
+            "Zexuan Zhu"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2512.09566v1"
+    }
+]
