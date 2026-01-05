@@ -1,0 +1,17 @@
+[
+    {
+        "title": "The thermodynamics of pressure activated assembly of supramolecules in isochoric and isobaric systems",
+        "summary": "The efficacy of cryopreservation is constrained by the difficulty of achieving sufficiently high intracellular concentrations of cryoprotective solutes without inducing osmotic injury or chemical toxicity during loading. This thermodynamic study introduces a new conceptual mechanism for cryoprotectant delivery into cells directly or through vascular perfusion. In this framework, effective cryoprotection could be achieved through the in situ generation of high intracellular concentrations of cryoprotective solutes via pressure-activated disassembly of membrane-permeant supramolecular assemblies composed of cryoprotectant monomers or oligomers. These supramolecules, present initially at low concentrations, are envisioned to enter cells through passive partitioning or endocytosis with minimal osmotic effect, and subsequently transform into a high intracellular concentration of cryoprotectants upon disassembly. We propose that elevated hydrostatic pressure, generated intrinsically during isochoric (constant-volume) freezing or applied externally under isobaric (constant-pressure) conditions, can destabilize supramolecular assemblies whose dissociated state occupies a smaller molar volume than the assembled state. Under isochoric freezing, ice formation within a fixed volume produces a substantial pressure increase as a thermodynamic consequence of phase change, rendering pressure a dependent variable governed by the Helmholtz free energy. Under isobaric conditions, pressure acts as an externally controlled variable through the Gibbs free energy. In both formulations, pressure-activated disassembly decouples membrane transport from cryoprotectant availability and enables synchronized solute generation precisely during cooling or freezing, without pre-loading of osmotically active solutes.",
+        "url": "http://arxiv.org/abs/2601.00599v1",
+        "published_date": "2026-01-02T07:40:53+00:00",
+        "updated_date": "2026-01-02T07:40:53+00:00",
+        "categories": [
+            "cond-mat.soft",
+            "q-bio.BM"
+        ],
+        "authors": [
+            "Boris Rubinsky"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2601.00599v1"
+    }
+]
