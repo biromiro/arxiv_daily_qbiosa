@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ArXiv Peptide/Assembly Papers - January 13, 2026</title>
+  <title>ArXiv Peptide/Assembly Papers - January 15, 2026</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -47,7 +47,7 @@
   <motion.div initial="{ opacity: 0, y: -30 }" animate="{ opacity: 1, y: 0 }" transition="{ duration: 0.6, ease: 'easeOut' }" class="header" data-motion-element>
     <h1>Peptide & Assembly Daily Papers</h1>
     <p>Daily arXiv digest of machine learning for peptides, protein aggregation, and molecular self-assembly</p>
-    <p>January 13, 2026</p>
+    <p>January 15, 2026</p>
     <div class="mt-4">
         <a href="../list.html" class="text-teal-600 hover:underline">📚 View Full Report Archive</a>
     </div>
@@ -56,14 +56,30 @@
 
   <div class="bento-grid" id="paper-grid">
     
-    <motion.div initial="{ opacity: 0 }" animate="{ opacity: 1 }" transition="{ duration: 0.5 }" class="bento-item col-span-full text-center text-gray-500" data-motion-element>
-      <p>No relevant papers found for this date.</p>
+    <motion.div initial="{ opacity: 0, y: 50, scale: 0.9 }" whileInView="{ opacity: 1, y: 0, scale: 1 }" viewport="{ once: true, amount: 0.2 }" transition="{ duration: 0.5, delay: 0.0, ease: 'easeOut' }" class="bento-item" data-motion-element>
+      <h2 class="paper-title">Bayesian umbrella quadrature accelerates free-energy calculations across diverse molecular systems and processes</h2>
+      <p class="paper-summary">Biased sampling in molecular dynamics simulations overcomes timescale limitations and delivers free-energy landscapes, essential to understand complex atomistic phenomena. However, when applied across diverse systems and processes, biasing protocols often require time- and resource-consuming fine-tuning. In search for robustness, we boost a prominent biasing method, Umbrella Sampling. To estimate the value of an integral, i.e., the free energy, our Bayesian Umbrella Quadrature (BUQ) method iteratively selects gradient samples, i.e., bias locations, that most reduce the posterior integral variance based on a noise-tolerant Gaussian process model, which also effectively interpolates between samples. We validate the method for a conformational change in a small peptide, a water-to-ice phase transition, and a substitution chemical reaction; obtaining excellent accuracies and speedups. To ease adoption of this more automated and universal free-energy method, we interface BUQ with wide-spread simulation packages and share hyperparametrization guidelines.</p>
+
+      
+      
+      
+
+      
+
+      
+
+      <a href="http://arxiv.org/abs/2601.08783v1" target="_blank" class="paper-link">
+        <i class="fas fa-file-pdf mr-1"></i> Read Paper
+      </a>
+      
+      <p class="paper-authors">Authors: Eline K. Kempkes, Alberto Pérez de Alba Ortíz</p>
+      
     </motion.div>
     
   </div>
 
   <footer class="footer">
-    Generated on 2026-01-15 04:16:01 UTC.
+    Generated on 2026-01-15 04:16:02 UTC.
   </footer>
 
 </body>
