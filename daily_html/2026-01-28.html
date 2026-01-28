@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ArXiv Peptide/Assembly Papers - January 26, 2026</title>
+  <title>ArXiv Peptide/Assembly Papers - January 28, 2026</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -47,7 +47,7 @@
   <motion.div initial="{ opacity: 0, y: -30 }" animate="{ opacity: 1, y: 0 }" transition="{ duration: 0.6, ease: 'easeOut' }" class="header" data-motion-element>
     <h1>Peptide & Assembly Daily Papers</h1>
     <p>Daily arXiv digest of machine learning for peptides, protein aggregation, and molecular self-assembly</p>
-    <p>January 26, 2026</p>
+    <p>January 28, 2026</p>
     <div class="mt-4">
         <a href="../list.html" class="text-teal-600 hover:underline">📚 View Full Report Archive</a>
     </div>
@@ -56,8 +56,24 @@
 
   <div class="bento-grid" id="paper-grid">
     
-    <motion.div initial="{ opacity: 0 }" animate="{ opacity: 1 }" transition="{ duration: 0.5 }" class="bento-item col-span-full text-center text-gray-500" data-motion-element>
-      <p>No relevant papers found for this date.</p>
+    <motion.div initial="{ opacity: 0, y: 50, scale: 0.9 }" whileInView="{ opacity: 1, y: 0, scale: 1 }" viewport="{ once: true, amount: 0.2 }" transition="{ duration: 0.5, delay: 0.0, ease: 'easeOut' }" class="bento-item" data-motion-element>
+      <h2 class="paper-title">GPCR-Filter: a deep learning framework for efficient and precise GPCR modulator discovery</h2>
+      <p class="paper-summary">G protein-coupled receptors (GPCRs) govern diverse physiological processes and are central to modern pharmacology. Yet discovering GPCR modulators remains challenging because receptor activation often arises from complex allosteric effects rather than direct binding affinity, and conventional assays are slow, costly, and not optimized for capturing these dynamics. Here we present GPCR-Filter, a deep learning framework specifically developed for GPCR modulator discovery. We assembled a high-quality dataset of over 90,000 experimentally validated GPCR-ligand pairs, providing a robust foundation for training and evaluation. GPCR-Filter integrates the ESM-3 protein language model for high-fidelity GPCR sequence representations with graph neural networks that encode ligand structures, coupled through an attention-based fusion mechanism that learns receptor-ligand functional relationships. Across multiple evaluation settings, GPCR-Filter consistently outperforms state-of-the-art compound-protein interaction models and exhibits strong generalization to unseen receptors and ligands. Notably, the model successfully identified micromolar-level agonists of the 5-HT\textsubscript{1A} receptor with distinct chemical frameworks. These results establish GPCR-Filter as a scalable and effective computational approach for GPCR modulator discovery, advancing AI-assisted drug development for complex signaling systems.</p>
+
+      
+      
+      
+
+      
+
+      
+
+      <a href="http://arxiv.org/abs/2601.19149v1" target="_blank" class="paper-link">
+        <i class="fas fa-file-pdf mr-1"></i> Read Paper
+      </a>
+      
+      <p class="paper-authors">Authors: Jingjie Ning, Xiangzhen Shen, Li Hou, Shiyi Shen, Jiahao Yang, Junrui Li, Hong Shan, Sanan Wu, Sihan Gao, Huaqiang Eric Xu, Xinheng He</p>
+      
     </motion.div>
     
   </div>
