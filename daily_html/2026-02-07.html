@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArXiv Peptide/Assembly Papers - February 07, 2026</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg-color: #ffffff;
+      --text-color: #1e293b;
+      --text-muted-color: #64748b;
+      --header-color: #0f172a;
+      --highlight-primary: #14b8a6;
+      --highlight-secondary: #67e8f9;
+      --border-color: #e2e8f0;
+      --shadow-color: rgba(15, 23, 42, 0.08);
+    }
+    body { background-color: var(--bg-color); color: var(--text-color); font-family: 'Inter', sans-serif; overflow-x: hidden; line-height: 1.6; }
+    .bento-grid { display: grid; gap: 1.5rem; grid-template-columns: 1fr; padding-bottom: 4rem; }
+    .bento-item { background-color: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border-radius: 1rem; padding: 1.75rem; border: 1px solid rgba(226, 232, 240, 0.5); box-shadow: 0 4px 12px var(--shadow-color); transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; }
+    .bento-item:hover { transform: translateY(-6px); box-shadow: 0 10px 20px var(--shadow-color); }
+    .paper-title { font-size: 1.125rem; font-weight: 600; color: var(--highlight-primary); margin-bottom: 0.75rem; }
+    .paper-summary { font-size: 0.875rem; color: var(--text-muted-color); margin-bottom: 1.25rem; }
+    .paper-tldr { font-size: 0.95rem; color: #475569; margin: 0.75rem 0; font-weight: bold; }
+    details { margin: 0.75rem 0; }
+    details summary { cursor: pointer; font-weight: 600; color: var(--highlight-primary); }
+    details p { font-size: 0.85rem; color: #475569; margin: 0.5rem 0 0 1rem; }
+    .paper-link { display: inline-flex; align-items: center; font-size: 0.875rem; font-weight: 600; color: var(--highlight-primary); text-decoration: none; padding: 0.5rem 1rem; border-radius: 0.5rem; background-color: rgba(20, 184, 166, 0.08); border: 1px solid rgba(20, 184, 166, 0.2); transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; }
+    .paper-link:hover { background-color: rgba(20, 184, 166, 0.15); color: #0d9488; transform: translateY(-1px); }
+    .paper-authors { font-size: 0.75rem; color: var(--text-muted-color); margin-top: 1rem; font-style: italic; }
+    .header { text-align: center; margin-bottom: 3rem; padding-top: 3rem; }
+    .header h1 { font-size: 2.5rem; font-weight: 700; color: var(--header-color); margin-bottom: 0.5rem; }
+    .header p { font-size: 1.125rem; color: var(--text-muted-color); margin-top: 0.5rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+    .footer { text-align: center; color: var(--text-muted-color); font-size: 0.875rem; padding: 2rem 0; border-top: 1px solid var(--border-color); margin-top: 4rem; }
+    .line-graphic { height: 1px; background: linear-gradient(90deg, rgba(20, 184, 166, 0), var(--highlight-primary), rgba(20, 184, 166, 0)); opacity: 0.6; margin: 1.5rem 0; }
+    .paper-rating { margin: 1rem 0; color: #f59e0b; }
+    .paper-sub-ratings .rating-item i { color: #f59e0b; }
+  </style>
+</head>
+<body class="container mx-auto px-4 antialiased">
+
+  <motion.div initial="{ opacity: 0, y: -30 }" animate="{ opacity: 1, y: 0 }" transition="{ duration: 0.6, ease: 'easeOut' }" class="header" data-motion-element>
+    <h1>Peptide & Assembly Daily Papers</h1>
+    <p>Daily arXiv digest of machine learning for peptides, protein aggregation, and molecular self-assembly</p>
+    <p>February 07, 2026</p>
+    <div class="mt-4">
+        <a href="../list.html" class="text-teal-600 hover:underline">📚 View Full Report Archive</a>
+    </div>
+    <div class="line-graphic mt-4 mb-8 mx-auto w-1/4"></div>
+  </motion.div>
+
+  <div class="bento-grid" id="paper-grid">
+    
+    <motion.div initial="{ opacity: 0 }" animate="{ opacity: 1 }" transition="{ duration: 0.5 }" class="bento-item col-span-full text-center text-gray-500" data-motion-element>
+      <p>No relevant papers found for this date.</p>
+    </motion.div>
+    
+  </div>
+
+  <footer class="footer">
+    Generated on 2026-02-09 04:39:59 UTC.
+  </footer>
+
+</body>
+</html>
