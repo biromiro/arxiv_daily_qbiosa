@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Piecewise integrability of the discrete Hasimoto map for analytic prediction and design of helical peptides",
+        "summary": "The representation of protein backbone geometry through the discrete nonlinear Schrödinger equation provides a theoretical connection between biological structure and integrable systems. Although the global application of this framework is constrained by chiral degeneracies and non-local interactions we propose that helical peptides can be effectively modeled as piecewise integrable systems in which the discrete Hasimoto map remains applicable within specific geometric boundaries. We delineate these boundaries through an analytic characterization of the mapping between biochemical dihedral angles and Frenet frame parameters for a dataset of 50 helical peptide chains. We demonstrate that the transformation is information-preserving globally but ill-conditioned within the helical basin characterized by a median Jacobian condition number of 31 which suggests that the loss of chiral information arises primarily from local coordinate compression rather than topological singularities. We define a local integrability error $E[n]$ derived from the discrete dispersion relation to show that deviations from integrability are driven predominantly by torsion non-uniformity while curvature remains structurally rigid. This metric identifies integrable islands where the analytic dispersion relation predicts backbone coordinates with sub-angstrom accuracy yielding a median root-mean-square deviation of 0.77\\,Å and enables a segmentation strategy that isolates structural defects. We further indicate that the inverse design of peptide backbones is feasible within a quantitatively defined integrability zone where the design constraint reduces essentially to the control of torsion uniformity. These findings advance the Hasimoto formalism from a qualitative descriptor toward a precise quantitative framework for analyzing and designing local protein geometry within the limits of piecewise integrability.",
+        "url": "http://arxiv.org/abs/2602.16255v1",
+        "published_date": "2026-02-18T08:11:23+00:00",
+        "updated_date": "2026-02-18T08:11:23+00:00",
+        "categories": [
+            "q-bio.BM",
+            "math-ph",
+            "nlin.PS",
+            "nlin.SI"
+        ],
+        "authors": [
+            "Yiquan Wang"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2602.16255v1"
+    }
+]
