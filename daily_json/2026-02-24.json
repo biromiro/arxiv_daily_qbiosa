@@ -1,0 +1,46 @@
+[
+    {
+        "title": "Collective Variable-Guided Engineering of the Free-Energy Surface of a Small Peptide",
+        "summary": "Engineering the free-energy surfaces (FES) of proteins and peptides is central to controlling conformational ensembles and their responses to perturbations. However, predicting how chemical modifications such as point mutations reshape the FES and shift conformational equilibria remains challenging, particularly in data-scarce settings. Building on the Collective Variables for Free Energy Surface Tailoring (CV-FEST) framework, we develop a computational approach that leverages short, unbiased molecular dynamics trajectories to guide mutation analysis. Using the ten-residue beta-hairpin CLN025 and a systematic library of its single-point mutants, we apply Harmonic Linear Discriminant Analysis (HLDA) to extract collective variables from the conformational data. We find that the HLDA eigenvector learned solely from short wild-type trajectories provides residue-level insight into the propensity of mutations at specific positions to thermodynamically stabilize or destabilize the folded state. Extending this analysis, we show that shifts in the leading HLDA eigenvalue across mutants, a measure of changes in separability between the conformational ensembles along the HLDA coordinate, correlate strongly with mutation-induced changes in the free-energy difference between states, as reflected in melting temperatures. Benchmarked against Replica Exchange Molecular Dynamics simulations, these findings suggest a promising and computationally affordable route toward guiding the engineering of biomolecular free-energy landscapes.",
+        "url": "http://arxiv.org/abs/2602.19906v1",
+        "published_date": "2026-02-23T14:45:35+00:00",
+        "updated_date": "2026-02-23T14:45:35+00:00",
+        "categories": [
+            "physics.bio-ph",
+            "physics.chem-ph"
+        ],
+        "authors": [
+            "Muralika Medaparambath",
+            "Alexander Zhilkin",
+            "Dan Mendels"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2602.19906v1"
+    },
+    {
+        "title": "MACE-POLAR-1: A Polarisable Electrostatic Foundation Model for Molecular Chemistry",
+        "summary": "Accurate modelling of electrostatic interactions and charge transfer is fundamental to computational chemistry, yet most machine learning interatomic potentials (MLIPs) rely on local atomic descriptors that cannot capture long-range electrostatic effects. We present a new electrostatic foundation model for molecular chemistry that extends the MACE architecture with explicit treatment of long-range interactions and electrostatic induction. Our approach combines local many-body geometric features with a non-self-consistent field formalism that updates learnable charge and spin densities through polarisable iterations to model induction, followed by global charge equilibration via learnable Fukui functions to control total charge and total spin. This design enables an accurate and physical description of systems with varying charge and spin states while maintaining computational efficiency. Trained on the OMol25 dataset of 100 million hybrid DFT calculations, our models achieve chemical accuracy across diverse benchmarks, with accuracy competitive with hybrid DFT on thermochemistry, reaction barriers, conformational energies, and transition metal complexes. Notably, we demonstrate that the inclusion of long-range electrostatics leads to a large improvement in the description of non-covalent interactions and supramolecular complexes over non-electrostatic models, including sub-kcal/mol prediction of molecular crystal formation energy in the X23-DMC dataset and a fourfold improvement over short-ranged models on protein-ligand interactions. The model's ability to handle variable charge and spin states, respond to external fields, provide interpretable spin-resolved charge densities, and maintain accuracy from small molecules to protein-ligand complexes positions it as a versatile tool for computational molecular chemistry and drug discovery.",
+        "url": "http://arxiv.org/abs/2602.19411v1",
+        "published_date": "2026-02-23T01:09:54+00:00",
+        "updated_date": "2026-02-23T01:09:54+00:00",
+        "categories": [
+            "physics.chem-ph",
+            "cs.LG"
+        ],
+        "authors": [
+            "Ilyes Batatia",
+            "William J. Baldwin",
+            "Domantas Kuryla",
+            "Joseph Hart",
+            "Elliott Kasoar",
+            "Alin M. Elena",
+            "Harry Moore",
+            "Mikołaj J. Gawkowski",
+            "Benjamin X. Shi",
+            "Venkat Kapil",
+            "Panagiotis Kourtis",
+            "Ioan-Bogdan Magdău",
+            "Gábor Csányi"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2602.19411v1"
+    }
+]
