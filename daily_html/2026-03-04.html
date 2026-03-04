@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ArXiv Peptide/Assembly Papers - March 03, 2026</title>
+  <title>ArXiv Peptide/Assembly Papers - March 04, 2026</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -47,7 +47,7 @@
   <motion.div initial="{ opacity: 0, y: -30 }" animate="{ opacity: 1, y: 0 }" transition="{ duration: 0.6, ease: 'easeOut' }" class="header" data-motion-element>
     <h1>Peptide & Assembly Daily Papers</h1>
     <p>Daily arXiv digest of machine learning for peptides, protein aggregation, and molecular self-assembly</p>
-    <p>March 03, 2026</p>
+    <p>March 04, 2026</p>
     <div class="mt-4">
         <a href="../list.html" class="text-teal-600 hover:underline">📚 View Full Report Archive</a>
     </div>
@@ -56,24 +56,8 @@
 
   <div class="bento-grid" id="paper-grid">
     
-    <motion.div initial="{ opacity: 0, y: 50, scale: 0.9 }" whileInView="{ opacity: 1, y: 0, scale: 1 }" viewport="{ once: true, amount: 0.2 }" transition="{ duration: 0.5, delay: 0.0, ease: 'easeOut' }" class="bento-item" data-motion-element>
-      <h2 class="paper-title">Bi-TEAM: A Unified Cross-Scale Representation Learning Framework for Chemically Modified Biomolecules</h2>
-      <p class="paper-summary">Representation learning for protein biochemical space faces a difficult trade-off: protein language models excel at capturing long-range biological semantics but often miss fine-grained chemical details. Conversely, chemical language models encode atomic information but lack broader sequence context. To address this, we introduce Bi-TEAM (Bi-gated Residual Space Modification), a general framework that injects localized chemical variation into global protein contexts. By ensuring robustness against perturbations such as non-canonical amino acids, post-translational modifications (PTMs), and topological constraints, Bi-TEAM uncovers functional chemical dependencies often missed by evolutionary baselines. Mechanistically, Bi-TEAM maps non-canonical residues to their natural counterparts and injects atomic-level data via a bi-gated residual fusion mechanism. Crucially, this process uses modification-aware prompts to ensure that local structural changes influence global functional representations without requiring alphabet expansion. We evaluated Bi-TEAM on ten datasets spanning chemically modified peptides, PTMs, and natural proteins. The model consistently outperformed state-of-the-art baselines, achieving up to a 66 percent improvement in Matthews correlation coefficient (MCC) on scaffold-similarity splits and a 350 percent increase in hemolysis prediction accuracy. Furthermore, when deployed as an oracle for generative modeling, Bi-TEAM nearly quadrupled the success rate for designing cell-penetrating cyclic peptides. By unifying biological semantics with chemical precision, Bi-TEAM provides a versatile foundation for machine learning driven exploration of peptide and protein biochemical space.</p>
-
-      
-      
-      
-
-      
-
-      
-
-      <a href="http://arxiv.org/abs/2603.01873v1" target="_blank" class="paper-link">
-        <i class="fas fa-file-pdf mr-1"></i> Read Paper
-      </a>
-      
-      <p class="paper-authors">Authors: Chunbin Gu, Zijun Gao, Mutian He, Jingjie Zhang, Haipeng Wen, Zihao Luo, Xiaorui Wang, Hanqun Cao, Jiajun Bu, Chang-Yu Hsieh, Pheng Ann Heng</p>
-      
+    <motion.div initial="{ opacity: 0 }" animate="{ opacity: 1 }" transition="{ duration: 0.5 }" class="bento-item col-span-full text-center text-gray-500" data-motion-element>
+      <p>No relevant papers found for this date.</p>
     </motion.div>
     
   </div>
