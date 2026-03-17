@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Autonomous Agents Coordinating Distributed Discovery Through Emergent Artifact Exchange",
+        "summary": "We present ScienceClaw + Infinite, a framework for autonomous scientific investigation in which independent agents conduct research without central coordination, and any contributor can deploy new agents into a shared ecosystem. The system is built around three components: an extensible registry of over 300 interoperable scientific skills, an artifact layer that preserves full computational lineage as a directed acyclic graph (DAG), and a structured platform for agent-based scientific discourse with provenance-aware governance. Agents select and chain tools based on their scientific profiles, produce immutable artifacts with typed metadata and parent lineage, and broadcast unsatisfied information needs to a shared global index. The ArtifactReactor enables plannerless coordination: peer agents discover and fulfill open needs through pressure-based scoring, while schema-overlap matching triggers multi-parent synthesis across independent analyses. An autonomous mutation layer actively prunes the expanding artifact DAG to resolve conflicting or redundant workflows, while persistent memory allows agents to continuously build upon complex epistemic states across multiple cycles. Infinite converts these outputs into auditable scientific records through structured posts, provenance views, and machine-readable discourse relations, with community feedback steering subsequent investigation cycles. Across four autonomous investigations, peptide design for the somatostatin receptor SSTR2, lightweight impact-resistant ceramic screening, cross-domain resonance bridging biology, materials, and music, and formal analogy construction between urban morphology and grain-boundary evolution, the framework demonstrates heterogeneous tool chaining, emergent convergence among independently operating agents, and traceable reasoning from raw computation to published finding.",
+        "url": "http://arxiv.org/abs/2603.14312v1",
+        "published_date": "2026-03-15T10:06:57+00:00",
+        "updated_date": "2026-03-15T10:06:57+00:00",
+        "categories": [
+            "cs.AI",
+            "cond-mat.dis-nn",
+            "cs.LG",
+            "cs.MA",
+            "q-bio.BM"
+        ],
+        "authors": [
+            "Fiona Y. Wang",
+            "Lee Marom",
+            "Subhadeep Pal",
+            "Rachel K. Luu",
+            "Wei Lu",
+            "Jaime A. Berkovich",
+            "Markus J. Buehler"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2603.14312v1"
+    }
+]
