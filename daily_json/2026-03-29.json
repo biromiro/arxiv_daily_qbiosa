@@ -1,0 +1,22 @@
+[
+    {
+        "title": "ImmSET: Sequence-Based Predictor of TCR-pMHC Specificity at Scale",
+        "summary": "T cells are a critical component of the adaptive immune system, playing a role in infectious disease, autoimmunity, and cancer. T cell function is mediated by the T cell receptor (TCR) protein, a highly diverse receptor targeting specific peptides presented by the major histocompatibility complex (pMHCs). Predicting the specificity of TCRs for their cognate pMHCs is central to understanding adaptive immunity and enabling personalized therapies. However, accurate prediction of this protein-protein interaction remains challenging due to the extreme diversity of both TCRs and pMHCs. Here, we present ImmSET (Immune Synapse Encoding Transformer), a novel sequence-based architecture designed to model interactions among sets of variable-length biological sequences. We train this model across a range of dataset sizes and compositions and study the resulting models' generalization to pMHC targets. We describe a failure mode in prior sequence-based approaches that inflates previously reported performance on this task and show that ImmSET remains robust under stricter evaluation. In systematically testing the scaling behavior of ImmSET with training data, we show that performance scales consistently with data volume across multiple data types and compares favorably with the pre-trained protein language model ESM2 fine-tuned on the same datasets. Finally, we demonstrate that ImmSET can outperform AlphaFold2 and AlphaFold3-based pipelines on TCR-pMHC specificity prediction when provided sufficient training data. This work establishes ImmSET as a scalable modeling paradigm for multi-sequence interaction problems, demonstrated in the TCR-pMHC setting but generalizable to other biological domains where high-throughput sequence-driven reasoning complements structure prediction and experimental mapping.",
+        "url": "http://arxiv.org/abs/2603.26994v1",
+        "published_date": "2026-03-27T21:08:10+00:00",
+        "updated_date": "2026-03-27T21:08:10+00:00",
+        "categories": [
+            "cs.LG",
+            "q-bio.QM"
+        ],
+        "authors": [
+            "Marco Garcia Noceda",
+            "Matthew T Noakes",
+            "Andrew FigPope",
+            "Daniel E Mattox",
+            "Bryan Howie",
+            "Harlan Robins"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2603.26994v1"
+    }
+]
