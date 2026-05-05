@@ -1,0 +1,21 @@
+[
+    {
+        "title": "PepSpecBench: A Unified Evaluation Benchmark for Peptide Tandem Mass Spectrometry Prediction",
+        "summary": "Tandem mass spectrometry provides a high-throughput framework for identifying and quantifying proteins in complex biological samples. In computational proteomics, predicting peptide MS/MS spectra is a critical task, enabling downstream applications such as large-scale peptide identification and quantification. While deep learning architectures have substantially improved prediction accuracy, three evaluation challenges obscure the true progress of the field. First, inconsistent data preprocessing and incompatible model output spaces hinder fair model comparison. Second, flawed data splitting strategies can permit hidden sequence leakage and inflate reported performance. Third, existing evaluations typically lack comprehensive cross-species benchmarking and systematic assessment of model robustness to influential experimental conditions. To address these challenges, we propose PepSpecBench, a unified benchmark for peptide MS/MS spectrum prediction. PepSpecBench standardizes data preprocessing across complementary public datasets, enforces a strict backbone-disjoint splitting strategy to eliminate sequence leakage, and evaluates diverse architectures within a shared fragment-ion representation space. It further introduces a comprehensive multi-species evaluation suite and physically grounded metadata perturbation probes to assess model robustness and instrument awareness. We uncover previously unrecognized performance discrepancies and robustness limitations across six representative models, providing actionable insights for future model design, evaluation and practical deployment.",
+        "url": "http://arxiv.org/abs/2605.01945v1",
+        "published_date": "2026-05-03T16:11:27+00:00",
+        "updated_date": "2026-05-03T16:11:27+00:00",
+        "categories": [
+            "cs.LG",
+            "cs.AI"
+        ],
+        "authors": [
+            "Zhiwen Yang",
+            "Pan Liu",
+            "Yifan Li",
+            "Yunhua Zhong",
+            "Jun Xia"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2605.01945v1"
+    }
+]
