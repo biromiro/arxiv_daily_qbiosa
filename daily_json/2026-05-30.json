@@ -1,0 +1,27 @@
+[
+    {
+        "title": "mRNAutilus: Multi-Objective-Guided Discrete Generation of mRNA with Optimized Therapeutic Properties",
+        "summary": "Therapeutic mRNA design requires coordinating multiple interacting sequence features across the full transcript, where codon usage, untranslated regions (UTRs), and their coupling jointly determine stability, translation efficiency, and protein expression. Here, we present mRNA generation via unrolled trajectories and informed latent updates (mRNAutilus), a framework for simultaneous codon optimization and de novo UTR design directly from sequence. mRNAutilus combines a masked discrete diffusion model trained on millions of full-length mRNAs with Monte Carlo Tree Guidance to generate Pareto-efficient sequences under multiple functional objectives, using lightweight regressors over model embeddings to predict half-life, translation efficiency, and protein abundance. Unlike recent methods that design coding sequences and UTRs separately or rely on post hoc assembly and screening, mRNAutilus generates complete transcripts in a single process optimized across properties. Across diverse targets, zero-shot mRNAs encoding P. pyralis luciferase achieve over 400-fold higher expression than wild-type and outperform commercial and machine learning-designed baselines, including zero-shot generative approaches. Zero-shot SARS-CoV-2 Spike mRNAs exceed clinically used and commercial constructs and match or surpass lab-optimized designs with improved durability. We further demonstrate generality in therapeutic settings, including prime editing (PEMax) and programmable proteome modulation, where mRNAutilus-designed constructs enhance expression of peptide-guided E3 ligases (uAbs) for beta-catenin degradation. These results establish a sequence-based, multi-objective framework for generating functional mRNAs tailored to diverse biological applications.",
+        "url": "http://arxiv.org/abs/2605.31296v1",
+        "published_date": "2026-05-29T13:32:39+00:00",
+        "updated_date": "2026-05-29T13:32:39+00:00",
+        "categories": [
+            "q-bio.BM",
+            "cs.LG"
+        ],
+        "authors": [
+            "Sawan Patel",
+            "Sophia Tang",
+            "Yesol Kim",
+            "Yinuo Zhang",
+            "Divya Srijay",
+            "Ping-Jung Lin",
+            "Shambhavi Shubham",
+            "Fengmei Pi",
+            "Cedric Wu",
+            "Sherwood Yao",
+            "Pranam Chatterjee"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2605.31296v1"
+    }
+]
