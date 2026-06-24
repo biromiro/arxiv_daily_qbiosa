@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ArXiv Peptide/Assembly Papers - June 23, 2026</title>
+  <title>ArXiv Peptide/Assembly Papers - June 24, 2026</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -47,7 +47,7 @@
   <motion.div initial="{ opacity: 0, y: -30 }" animate="{ opacity: 1, y: 0 }" transition="{ duration: 0.6, ease: 'easeOut' }" class="header" data-motion-element>
     <h1>Peptide & Assembly Daily Papers</h1>
     <p>Daily arXiv digest of machine learning for peptides, protein aggregation, and molecular self-assembly</p>
-    <p>June 23, 2026</p>
+    <p>June 24, 2026</p>
     <div class="mt-4">
         <a href="../list.html" class="text-teal-600 hover:underline">📚 View Full Report Archive</a>
     </div>
@@ -56,8 +56,25 @@
 
   <div class="bento-grid" id="paper-grid">
     
-    <motion.div initial="{ opacity: 0 }" animate="{ opacity: 1 }" transition="{ duration: 0.5 }" class="bento-item col-span-full text-center text-gray-500" data-motion-element>
-      <p>No relevant papers found for this date.</p>
+    <motion.div initial="{ opacity: 0, y: 50, scale: 0.9 }" whileInView="{ opacity: 1, y: 0, scale: 1 }" viewport="{ once: true, amount: 0.2 }" transition="{ duration: 0.5, delay: 0.0, ease: 'easeOut' }" class="bento-item" data-motion-element>
+      <h2 class="paper-title">CABS-flex standalone 3: an open command-line platform for protein flexibility simulation, peptide structure modeling, and protein-peptide docking</h2>
+      <p class="paper-summary">Summary: CABS-flex standalone 3 is an open command-line platform for fast CABS-based coarse-grained modeling of protein flexibility, peptide structures, and global or information-guided protein-peptide docking, coupled with all-atom reconstruction and analysis. The package builds on the established CABS-flex and CABS-dock ecosystem, widely used in structural bioinformatics for protein flexibility simulations and flexible protein-peptide docking. It provides a Python 3 implementation that brings together previous standalone functionality with recent developments in protein flexibility simulation, linear and cyclic peptide modeling, extended reporting and visualization, and deep-learning-based all-atom reconstruction with cg2all.
+  Availability and Implementation: CABS-flex standalone 3 is implemented in Python 3 and is freely available as an open-source command-line package. Documentation is available at https://cabsflex.lcbio.pl. Source code is available at https://github.com/LCBio/CABSflex_standalone.</p>
+
+      
+      
+      
+
+      
+
+      
+
+      <a href="http://arxiv.org/abs/2606.24487v1" target="_blank" class="paper-link">
+        <i class="fas fa-file-pdf mr-1"></i> Read Paper
+      </a>
+      
+      <p class="paper-authors">Authors: Chandran Nithin, Karol Wroblewski, Piotr Szukalo, Ayomide Fasemire, Aleksander Kuriata, Mateusz Kurcinski, Andrzej Kolinski, Sebastian Kmiecik</p>
+      
     </motion.div>
     
   </div>

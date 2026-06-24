@@ -1,0 +1,23 @@
+[
+    {
+        "title": "CABS-flex standalone 3: an open command-line platform for protein flexibility simulation, peptide structure modeling, and protein-peptide docking",
+        "summary": "Summary: CABS-flex standalone 3 is an open command-line platform for fast CABS-based coarse-grained modeling of protein flexibility, peptide structures, and global or information-guided protein-peptide docking, coupled with all-atom reconstruction and analysis. The package builds on the established CABS-flex and CABS-dock ecosystem, widely used in structural bioinformatics for protein flexibility simulations and flexible protein-peptide docking. It provides a Python 3 implementation that brings together previous standalone functionality with recent developments in protein flexibility simulation, linear and cyclic peptide modeling, extended reporting and visualization, and deep-learning-based all-atom reconstruction with cg2all.\n  Availability and Implementation: CABS-flex standalone 3 is implemented in Python 3 and is freely available as an open-source command-line package. Documentation is available at https://cabsflex.lcbio.pl. Source code is available at https://github.com/LCBio/CABSflex_standalone.",
+        "url": "http://arxiv.org/abs/2606.24487v1",
+        "published_date": "2026-06-23T12:20:09+00:00",
+        "updated_date": "2026-06-23T12:20:09+00:00",
+        "categories": [
+            "q-bio.BM"
+        ],
+        "authors": [
+            "Chandran Nithin",
+            "Karol Wroblewski",
+            "Piotr Szukalo",
+            "Ayomide Fasemire",
+            "Aleksander Kuriata",
+            "Mateusz Kurcinski",
+            "Andrzej Kolinski",
+            "Sebastian Kmiecik"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2606.24487v1"
+    }
+]
