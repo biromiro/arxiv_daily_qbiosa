@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Modular molecular toolkit for photochemical energy conversion in a self-assembling nanocontainer",
+        "summary": "Production of useful chemicals using photoelectrochemical biohybrid devices offers an environmentally friendly alternative to existing energetically demanding processes. These devices exploit light-driven charge separation, e.g. by a photosystem, and require efficient electron transfer to a tailored redox enzyme cascade. Here we demonstrate that electron transfer efficiency can be increased by confining the photosystem with the redox protein inside a self-assembling, virus-based nanocontainer. The photosynthetic system from the phototrophic bacterium Cereibacter sphaeroides and cytochrome c were conjugated to a bacteriophage P22 scaffolding protein and co-incorporated into the 50 nm diameter virus shell in vitro. The porous shell confined the macromolecular components for efficient electron transfer while allowing free exchange of small electron mediators. Sustainable and accelerated light-driven electron transfer between the encapsulated components was confirmed by optical spectroscopy. This self-assembly system presents a versatile platform for developing nanoreactors that combine photosystems with complex redox pathways.",
+        "url": "http://arxiv.org/abs/2606.27238v1",
+        "published_date": "2026-06-25T16:23:37+00:00",
+        "updated_date": "2026-06-25T16:23:37+00:00",
+        "categories": [
+            "physics.chem-ph"
+        ],
+        "authors": [
+            "David Kaftan",
+            "David Bina",
+            "Guy Michel Wolf",
+            "Martin Baroch",
+            "Jakub Kodel",
+            "Juraj Dian",
+            "Filip Dycka",
+            "J. Thomas Beatty",
+            "Heiko Lokstein",
+            "Jakub Psencik",
+            "Roman Tuma"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2606.27238v1"
+    }
+]
