@@ -1,0 +1,21 @@
+[
+    {
+        "title": "Optimal interactions for addressable self-assembly",
+        "summary": "Addressable self-assembly asks that each building block assemble into a particular location in a target structure. Although particles may all be distinct, achieving high yield is a challenge because of monomer depletion: more target structures can nucleate than there are building blocks for, so they form partial fragments which cannot complete growth. We ask how to design the interactions between building blocks to achieve the highest yield in a given time. Using reaction equations describing all the intermediate steps of assembly, combined with numerical optimization, we show that the optimal interactions are such that (i) all bonds are either very strong or very weak, and (ii) the strong bonds form a spanning tree of the target structure. We then prove that when interactions form a spanning tree, monomer depletion cannot occur: assembly can always proceed downhill in energy space, with no kinetic traps. This result is a combinatorial property of the underlying interaction graph, and does not depend on the particular model for the kinetics. It suggests a robust design principle: create a network of strong interactions that has no loops, and make all other interactions much weaker. We validate this principle in numerical simulations of larger structures, and we further show that spanning trees that are more compact have typically better yield. Our results suggest a new framework for understanding monomer depletion and addressable self-assembly, which may be applied to DNA nanotechnology and which may give insight into the assembly pathways of certain multiprotein complexes.",
+        "url": "http://arxiv.org/abs/2606.31838v1",
+        "published_date": "2026-06-30T15:42:07+00:00",
+        "updated_date": "2026-06-30T15:42:07+00:00",
+        "categories": [
+            "cond-mat.soft",
+            "cond-mat.mtrl-sci",
+            "physics.chem-ph"
+        ],
+        "authors": [
+            "Tighe McAsey",
+            "Sushrut Tadwalkar",
+            "Ali Fele-Paranj",
+            "Miranda Holmes-Cerfon"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2606.31838v1"
+    }
+]

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ArXiv Peptide/Assembly Papers - June 30, 2026</title>
+  <title>ArXiv Peptide/Assembly Papers - July 01, 2026</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -47,7 +47,7 @@
   <motion.div initial="{ opacity: 0, y: -30 }" animate="{ opacity: 1, y: 0 }" transition="{ duration: 0.6, ease: 'easeOut' }" class="header" data-motion-element>
     <h1>Peptide & Assembly Daily Papers</h1>
     <p>Daily arXiv digest of machine learning for peptides, protein aggregation, and molecular self-assembly</p>
-    <p>June 30, 2026</p>
+    <p>July 01, 2026</p>
     <div class="mt-4">
         <a href="../list.html" class="text-teal-600 hover:underline">📚 View Full Report Archive</a>
     </div>
@@ -56,8 +56,24 @@
 
   <div class="bento-grid" id="paper-grid">
     
-    <motion.div initial="{ opacity: 0 }" animate="{ opacity: 1 }" transition="{ duration: 0.5 }" class="bento-item col-span-full text-center text-gray-500" data-motion-element>
-      <p>No relevant papers found for this date.</p>
+    <motion.div initial="{ opacity: 0, y: 50, scale: 0.9 }" whileInView="{ opacity: 1, y: 0, scale: 1 }" viewport="{ once: true, amount: 0.2 }" transition="{ duration: 0.5, delay: 0.0, ease: 'easeOut' }" class="bento-item" data-motion-element>
+      <h2 class="paper-title">Optimal interactions for addressable self-assembly</h2>
+      <p class="paper-summary">Addressable self-assembly asks that each building block assemble into a particular location in a target structure. Although particles may all be distinct, achieving high yield is a challenge because of monomer depletion: more target structures can nucleate than there are building blocks for, so they form partial fragments which cannot complete growth. We ask how to design the interactions between building blocks to achieve the highest yield in a given time. Using reaction equations describing all the intermediate steps of assembly, combined with numerical optimization, we show that the optimal interactions are such that (i) all bonds are either very strong or very weak, and (ii) the strong bonds form a spanning tree of the target structure. We then prove that when interactions form a spanning tree, monomer depletion cannot occur: assembly can always proceed downhill in energy space, with no kinetic traps. This result is a combinatorial property of the underlying interaction graph, and does not depend on the particular model for the kinetics. It suggests a robust design principle: create a network of strong interactions that has no loops, and make all other interactions much weaker. We validate this principle in numerical simulations of larger structures, and we further show that spanning trees that are more compact have typically better yield. Our results suggest a new framework for understanding monomer depletion and addressable self-assembly, which may be applied to DNA nanotechnology and which may give insight into the assembly pathways of certain multiprotein complexes.</p>
+
+      
+      
+      
+
+      
+
+      
+
+      <a href="http://arxiv.org/abs/2606.31838v1" target="_blank" class="paper-link">
+        <i class="fas fa-file-pdf mr-1"></i> Read Paper
+      </a>
+      
+      <p class="paper-authors">Authors: Tighe McAsey, Sushrut Tadwalkar, Ali Fele-Paranj, Miranda Holmes-Cerfon</p>
+      
     </motion.div>
     
   </div>
