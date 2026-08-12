@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ArXiv Peptide/Assembly Papers - August 10, 2026</title>
+  <title>ArXiv Peptide/Assembly Papers - August 12, 2026</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -47,7 +47,7 @@
   <motion.div initial="{ opacity: 0, y: -30 }" animate="{ opacity: 1, y: 0 }" transition="{ duration: 0.6, ease: 'easeOut' }" class="header" data-motion-element>
     <h1>Peptide & Assembly Daily Papers</h1>
     <p>Daily arXiv digest of machine learning for peptides, protein aggregation, and molecular self-assembly</p>
-    <p>August 10, 2026</p>
+    <p>August 12, 2026</p>
     <div class="mt-4">
         <a href="../list.html" class="text-teal-600 hover:underline">📚 View Full Report Archive</a>
     </div>
@@ -56,14 +56,30 @@
 
   <div class="bento-grid" id="paper-grid">
     
-    <motion.div initial="{ opacity: 0 }" animate="{ opacity: 1 }" transition="{ duration: 0.5 }" class="bento-item col-span-full text-center text-gray-500" data-motion-element>
-      <p>No relevant papers found for this date.</p>
+    <motion.div initial="{ opacity: 0, y: 50, scale: 0.9 }" whileInView="{ opacity: 1, y: 0, scale: 1 }" viewport="{ once: true, amount: 0.2 }" transition="{ duration: 0.5, delay: 0.0, ease: 'easeOut' }" class="bento-item" data-motion-element>
+      <h2 class="paper-title">Is Retrieval All You Need? Assessment and Emergence of Novelty in Protein Structure Generation</h2>
+      <p class="paper-summary">Protein backbone generation models are often credited with exploring novel fold space based solely on low full-chain similarity to known proteins, yet this cannot distinguish a genuinely new fold from a novel assembly of known structural units. We first ask whether this granularity mismatch alone explains the reported rates, and introduce the Domain Retrieval Rate (DRR), the fraction of generated backbones for which any constituent domain matches a known domain in CATH S40. Applied to eight backbone generation models spanning diffusion and flow-matching paradigms, DRR finds locally alignable known structure in most outputs, while the fraction containing a substantially covered complete domain is considerably smaller and depends on the scoring convention. To calibrate what retrieval alone can achieve, we propose RetFold, a zero-training baseline that constructs backbones by retrieving CATH domains and refining inter-domain connections through geometry-based helix-linker optimization, at two orders of magnitude lower cost on CPU alone.</p>
+
+      
+      
+      
+
+      
+
+      
+
+      <a href="http://arxiv.org/abs/2608.10598v1" target="_blank" class="paper-link">
+        <i class="fas fa-file-pdf mr-1"></i> Read Paper
+      </a>
+      
+      <p class="paper-authors">Authors: Tongyue Xu, Yijie Zhang, Mutian He, Lingdong Shen, Zhihong Liu, Tianlei Ying, Cheng Tan</p>
+      
     </motion.div>
     
   </div>
 
   <footer class="footer">
-    Generated on 2026-08-12 05:21:58 UTC.
+    Generated on 2026-08-12 05:21:59 UTC.
   </footer>
 
 </body>
