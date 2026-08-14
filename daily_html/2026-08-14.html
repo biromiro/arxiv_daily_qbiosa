@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ArXiv Peptide/Assembly Papers - August 12, 2026</title>
+  <title>ArXiv Peptide/Assembly Papers - August 14, 2026</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.dev.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -47,7 +47,7 @@
   <motion.div initial="{ opacity: 0, y: -30 }" animate="{ opacity: 1, y: 0 }" transition="{ duration: 0.6, ease: 'easeOut' }" class="header" data-motion-element>
     <h1>Peptide & Assembly Daily Papers</h1>
     <p>Daily arXiv digest of machine learning for peptides, protein aggregation, and molecular self-assembly</p>
-    <p>August 12, 2026</p>
+    <p>August 14, 2026</p>
     <div class="mt-4">
         <a href="../list.html" class="text-teal-600 hover:underline">📚 View Full Report Archive</a>
     </div>
@@ -57,8 +57,8 @@
   <div class="bento-grid" id="paper-grid">
     
     <motion.div initial="{ opacity: 0, y: 50, scale: 0.9 }" whileInView="{ opacity: 1, y: 0, scale: 1 }" viewport="{ once: true, amount: 0.2 }" transition="{ duration: 0.5, delay: 0.0, ease: 'easeOut' }" class="bento-item" data-motion-element>
-      <h2 class="paper-title">Is Retrieval All You Need? Assessment and Emergence of Novelty in Protein Structure Generation</h2>
-      <p class="paper-summary">Protein backbone generation models are often credited with exploring novel fold space based solely on low full-chain similarity to known proteins, yet this cannot distinguish a genuinely new fold from a novel assembly of known structural units. We first ask whether this granularity mismatch alone explains the reported rates, and introduce the Domain Retrieval Rate (DRR), the fraction of generated backbones for which any constituent domain matches a known domain in CATH S40. Applied to eight backbone generation models spanning diffusion and flow-matching paradigms, DRR finds locally alignable known structure in most outputs, while the fraction containing a substantially covered complete domain is considerably smaller and depends on the scoring convention. To calibrate what retrieval alone can achieve, we propose RetFold, a zero-training baseline that constructs backbones by retrieving CATH domains and refining inter-domain connections through geometry-based helix-linker optimization, at two orders of magnitude lower cost on CPU alone.</p>
+      <h2 class="paper-title">Integrated Alchemical and Conformational Enhanced Sampling for Solvation Free Energy Calculations</h2>
+      <p class="paper-summary">Accurate solvation free energies from molecular dynamics simulations require efficient sampling of coupled slow variables, including solvent coordinates, solute conformational modes, and the alchemical coordinate $λ$. Here, we develop a $λ$-dynamics framework that combines mass scaling, on-the-fly probability enhanced sampling (OPES), and driven adiabatic free energy dynamics (d-AFED) to address these sampling challenges within a unified protocol. For rigid organic solutes, Hamiltonian replica exchange with mass scaling is first used to quantify the effect of octanol solvent relaxation. Reducing all octanol atomic masses by a factor of ten accelerates convergence by more than fivefold while preserving equilibrium solvation free energies. These calculations then provide reference benchmarks for $λ$-OPES, a dual-bias $λ$-dynamics strategy that combines the "standard" and "explore" variants of OPES to promote transitions along the alchemical coordinate. This approach reaches convergence on timescales comparable to replica exchange, but without predefined $λ$ windows or multiple parallel simulations. For flexible $N$-acetyl amino-acid amide solutes, $λ$-OPES is coupled with d-AFED on selected backbone and side-chain dihedrals to enable simultaneous alchemical and conformational enhanced sampling. This combined strategy improves agreement with experimental octanol-water partition coefficients and reduces the mean absolute error from 0.75 log units with $λ$-OPES alone to 0.30 log units with $λ$-OPES-d-AFED. Overall, this work establishes an integrated enhanced sampling protocol for solvation free energy calculations across rigid organic solutes and flexible peptide-like solutes, and provides a foundation for the application of alchemical free energy methods to larger and more conformationally complex systems.</p>
 
       
       
@@ -68,11 +68,11 @@
 
       
 
-      <a href="http://arxiv.org/abs/2608.10598v1" target="_blank" class="paper-link">
+      <a href="http://arxiv.org/abs/2608.12691v1" target="_blank" class="paper-link">
         <i class="fas fa-file-pdf mr-1"></i> Read Paper
       </a>
       
-      <p class="paper-authors">Authors: Tongyue Xu, Yijie Zhang, Mutian He, Lingdong Shen, Zhihong Liu, Tianlei Ying, Cheng Tan</p>
+      <p class="paper-authors">Authors: Gabriela B. Correa, Charlles R. A. Abreu, Nisanth N. Nair, Mark E. Tuckerman</p>
       
     </motion.div>
     

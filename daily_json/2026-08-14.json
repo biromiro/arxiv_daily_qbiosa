@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Integrated Alchemical and Conformational Enhanced Sampling for Solvation Free Energy Calculations",
+        "summary": "Accurate solvation free energies from molecular dynamics simulations require efficient sampling of coupled slow variables, including solvent coordinates, solute conformational modes, and the alchemical coordinate $λ$. Here, we develop a $λ$-dynamics framework that combines mass scaling, on-the-fly probability enhanced sampling (OPES), and driven adiabatic free energy dynamics (d-AFED) to address these sampling challenges within a unified protocol. For rigid organic solutes, Hamiltonian replica exchange with mass scaling is first used to quantify the effect of octanol solvent relaxation. Reducing all octanol atomic masses by a factor of ten accelerates convergence by more than fivefold while preserving equilibrium solvation free energies. These calculations then provide reference benchmarks for $λ$-OPES, a dual-bias $λ$-dynamics strategy that combines the \"standard\" and \"explore\" variants of OPES to promote transitions along the alchemical coordinate. This approach reaches convergence on timescales comparable to replica exchange, but without predefined $λ$ windows or multiple parallel simulations. For flexible $N$-acetyl amino-acid amide solutes, $λ$-OPES is coupled with d-AFED on selected backbone and side-chain dihedrals to enable simultaneous alchemical and conformational enhanced sampling. This combined strategy improves agreement with experimental octanol-water partition coefficients and reduces the mean absolute error from 0.75 log units with $λ$-OPES alone to 0.30 log units with $λ$-OPES-d-AFED. Overall, this work establishes an integrated enhanced sampling protocol for solvation free energy calculations across rigid organic solutes and flexible peptide-like solutes, and provides a foundation for the application of alchemical free energy methods to larger and more conformationally complex systems.",
+        "url": "http://arxiv.org/abs/2608.12691v1",
+        "published_date": "2026-08-13T01:14:17+00:00",
+        "updated_date": "2026-08-13T01:14:17+00:00",
+        "categories": [
+            "physics.chem-ph",
+            "physics.comp-ph"
+        ],
+        "authors": [
+            "Gabriela B. Correa",
+            "Charlles R. A. Abreu",
+            "Nisanth N. Nair",
+            "Mark E. Tuckerman"
+        ],
+        "pdf_url": "https://arxiv.org/pdf/2608.12691v1"
+    }
+]
